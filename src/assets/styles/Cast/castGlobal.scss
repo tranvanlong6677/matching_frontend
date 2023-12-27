@@ -1,0 +1,347 @@
+.block-reserve-form .head-title {
+  margin-right: convertToVw(20px);
+
+  @include mq_min_750 {
+    margin-right: 20px;
+  }
+}
+
+.content .head-title {
+  width: 100%;
+  padding-bottom: convertToVw(32px);
+  border-bottom: 2px solid $divided-color;
+  @include flexbox(flex, null, center, null);
+  @include font(convertToVw(26px), 500, null);
+
+  @include mq_min_750 {
+    padding-bottom: 32px;
+    @include font(26px, null, null);
+  }
+
+  & img {
+    width: convertToVw(51px);
+    height: convertToVw(51px);
+
+    @include mq_min_750 {
+      width: 51px;
+      height: 51px;
+    }
+  }
+
+  .item-title {
+    line-height: convertToVw(49px);
+    margin-left: convertToVw(24px);
+    font-size: convertToVw(34px);
+
+    @include mq_min_750 {
+      line-height: 49px;
+      margin-left: 24px;
+      font-size: 34px;
+    }
+  }
+}
+
+.item-content {
+  padding-top: convertToVw(28px);
+  @include flexbox(flex, center, center, null);
+
+  & input {
+    border-radius: convertToVw(9px);
+    border-style: none;
+    background-color: $bg-color-input;
+    min-height: convertToVw(100px);
+    font-size: convertToVw(24px);
+  }
+
+  @include mq_min_750 {
+    padding-top: 28px;
+
+    & input {
+      border-radius: 9px;
+      min-height: 100px;
+      font-size: 24px;
+    }
+  }
+}
+
+.item-form {
+  padding-top: convertToVw(59px);
+  @include font(convertToVw(24px), normal, convertToVw(50px));
+  width: 100%;
+
+  &:nth-child(1) {
+    padding-top: 0;
+  }
+
+  &:nth-child(3) {
+    padding-bottom: convertToVw(36px);
+  }
+
+  & p {
+    margin-bottom: convertToVw(10px);
+  }
+
+  @include mq_min_750 {
+    padding-top: 59px;
+    @include font(24px, null, 50px);
+
+    &:nth-child(3) {
+      padding-bottom: 36px;
+    }
+
+    & p {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.ts-1 {
+  text-align: start !important;
+}
+
+.block-note-register {
+  text-align: center;
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  & .header-note-item {
+    @include font(convertToVw(30px), 600, convertToVw(54px));
+    margin-bottom: convertToVw(44px);
+
+    @include mq_min_750 {
+      @include font(30px, null, 54px);
+      margin-bottom: 44px;
+    }
+  }
+
+  & .description-item {
+    @include font(convertToVw(25px), 400, convertToVw(46px));
+    height: convertToVw(311px);
+
+    @include mq_min_750 {
+      @include font(26px, null, 46px);
+      height: 311px;
+    }
+  }
+
+  .block-btn-node-register {
+    margin: convertToVw(500px) 0 convertToVw(58px);
+
+    @include mq_min_750 {
+      margin: 500px 0 58px;
+    }
+  }
+}
+
+.block-btn-reserve {
+  padding-top: convertToVw(145px);
+
+  @include mq_min_750 {
+    padding-top: 145px;
+  }
+}
+
+.infor-block-item {
+  display: block;
+  padding: convertToVw(34px) convertToVw(20px) convertToVw(35px) convertToVw(22px);
+  border-bottom: 1px solid $border-user-color;
+
+  @include mq_min_750 {
+    padding: 34px 20px 35px 22px;
+  }
+
+  span {
+    display: block;
+    @include font(convertToVw(24px), 300, convertToVw(42px));
+
+    @include mq_min_750 {
+      @include font(24px, null, 42px);
+    }
+  }
+}
+
+.infor-element {
+  line-height: convertToVw(42px);
+
+  & span {
+    font-size: convertToVw(24px);
+  }
+
+  @include mq_min_750 {
+    line-height: 42px;
+
+    & span {
+      font-size: 24px;
+    }
+  }
+}
+
+.btn-client {
+  background-color: $button-color-first;
+  color: $white-color;
+}
+
+#img-size {
+  width: convertToVw(21px);
+  height: convertToVw(26px);
+
+  @include mq_min_750 {
+    width: 21px;
+    height: 26px;
+  }
+}
+
+#procedure-content {
+  margin-top: convertToVw(160px);
+
+  @include mq_min_750 {
+    margin-top: 160px;
+  }
+}
+
+.none-border {
+  border-bottom: none !important;
+}
+
+.bottom-client {
+  border-bottom: 1px solid $border-bottom-default;
+}
+
+.bottom-title-customer {
+  border-bottom: 2px solid $button-color-first !important;
+}
+
+#btn-danger {
+  background-color: #c10e23;
+  color: $white-color;
+}
+
+.icon-ml {
+  margin-left: convertToVw(13px);
+
+  @include mq_min_750 {
+    margin-left: 13px;
+  }
+}
+
+.btn-black {
+  background-color: $black-color-v2 !important;
+  color: $white-color;
+}
+
+.btn-custom {
+  background-color: $button-color-first !important;
+  color: $white-color;
+}
+
+.bottom-customer {
+  border-bottom: 2px solid $button-color-first !important;
+}
+
+.btn-customer {
+  background-color: $button-color-first;
+  color: $black-color;
+}
+
+#no-border {
+  border-bottom: none;
+}
+
+.calendar-list {
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.overlay:before {
+  content: 'キャンセルされました';
+  z-index: 100001;
+  color: $btn-dot;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  border: 1px solid #e53828;
+  @include font(convertToVw(24px), 400, convertToVw(32px));
+  padding: convertToVw(15px) convertToVw(19px) convertToVw(14px) convertToVw(19px);
+  border-radius: convertToVw(8px);
+  max-width: convertToVw(280px);
+  background: $white-color;
+
+  @include mq_min_750 {
+    @include font(24px, null, 32px);
+    padding: 15px 19px 14px 19px;
+    border-radius: 8px;
+    max-width: 280px;
+  }
+}
+
+.bg-unseen {
+  background-color: $white-color !important;
+}
+
+.ant-input-number-status-error:not(.ant-input-number-disabled):not(.ant-input-number-borderless).ant-input-number:focus,
+.ant-input-number-status-error.ant-input-number-focused {
+  border-inline-end-width: convertToVw(3px);
+
+  @include mq_min_750 {
+    border-inline-end-width: 3px;
+  }
+}
+
+.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:focus,
+.ant-input-status-error.ant-input-focused {
+  border-inline-end-width: convertToVw(3px);
+
+  @include mq_min_750 {
+    border-inline-end-width: 3px;
+  }
+}
+
+.error-bank {
+  color: #e30012;
+  @include font(convertToVw(20px), 400, convertToVw(35px));
+
+  @include mq_min_750 {
+    @include font(20px, null, 35px);
+  }
+}
+
+.bank-form .form-group .number {
+  margin-top: convertToVw(21px);
+
+  @include mq_min_750 {
+    margin-top: 21px;
+  }
+}
+
+.signup-container .signup-form {
+  .job,
+  .street {
+    margin-top: convertToVw(42px);
+
+    @include mq_min_750 {
+      margin-top: 42px;
+    }
+  }
+}
+
+.signup-container .signup-form #gender_help,
+.bank-container #account_type_help {
+  display: none;
+}
+
+.btn-yellow {
+  background-color: #ffcd00;
+  color: $black-color-v2;
+}

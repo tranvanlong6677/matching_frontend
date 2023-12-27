@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+body {
+  font-family: 'Hiragino Sans', sans-serif !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  & button {
+    font-family: 'Hiragino Sans', sans-serif;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace, ' Inter-Semibold';
+}
+
+.d-flex-bw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

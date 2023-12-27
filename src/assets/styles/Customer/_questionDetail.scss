@@ -1,0 +1,178 @@
+.question-detail-wrapper {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .title {
+    border-bottom: 1px solid #b3b3b3;
+    padding: 0 convertToVw(34px) convertToVw(45px) convertToVw(40px);
+
+    .title-element {
+      font-weight: 500;
+      margin-bottom: convertToVw(26px);
+      font-size: convertToVw(26px);
+      @include flexbox(flex, space-between, center, nowrap);
+    }
+
+    @include mq_min_750 {
+      padding: 0 34px 45px 40px;
+
+      .title-element {
+        font-weight: 500;
+        margin-bottom: 26px;
+        font-size: 26px;
+      }
+    }
+  }
+
+  .introduction {
+    font-weight: 300;
+    border-bottom: 1px solid #b3b3b3;
+    padding: convertToVw(62px) convertToVw(38px) convertToVw(42px) convertToVw(37px);
+    font-size: convertToVw(24px);
+    line-height: convertToVw(42px);
+
+    @include mq_min_750 {
+      padding: 62px 38px 42px 37px;
+      font-size: 24px;
+      line-height: 42px;
+    }
+  }
+  .question-list {
+    .ant-form-item {
+      border-bottom: 1px solid #b3b3b3;
+      padding: convertToVw(48px) convertToVw(34px) convertToVw(45px) convertToVw(40px);
+
+      @include mq_min_750 {
+        padding: 48px 34px 45px 40px;
+      }
+
+      .question {
+        font-weight: 500;
+        margin: 0 0 convertToVw(20px);
+        font-size: convertToVw(24px);
+        margin-bottom: convertToVw(26px);
+        letter-spacing: convertToVw(-1px);
+
+        @include mq_min_750 {
+          margin: 0 0 20px;
+          font-size: 28px;
+          margin-bottom: 26px;
+          letter-spacing: -1px;
+        }
+
+        .label {
+          color: #036eb8;
+        }
+      }
+
+      .answer-option {
+        .checkbox-wrapper {
+          .checkbox-custom {
+            width: convertToVw(48px);
+            height: convertToVw(48px);
+
+            @include mq_min_750 {
+              width: 48px;
+              height: 48px;
+            }
+          }
+        }
+      }
+
+      .checkbox-custom {
+        width: convertToVw(44px);
+        height: convertToVw(44px);
+
+        @include mq_min_750 {
+          width: 44px;
+          height: 44px;
+        }
+      }
+
+      .answer-result {
+        font-weight: 500;
+        font-size: convertToVw(28px);
+
+        @include mq_min_750 {
+          font-size: 28px;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        resize: none;
+        min-height: convertToVw(380px);
+
+        &::-webkit-scrollbar {
+          width: convertToVw(8px);
+          background-color: $white-color;
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: $bg-color-input;
+          border-bottom-right-radius: convertToVw(16px);
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #595757;
+          border-radius: convertToVw(4px);
+        }
+
+        @include mq_min_750 {
+          min-height: 380px;
+
+          &::-webkit-scrollbar {
+            width: 8px;
+          }
+
+          &::-webkit-scrollbar-track {
+            border-bottom-right-radius: 16px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            border-radius: 4px;
+          }
+        }
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .btn-block {
+    gap: convertToVw(30px);
+    @include flexbox(flex, center, center, nowrap);
+
+    @include mq_min_750 {
+      gap: 30px;
+    }
+
+    .btn {
+      &:hover {
+        color: $white-color;
+      }
+    }
+  }
+
+  .overlay-checkbox {
+    position: relative;
+  }
+
+  .overlay-checkbox::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    // background-color: rgba(255, 255, 255, 0.3); /* Màu sắc và độ mờ của overlay */
+    // background-color: rgba(217, 200, 161, 0.05);
+    background-color: rgba(249, 246, 238, 0.8);
+  }
+}

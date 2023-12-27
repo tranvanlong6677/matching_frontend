@@ -1,0 +1,962 @@
+// custom checkbox antd
+.ant-checkbox .ant-checkbox-inner {
+  background-color: $bg-color-input;
+  position: relative;
+  width: convertToVw(55px);
+  height: convertToVw(55px);
+
+  @include mq_min_750 {
+    width: 55px;
+    height: 55px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    transform: scale(1) translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: none;
+    cursor: pointer;
+    width: 3.2vw;
+    height: 3.2vw;
+    background: $black-color;
+
+    @include mq_min_750 {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.ant-checkbox + span {
+  @include font(convertToVw(24px), 300, convertToVw(42px));
+  border: none;
+}
+
+.ant-radio-wrapper .ant-radio-inner {
+  width: convertToVw(55px);
+  height: convertToVw(55px);
+  border-radius: 0;
+  background-color: $bg-color-input;
+
+  &::after {
+    content: url(../../images/mockup/icon-dot-small.svg);
+    transform: rotate(45deg) scale(1) translate(-20%, -40%);
+    border: none;
+  }
+}
+
+.ant-form label {
+  display: flex;
+  align-items: center;
+  @include font(convertToVw(24px), 400, convertToVw(42px));
+}
+
+.ant-form label.warning {
+  color: $btn-delete-color;
+}
+
+.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless) {
+  opacity: 0.8;
+  border: 2px solid $color-border-input;
+}
+
+.ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(
+    .ant-input-affix-wrapper-borderless
+  ).ant-input-affix-wrapper {
+  opacity: 0.8;
+  border: 2px solid;
+}
+
+.error-validate {
+  width: 100%;
+  height: convertToVw(80px);
+
+  display: flex;
+  justify-content: flex-start;
+
+  margin: convertToVw(35px) 0 convertToVw(30px) 0;
+
+  border-radius: convertToVw(9px);
+
+  letter-spacing: convertToVw(-3px);
+  @include font(convertToVw(20px), 400, convertToVw(35px));
+
+  @include mq_min_750 {
+    height: 80px;
+
+    margin: 35px 0 30px 0;
+
+    border-radius: 9px;
+
+    letter-spacing: -3px;
+    @include font(20px, 400, 35px);
+  }
+}
+
+//custom-modal
+.ant-modal {
+  padding: 0;
+  width: convertToVw(680px) !important;
+  top: convertToVw(52px);
+  font-family: 'Hiragino Sans', sans-serif !important;
+
+  .modal-date {
+    height: convertToVw(900px);
+    width: convertToVw(680px);
+  }
+
+  .ant-modal-content {
+    padding: 0;
+    border-radius: convertToVw(30px);
+
+    & .ant-modal-close {
+      width: convertToVw(60px);
+      height: convertToVw(60px);
+      margin-top: convertToVw(5px);
+
+      svg {
+        width: convertToVw(30px);
+        height: convertToVw(30px);
+      }
+    }
+  }
+  & .ant-modal-close-x {
+    font-size: convertToVw(30px);
+
+    img {
+      width: convertToVw(44px);
+      height: convertToVw(36px);
+    }
+    svg {
+      width: convertToVw(60px);
+      height: convertToVw(60px);
+      margin-right: convertToVw(30px);
+      padding-top: convertToVw(10px);
+    }
+  }
+  & .ant-modal-header {
+    width: 100%;
+    background-color: #ededed;
+    margin-bottom: 0;
+    border-radius: convertToVw(30px) convertToVw(30px) 0 0;
+
+    & .ant-modal-title {
+      padding: convertToVw(41px) convertToVw(40px) convertToVw(34px) convertToVw(41px);
+      @include font(convertToVw(30px), 400, convertToVw(52.5px));
+
+      .head-modal-title {
+        @include font(convertToVw(30px), 400, convertToVw(36px));
+      }
+    }
+  }
+  & .ant-modal-body {
+    overflow: overlay;
+    max-height: 75vh;
+    /* Handle */
+    & p {
+      border-bottom: 1px solid #b3b3b3;
+      cursor: pointer;
+      padding: convertToVw(32px) convertToVw(32px) convertToVw(28px) convertToVw(41px) !important;
+      @include font(convertToVw(24px), 300, convertToVw(30px));
+
+      &:nth-last-child(-n + 1) {
+        border-bottom: none;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      background-color: $transparent-color;
+      width: convertToVw(10px);
+      border-radius: convertToVw(20px);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #595757;
+      border-radius: convertToVw(20px);
+    }
+  }
+}
+
+.ant-modal.modal-delete-cast {
+  width: convertToVw(480px) !important;
+
+  img {
+    width: convertToVw(70px);
+  }
+
+  .modal-delete-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: convertToVw(24px) 0;
+  }
+
+  .text-delete {
+    font-size: convertToVw(24px);
+    display: inline-block;
+    margin-top: convertToVw(26px);
+  }
+
+  .delete-actions {
+    display: flex;
+    gap: convertToVw(24px);
+    margin-top: convertToVw(26px);
+  }
+
+  button {
+    min-width: convertToVw(178px);
+    height: convertToVw(40px);
+    border-radius: convertToVw(8px);
+    cursor: pointer;
+    font-size: convertToVw(20px);
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .btn-cancel {
+    border: 1px solid #ccc;
+    background-color: $transparent-color;
+  }
+
+  .btn-delete {
+    background-color: $btn-delete-color;
+    color: $white-color;
+    border: none;
+  }
+}
+
+//custom-modal emotion
+.close-modal {
+  width: convertToVw(40px);
+  height: convertToVw(40px);
+  svg {
+    width: convertToVw(37px);
+    height: convertToVw(35px);
+  }
+}
+
+.ant-modal-content .ant-modal-body .ant-modal-confirm-body-wrapper {
+  padding: convertToVw(20px);
+}
+
+.modal-container-emotion {
+  text-align: center;
+
+  .icon-modal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: convertToVw(28px);
+  }
+
+  .btn-bottom-emotion {
+    margin-top: convertToVw(30px);
+
+    .ct-allow {
+      margin-bottom: convertToVw(15px);
+    }
+  }
+}
+
+.ant-modal.ant-modal-content.ant-modal-body {
+  & p:nth-last-child(-n + 1) {
+    border-bottom: none !important;
+  }
+}
+
+.ant-form-item.ant-form-item-with-help.ant-form-item-has-error {
+  .ant-checkbox-inner {
+    border: convertToVw(3px) solid $danger-color-v2 !important;
+  }
+}
+
+.ant-form-item .ant-form-item-explain-error {
+  color: #e30012;
+  @include font(convertToVw(20px), 500, convertToVw(35px));
+}
+.ant-form-item {
+  .ant-form-item-explain-error {
+    color: $color-border-input;
+
+    margin: convertToVw(-2px) 0 convertToVw(16px) 0;
+
+    @include font(convertToVw(20px), 500, convertToVw(35px));
+
+    @include mq_min_750 {
+      margin: -2px 0 16px 0;
+
+      @include font(20px, null, 35px);
+    }
+  }
+}
+
+.checkbox:checked + .checkboxLabel::before {
+  background-color: firebrick;
+  border-radius: convertToVw(2px);
+  color: $white-color;
+  content: '\2713';
+  font-size: convertToVw(19px);
+  line-height: convertToVw(18px);
+}
+
+.calendar .selected {
+  background-color: $calendar-color-matching !important;
+  color: $white-color;
+}
+
+//custom form
+.ant-form-item {
+  margin-bottom: 0;
+}
+
+.ant-input-affix-wrapper > input.ant-input {
+  -webkit-background-clip: text !important;
+}
+
+.ant-checkbox-wrapper + .ant-checkbox-wrapper {
+  margin-inline-start: 0;
+}
+
+.ant-checkbox-wrapper.ant-checkbox-wrapper-in-form-item.ant-checkbox-group-item {
+  margin-bottom: convertToVw(35px);
+}
+
+.ant-select-selection-placeholder {
+  display: flex;
+}
+
+// ant disable custom
+.ant-btn-primary:not(:disabled):active {
+  background-color: red !important;
+}
+
+//annotate calendar modal
+.annotate {
+  display: flex;
+  align-items: center;
+  gap: convertToVw(26px);
+  margin-top: convertToVw(20px);
+  @include font(convertToVw(20px), 400, convertToVw(35px));
+
+  &-item {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: convertToVw(7px);
+    }
+  }
+
+  &-square {
+    width: convertToVw(20px);
+    height: convertToVw(20px);
+    border: convertToVw(3px) solid $border-calendar;
+    background-color: #ccebff;
+  }
+
+  &-square.white {
+    background-color: $white-color;
+  }
+}
+
+//custom modal calendar
+.item-selected {
+  width: 100%;
+  margin-top: convertToVw(22px);
+
+  & .item-date {
+    @include font(convertToVw(20px), 400, convertToVw(35px));
+  }
+  .item-date-empty {
+    display: block;
+    min-height: convertToVw(100px);
+
+    @include mq_min_750 {
+      min-height: 100px;
+    }
+  }
+
+  .btn-date {
+    width: 100%;
+    background-color: rgba(0, 138, 255, 0.86);
+    color: $white-color;
+    border: none;
+    margin-bottom: convertToVw(22px);
+    font-family: 'Hiragino Sans', sans-serif;
+    @include font(convertToVw(29px), normal, convertToVw(90px));
+  }
+  .item-hour-line {
+    .note-calendar {
+      @include font(convertToVw(24px), 300, convertToVw(46px));
+      margin-bottom: convertToVw(25px);
+      white-space: nowrap;
+    }
+
+    .list-hour {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-between;
+      grid-row-gap: convertToVw(15px);
+    }
+
+    .list-hour.booking-soji {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: convertToVw(15px);
+
+      button {
+        border-radius: convertToVw(8px);
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        border: none;
+        color: $black-color-v2;
+        max-width: convertToVw(220px);
+        height: convertToVw(80px);
+        @include font(convertToVw(23px), 400, convertToVw(90px));
+
+        @include mq_min_1024 {
+          max-width: convertToVw(220px);
+          height: convertToVw(80px);
+          @include font(convertToVw(29px), 400, convertToVw(90px));
+        }
+      }
+    }
+    .list-hour.customer-hearing-list-hour {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: convertToVw(15px);
+      text-align: start;
+      margin-top: convertToVw(10px);
+
+      .btn-hour {
+        background-color: $white-color;
+      }
+    }
+
+    & button {
+      border-radius: convertToVw(8px);
+      padding: 0 convertToVw(16px);
+      border: none;
+      height: convertToVw(110px);
+      @include font(convertToVw(29px), normal, convertToVw(90px));
+    }
+
+    & .btn-hour {
+      font-family: 'Hiragino Sans', sans-serif;
+    }
+
+    & .disabled {
+      cursor: not-allowed;
+    }
+
+    & .btn-hour-active {
+      background-color: $selected-color !important;
+      cursor: pointer;
+      color: white !important;
+    }
+  }
+
+  & .check-hour {
+    @include flexbox(flex, space-between, center, wrap);
+    padding-top: convertToVw(55px);
+
+    &:nth-child(3) {
+      margin-bottom: convertToVw(20px);
+    }
+    .checkbox-warning {
+      color: $danger-color !important;
+      @include font(convertToVw(18px), 400, convertToVw(25px));
+    }
+
+    & span {
+      @include font(convertToVw(25px), normal, convertToVw(44px));
+
+      &:nth-child(1) {
+        @include font(convertToVw(20px), normal, convertToVw(37px));
+      }
+    }
+
+    & .checkbox-confirm {
+      @include flexbox(flex, null, center, wrap);
+
+      .ant-checkbox-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      input {
+        width: convertToVw(43px);
+        height: convertToVw(42px);
+        margin-left: convertToVw(26px);
+      }
+    }
+  }
+  & .calendar-modal-bottom {
+    .checkbox-warning {
+      color: $danger-color !important;
+      @include font(convertToVw(18px), 400, convertToVw(45px));
+    }
+
+    .calendar-frequency {
+      @include font(convertToVw(20px), 400, convertToVw(31px));
+      color: #ea5514;
+      margin-top: convertToVw(30px);
+    }
+
+    & #calendar-frequency-item {
+      border-bottom: none;
+      @include font(convertToVw(20px), 300, convertToVw(31px));
+      padding: 0 !important;
+    }
+  }
+}
+
+.empty-item {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid $button-color-first;
+  padding: convertToVw(43px) convertToVw(0px) convertToVw(37px) convertToVw(0px);
+  background-color: $white-color;
+
+  .data-empty {
+    @include font(convertToVw(20px), 400, convertToVw(35px));
+    text-align: center;
+    color: $font-color-new;
+  }
+  @include mq_min_750 {
+    padding: 43px 0px 37px 0px;
+
+    .data-empty {
+      @include font(20px, null, 35px);
+    }
+  }
+}
+.ant-select-dropdow-custom {
+  width: 100% !important;
+  max-width: convertToVw(630px);
+}
+
+.form-group .ant-input-number {
+  width: 100%;
+
+  .ant-input-number-input {
+    padding: 0 !important;
+  }
+}
+
+.ant-input-number-status-error.ant-input-number {
+  border: convertToVw(3px) solid $danger-color-v2;
+}
+
+.ant-select-selector {
+  .ant-select-selection-search {
+    .ant-select-selection-search-input {
+      font-size: convertToVw(24px);
+    }
+  }
+}
+
+// delete arrow up down in input type number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.ant-select-status-error,
+.ant-input-group-wrapper-status-error {
+  border: 2px solid $color-border-input !important;
+}
+.ant-input-focused {
+  border-inline-end-width: convertToVw(3px) !important;
+}
+.ant-btn:hover {
+  opacity: 0.7;
+}
+
+.ant-input-clear-icon {
+  svg {
+    width: convertToVw(20px);
+    height: convertToVw(20px);
+  }
+}
+
+.text-calendar-hearing {
+  letter-spacing: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+:where(.css-dev-only-do-not-override-1poc1a7).ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+  .ant-checkbox-inner,
+:where(.css-dev-only-do-not-override-1poc1a7).ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+  border-color: $transparent-color !important;
+}
+.ant-form input[type='checkbox']:focus {
+  box-shadow: none;
+}
+
+@include mq_min_750 {
+  .ant-checkbox + span {
+    @include font(24px, 300, 42px);
+  }
+
+  .ant-radio-wrapper .ant-radio-inner {
+    width: 55px;
+    height: 55px;
+  }
+
+  .ant-form label {
+    @include font(24px, 400, 42px);
+  }
+
+  //custom validate
+  .error-validate {
+    border-radius: 9px;
+    margin: 35px 0 30px 0;
+    height: 80px;
+    @include font(20px, 400, 35px);
+  }
+
+  //custom-modal
+  .ant-modal {
+    width: 680px !important;
+    top: 52px;
+
+    .modal-date {
+      height: 900px;
+      width: 680px;
+    }
+    .ant-modal-content {
+      border-radius: 30px;
+
+      & .ant-modal-close {
+        width: 60px;
+        height: 60px;
+        margin-top: 5px;
+
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      & .ant-modal-close-x {
+        font-size: 30px;
+
+        img {
+          width: 44px;
+          height: 36px;
+        }
+
+        svg {
+          width: 60px;
+          height: 60px;
+          margin-right: 30px;
+          padding-top: 10px;
+        }
+      }
+
+      & .ant-modal-header {
+        border-radius: 30px 30px 0 0;
+
+        & .ant-modal-title {
+          padding: 41px 40px 34px 41px;
+
+          @include font(30px, 400, 52.5px);
+
+          .head-modal-title {
+            @include font(30px, 400, 36px);
+          }
+        }
+      }
+
+      & .ant-modal-body {
+        max-height: 75vh;
+
+        & p {
+          @include font(24px, 300, 30px);
+          padding: 32px 32px 28px 41px !important;
+        }
+
+        &::-webkit-scrollbar {
+          width: 10px;
+          border-radius: 20px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+
+  .ant-modal.modal-delete-cast {
+    width: 480px !important;
+
+    img {
+      width: 70px;
+    }
+
+    .modal-delete-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 0;
+    }
+
+    .text-delete {
+      font-size: 24px;
+      display: inline-block;
+      margin-top: 26px;
+    }
+
+    .delete-actions {
+      display: flex;
+      gap: 24px;
+      margin-top: 26px;
+    }
+
+    button {
+      min-width: 178px;
+      height: 40px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 20px;
+      transition: all 0.3s;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .btn-cancel {
+      border: 1px solid #ccc;
+      background-color: $transparent-color;
+    }
+
+    .btn-delete {
+      background-color: $btn-delete-color;
+      color: $white-color;
+      border: none;
+    }
+  }
+
+  .close-modal {
+    width: 40px;
+    height: 40px;
+
+    svg {
+      width: 37px;
+      height: 35px;
+    }
+  }
+
+  .ant-modal-content .ant-modal-body .ant-modal-confirm-body-wrapper {
+    padding: 20px;
+  }
+
+  .modal-container-emotion {
+    .icon-modal {
+      margin-bottom: 28px;
+    }
+
+    .btn-bottom-emotion {
+      margin-top: 30px;
+
+      .ct-allow {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .ant-form-item.ant-form-item-with-help.ant-form-item-has-error {
+    .ant-checkbox-inner {
+      border: 3px solid $danger-color-v2 !important;
+    }
+  }
+
+  .checkbox:checked + .checkboxLabel::before {
+    border-radius: 2px;
+    content: '\2713';
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .calendar .selected {
+    background-color: $calendar-color-matching !important;
+    color: $white-color;
+  }
+
+  .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+    margin-inline-start: 0;
+  }
+
+  .ant-checkbox-wrapper.ant-checkbox-wrapper-in-form-item.ant-checkbox-group-item {
+    margin-bottom: 35px;
+  }
+
+  .annotate {
+    gap: 26px;
+    margin-top: 20px;
+    @include font(20px, 400, 35px);
+
+    &-item {
+      span {
+        margin-left: 7px;
+      }
+    }
+
+    &-square {
+      width: 20px;
+      height: 20px;
+      border: 3px solid $border-calendar;
+    }
+  }
+
+  //custom modal calendar
+  .item-selected {
+    margin-top: 22px;
+
+    & .item-date {
+      @include font(20px, 400, 35px);
+    }
+
+    .btn-date {
+      margin-bottom: 22px;
+      @include font(29px, normal, 90px);
+    }
+    .item-hour-line {
+      .note-calendar {
+        margin-bottom: 25px;
+        white-space: nowrap;
+        @include font(26px, 400, 46px);
+      }
+      .list-hour {
+        grid-row-gap: 15px;
+      }
+
+      .list-hour.booking-soji {
+        grid-gap: 15px;
+
+        button {
+          border-radius: 8px;
+          max-width: 220px;
+          height: 80px;
+          @include font(29px, 400, 90px);
+        }
+      }
+      .list-hour.customer-hearing-list-hour {
+        grid-gap: 15px;
+      }
+      margin-top: 10px;
+
+      & button {
+        border-radius: 8px;
+        padding: 0 16px;
+        border: none;
+        height: 110px;
+        @include font(29px, normal, 90px);
+      }
+    }
+
+    & .check-hour {
+      padding-top: 55px;
+
+      &:nth-child(3) {
+        margin-bottom: 20px;
+      }
+
+      .checkbox-warning {
+        @include font(18px, 400, 25px);
+      }
+
+      & span {
+        @include font(25px, normal, 44px);
+
+        &:nth-child(1) {
+          @include font(20px, normal, 37px);
+        }
+      }
+      & .checkbox-confirm {
+        input {
+          width: 43px;
+          height: 42px;
+          margin-left: 26px;
+        }
+      }
+    }
+
+    & .calendar-modal-bottom {
+      .checkbox-warning {
+        @include font(18px, 400, 45px);
+      }
+
+      .calendar-frequency {
+        @include font(20px, 400, 31px);
+        margin-top: 30px;
+      }
+
+      & #calendar-frequency-item {
+        @include font(20px, 300, 31px);
+      }
+    }
+  }
+  .ant-select-dropdow-custom {
+    max-width: 630px;
+  }
+  .ant-input-number-status-error.ant-input-number {
+    border: 3px solid $danger-color-v2;
+  }
+
+  .ant-select-selector {
+    .ant-select-selection-search {
+      .ant-select-selection-search-input {
+        font-size: 24px;
+      }
+    }
+  }
+
+  // delete arrow up down in input type number
+  .ant-input-focused {
+    border-inline-end-width: 3px !important;
+  }
+
+  .ant-input-clear-icon {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.loading-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .icon-loading {
+    color: $border-bottom-default;
+    font-size: convertToVw(45px);
+
+    @include mq_min_750 {
+      font-size: 45px;
+    }
+  }
+}

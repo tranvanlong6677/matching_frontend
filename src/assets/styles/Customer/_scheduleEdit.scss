@@ -1,0 +1,443 @@
+.customer-booking,
+.request-history {
+  .request-history-empty {
+    display: block;
+    font-size: convertToVw(24px);
+    margin: convertToVw(46px) 0 convertToVw(800px) convertToVw(24px);
+
+    @include mq_min_750 {
+      font-size: 24px;
+      margin: 46px 0 800px 24px;
+    }
+  }
+
+  .title {
+    gap: convertToVw(12px);
+    padding: 0 convertToVw(20px) convertToVw(28px) convertToVw(20px);
+    border-bottom: 2px solid $button-color-first;
+    @include flexbox(flex, flex-start, center, nowrap);
+
+    img {
+      width: convertToVw(26px);
+      height: convertToVw(26px);
+    }
+
+    h1 {
+      font-size: convertToVw(30px);
+      font-weight: 600;
+      line-height: convertToVw(49px);
+    }
+
+    @include mq_min_750 {
+      gap: 12px;
+      padding: 0 20px 28px 20px;
+
+      img {
+        width: 26px;
+        height: 26px;
+      }
+
+      h1 {
+        font-size: 30px;
+        line-height: 49px;
+      }
+    }
+  }
+
+  .list-services {
+    .booking-status {
+      font-size: convertToVw(20px);
+      @include mq_min_750 {
+        font-size: 20px;
+      }
+    }
+
+    .ant-collapse {
+      background-color: $transparent-color;
+
+      .ant-collapse-item {
+        .ant-collapse-header {
+          padding: convertToVw(33px) convertToVw(23px) convertToVw(31px) convertToVw(20px);
+          @include font(convertToVw(24px), 400, convertToVw(38px));
+
+          @include mq_min_750 {
+            padding: 33px 23px 31px 20px;
+            @include font(24px, 400, 38px);
+          }
+
+          .ant-collapse-expand-icon {
+            span {
+              svg {
+                width: convertToVw(21px);
+                height: convertToVw(21px);
+
+                @include mq_min_750 {
+                  width: 21px;
+                  height: 21px;
+                }
+              }
+            }
+          }
+
+          .header-service-item {
+            padding: convertToVw(16px) convertToVw(12px) convertToVw(16px) convertToVw(10px);
+            @include flexbox(flex, space-between, center, nowrap);
+
+            .detail {
+              font-weight: 500;
+              font-size: convertToVw(24px);
+              margin-right: convertToVw(20px);
+            }
+
+            @include mq_min_750 {
+              padding: 16px 12px 16px 10px;
+
+              .detail {
+                font-size: 24px;
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+
+        .ant-collapse-content {
+          background-color: $white-color;
+
+          .ant-collapse-content-box {
+            padding: 0;
+
+            .service-detail {
+              padding-bottom: convertToVw(25px);
+
+              .service-detail-element {
+                border-bottom: 1px solid $border-bottom-default;
+                padding: convertToVw(29px) convertToVw(35px) convertToVw(23px) convertToVw(32px);
+                @include flexbox(flex, space-between, center, nowrap);
+
+                .field {
+                  margin-right: convertToVw(20px);
+                  font-weight: 500;
+                  font-size: convertToVw(20px);
+                }
+
+                .value {
+                  font-size: convertToVw(24px);
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+
+          @include mq_min_750 {
+            .ant-collapse-content-box {
+              .service-detail {
+                padding-bottom: 25px;
+
+                .service-detail-element {
+                  padding: 29px 35px 23px 32px;
+
+                  .field {
+                    margin-right: 20px;
+                    font-size: 20px;
+                  }
+
+                  .value {
+                    font-size: 24px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .collapse-open {
+        border-bottom: 2px solid $button-color-first;
+      }
+    }
+
+    .note {
+      display: block;
+      padding: convertToVw(22px) convertToVw(23px) 0 convertToVw(20px);
+      @include font(convertToVw(20px), 500, convertToVw(24px));
+
+      &-item {
+        display: block;
+        line-height: convertToVw(36px);
+      }
+      @include mq_min_750 {
+        @include font(20px, 500, 24px);
+        padding: 22px 23px 0 20px;
+
+        &-item {
+          line-height: 36px;
+        }
+      }
+    }
+
+    .note-empty {
+      display: block;
+      font-size: convertToVw(24px);
+      line-height: convertToVw(38px);
+      padding: convertToVw(50px) convertToVw(20px) convertToVw(800px);
+
+      @include mq_min_750 {
+        font-size: 24px;
+        line-height: 38px;
+        padding: 50px 20px 800px;
+      }
+    }
+  }
+
+  .instruct {
+    display: block;
+    margin: convertToVw(137px) 0 convertToVw(59px) 0;
+    font-size: convertToVw(20px);
+    font-weight: 500;
+
+    @include mq_min_750 {
+      margin: 137px 0 59px 0;
+      font-size: 20px;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #036eb7;
+    }
+  }
+
+  .extensions {
+    .extensions-title {
+      padding: 0 convertToVw(23px) 0 convertToVw(37px);
+      gap: convertToVw(12px);
+      margin-bottom: convertToVw(13px);
+      @include flexbox(flex, flex-start, center, nowrap);
+
+      img {
+        width: convertToVw(27px);
+        height: convertToVw(36px);
+      }
+
+      span {
+        font-size: convertToVw(30px);
+        font-weight: 500;
+      }
+    }
+
+    .extensions-content {
+      font-weight: 500;
+      padding-left: convertToVw(78px);
+      font-size: convertToVw(20px);
+      line-height: convertToVw(29.5px);
+    }
+
+    @include mq_min_750 {
+      .extensions-title {
+        padding: 0 23px 0 37px;
+        gap: 12px;
+        margin-bottom: 13px;
+
+        img {
+          width: 27px;
+          height: 36px;
+        }
+
+        span {
+          font-size: 30px;
+        }
+      }
+
+      .extensions-content {
+        padding-left: 78px;
+        font-size: 20px;
+        line-height: 29.5px;
+      }
+    }
+  }
+
+  .btn-reserve-block {
+    margin: convertToVw(61px) 0 0;
+
+    .ant-btn {
+      font-size: convertToVw(24px);
+      font-weight: 500;
+    }
+
+    .ant-btn:first-child {
+      &:hover {
+        color: $black-color;
+      }
+    }
+
+    .ant-btn:last-child {
+      &:hover {
+        color: $white-color;
+      }
+    }
+
+    @include mq_min_750 {
+      margin: 61px 0 0;
+
+      .ant-btn {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.customer-booking {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .btn-extend {
+    margin-top: convertToVw(21px);
+    padding: 0 convertToVw(35px) 0 convertToVw(31px);
+    column-gap: convertToVw(20px);
+    @include flexbox(flex, space-between, center, nowrap);
+
+    @include mq_min_750 {
+      margin-top: 21px;
+      padding: 0 35px 0 31px;
+      column-gap: 20px;
+    }
+
+    .ant-btn.change {
+      background-color: #595757;
+    }
+
+    .ant-btn.cancel {
+      background-color: #e83828;
+    }
+
+    .ant-btn {
+      gap: convertToVw(20px);
+      border-radius: convertToVw(4px);
+      height: convertToVw(68px);
+      max-width: convertToVw(143px);
+      width: 100%;
+      font-size: convertToVw(24px);
+      font-weight: 500;
+      background-color: $button-disable;
+      @include flexbox(flex, center, center, nowrap);
+
+      img {
+        width: convertToVw(22px);
+        height: convertToVw(22px);
+      }
+
+      @include mq_min_750 {
+        gap: 20px;
+        border-radius: 4px;
+        height: 68px;
+        max-width: 143px;
+        font-size: 24px;
+
+        img {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+
+    .ant-btn.add-hour {
+      color: $white-color;
+      max-width: convertToVw(200px);
+      @include mq_min_750 {
+        max-width: 200px;
+      }
+    }
+
+    .ant-btn.add-hour.active {
+      background-color: $bg-btn-add-hour;
+    }
+
+    .ant-btn.btn-finish {
+      color: $white-color;
+    }
+
+    .ant-btn.btn-finish.active {
+      background-color: $cr-allow;
+      color: $white-color;
+    }
+  }
+
+  .btn-extend.secondary {
+    justify-content: flex-end;
+    gap: convertToVw(40px);
+    @include mq_min_750 {
+      gap: 40px;
+    }
+  }
+
+  .delete-warning {
+    color: #c30d23;
+    padding: convertToVw(21px) convertToVw(35px) 0 convertToVw(32px);
+    @include font(convertToVw(20px), 500, convertToVw(31px));
+    @include mq_min_750 {
+      padding: 21px 35px 0 32px;
+      @include font(20px, 500, 31px);
+    }
+  }
+}
+
+.request-history {
+  margin-top: convertToVw(80px);
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+  min-height: 100vh;
+
+  .service-detail-element:first-child {
+    border-top: 1px solid $border-bottom-default;
+  }
+
+  .btn-extend {
+    @include flexbox(flex, center, center, nowrap);
+    margin-top: convertToVw(21px);
+    column-gap: convertToVw(20px);
+
+    .ant-btn {
+      @include flexbox(flex, center, center, nowrap);
+
+      border-radius: convertToVw(4px);
+      gap: convertToVw(20px);
+      max-width: convertToVw(230px);
+      min-height: convertToVw(50px);
+      font-size: convertToVw(20px);
+      width: 100%;
+      font-weight: 500;
+      background-color: $button-disable;
+
+      img {
+        width: convertToVw(22px);
+        height: convertToVw(22px);
+      }
+    }
+    @include mq_min_750 {
+      margin-top: 21px;
+      column-gap: 20px;
+
+      .ant-btn {
+        border-radius: 4px;
+        gap: 20px;
+        max-width: 230px;
+        min-height: 50px;
+        font-size: 20px;
+
+        img {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+  }
+  .block-btn {
+    margin-top: convertToVw(62.5px);
+    @include mq_min_750 {
+      margin-top: 62.5px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.mb-img-success {
+  margin-bottom: convertToVw(105px);
+
+  @include mq_min_750 {
+    margin-bottom: 105px;
+  }
+}

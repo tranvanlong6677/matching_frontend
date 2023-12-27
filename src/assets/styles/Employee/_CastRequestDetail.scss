@@ -1,0 +1,199 @@
+.cast-request-detail-container {
+  .title {
+    padding: 0 convertToVw(28px);
+    margin: convertToVw(80px) 0 convertToVw(45px) 0;
+    @include font(convertToVw(30px), 500, convertToVw(50px));
+
+    @include mq_min_750 {
+      padding: 0 28px;
+      margin: 80px 0 45px 0;
+      @include font(30px, null, 50px);
+    }
+  }
+
+  .request-detail-content {
+    margin-bottom: convertToVw(34px);
+
+    @include mq_min_750 {
+      margin-bottom: 34px;
+    }
+
+    .date-time {
+      .field {
+        flex: 3;
+      }
+
+      .value {
+        flex: 8;
+      }
+    }
+
+    .request-detail-content-element {
+      padding: convertToVw(28px) convertToVw(35px) convertToVw(23px) convertToVw(31px);
+      border-bottom: 1px solid $border-bottom-default;
+      @include flexbox(flex, space-between, center, nowrap);
+
+      .field {
+        color: $font-color-new;
+        font-weight: 500;
+        flex: 1;
+        @include font(convertToVw(20px), 500, convertToVw(35px));
+      }
+
+      .value {
+        flex: 1;
+        text-align: right;
+        font-weight: 500;
+        line-height: convertToVw(40px);
+        @include font(convertToVw(24px), 500, convertToVw(38px));
+      }
+
+      @include mq_min_750 {
+        padding: 28px 35px 23px 31px;
+
+        .field {
+          @include font(20px, null, 35px);
+        }
+
+        .value {
+          @include font(24px, null, 38px);
+        }
+      }
+    }
+  }
+
+  .question {
+    padding: 0 convertToVw(25px);
+
+    @include mq_min_750 {
+      padding: 0 25px;
+    }
+
+    .ant-form {
+      .question-checkbox {
+        margin-bottom: convertToVw(65px);
+
+        @include mq_min_750 {
+          margin-bottom: 65px;
+        }
+
+        .question-form {
+          margin-bottom: convertToVw(24px);
+          font-size: convertToVw(24px);
+          font-weight: 500;
+
+          @include mq_min_750 {
+            margin-bottom: 24px;
+            font-size: 24px;
+          }
+        }
+
+        .ant-form-item:last-child {
+          margin-bottom: 0;
+        }
+
+        .ant-form-item .ant-form-item-explain-error {
+          margin: convertToVw(10px) 0 convertToVw(16px) 0;
+
+          @include mq_min_750 {
+            margin: 10px 0 16px 0;
+          }
+        }
+
+        .ant-form-item {
+          margin-bottom: convertToVw(30px);
+
+          @include mq_min_750 {
+            margin-bottom: 30px;
+          }
+        }
+      }
+
+      .question-checkbox:nth-child(2) {
+        margin-bottom: convertToVw(54px);
+
+        @include mq_min_750 {
+          margin-bottom: 54px;
+        }
+      }
+
+      .question-textarea {
+        margin-bottom: convertToVw(56px);
+
+        textarea {
+          resize: none;
+        }
+
+        .question-form {
+          margin-bottom: convertToVw(20px);
+          font-size: convertToVw(24px);
+          font-weight: 500;
+        }
+
+        .ant-input {
+          padding: convertToVw(22px) convertToVw(26px);
+          height: convertToVw(240px) !important;
+
+          &::-webkit-scrollbar {
+            width: convertToVw(8px);
+            background-color: $white-color;
+          }
+
+          &::-webkit-scrollbar-track {
+            background-color: $bg-color-input;
+            border-bottom-right-radius: convertToVw(16px);
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background-color: #595757;
+            border-radius: convertToVw(4px);
+          }
+        }
+
+        @include mq_min_750 {
+          margin-bottom: 56px;
+
+          .question-form {
+            margin-bottom: 20px;
+            font-size: 24px;
+          }
+
+          .ant-input {
+            padding: 22px 26px;
+            height: 240px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .button-block {
+    .ant-btn {
+      max-width: convertToVw(650px);
+      background-color: $button-color-first;
+      color: $white-color;
+    }
+
+    @include mq_min_750 {
+      .ant-btn {
+        max-width: 650px;
+      }
+    }
+  }
+
+  .star {
+    color: $btn-dot;
+  }
+
+  .red {
+    text-align: right;
+    color: $btn-dot;
+    padding-right: convertToVw(24px);
+    @include font(convertToVw(18px), 500, convertToVw(45px));
+
+    @include mq_min_750 {
+      @include font(18px, null, 45px);
+      padding-right: 24px;
+    }
+  }
+}

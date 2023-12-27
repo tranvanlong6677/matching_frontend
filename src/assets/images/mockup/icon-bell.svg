@@ -1,0 +1,52 @@
+   <svg xmlns="http://www.w3.org/2000/svg" width="49.647" height="52.801" viewBox="0 0 49.647 52.801">
+              <g id="Group_103" data-name="Group 103" transform="translate(-6003.44 -6057.385)">
+                <rect
+                  id="Rectangle_51"
+                  data-name="Rectangle 51"
+                  width="48.247"
+                  height="8.676"
+                  rx="4.338"
+                  transform="translate(6004.14 6094.651)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="1.4"
+                />
+                <path
+                  id="Path_138"
+                  data-name="Path 138"
+                  d="M6007.726,6094.651s4.076-2.145,4.076-5.71.044-14.1.044-14.1a13.851,13.851,0,0,1,5.231-9.748c5.107-4.047,8.442-3.76,8.442-3.76"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="1.4"
+                />
+                <path
+                  id="Path_139"
+                  data-name="Path 139"
+                  d="M6048.654,6094.651s-4.076-2.145-4.076-5.71-.044-14.1-.044-14.1a13.85,13.85,0,0,0-5.231-9.749c-5.107-4.047-8.442-3.759-8.442-3.759"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="1.4"
+                />
+                <path
+                  id="Path_140"
+                  data-name="Path 140"
+                  d="M6034.209,6103.541a5.946,5.946,0,0,1-11.892,0"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="1.4"
+                />
+                <path
+                  id="Path_141"
+                  data-name="Path 141"
+                  d="M6024.815,6061.463a3.377,3.377,0,1,1,6.755,0"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="1.4"
+                />
+              </g>
+            </svg>

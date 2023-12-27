@@ -1,0 +1,19 @@
+.booking-confirm-container {
+  .menu-content {
+    .head-title {
+      padding-bottom: 0;
+    }
+
+    .item-content {
+      padding-top: 0;
+
+      .item-confirm-inline:first-child {
+        padding-top: convertToVw(22.5px);
+
+        @include mq_min_750 {
+          padding-top: 22.5px;
+        }
+      }
+    }
+  }
+}

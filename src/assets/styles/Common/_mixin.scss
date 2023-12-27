@@ -1,0 +1,104 @@
+@use 'sass:math';
+
+@mixin font($size, $weight, $lineHeight) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+
+@mixin flexbox($display, $justify, $align, $wrap) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin textAlign($align) {
+  text-align: $align;
+}
+
+@mixin mobileTitle($font, $weight, $lineHeight) {
+  @include font(20px, 400, 30px);
+  @include mq_min_576 {
+    @include font($font, $weight, $lineHeight);
+  }
+}
+
+@mixin mobileDescription($font, $weight, $lineHeight) {
+  @include font(13px, 300, 25px);
+  @include mq_min_576 {
+    @include font($font, $weight, $lineHeight);
+  }
+}
+
+@mixin mq_max_375 {
+  @media screen and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin mq_min_375 {
+  @media screen and (min-width: 375px) {
+    @content;
+  }
+}
+@mixin mq_min_450 {
+  @media screen and (min-width: 450px) {
+    @content;
+  }
+}
+
+@mixin mq_max_576 {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+@mixin mq_min_750 {
+  @media screen and (min-width: 750px) {
+    @content;
+  }
+}
+
+@mixin mq_min_768 {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mq_min_900 {
+  @media screen and (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin mq_min_576 {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin mq_min_650 {
+  @media screen and (min-width: 650px) {
+    @content;
+  }
+}
+@mixin mq_min_675 {
+  @media screen and (min-width: 675px) {
+    @content;
+  }
+}
+@mixin mq_max_768 {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin mq_min_1024 {
+  @media screen and (min-width: 1000px) {
+    @content;
+  }
+}
+@mixin mq_min_1024 {
+  @media #{$mq_min_1024} {
+    @content;
+  }
+}

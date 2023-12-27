@@ -1,0 +1,14 @@
+.btn-signup-bottom {
+  .btn-signup-item {
+    display: flex;
+
+    .btn-check {
+      background-color: $button-disable;
+      color: $white-color;
+    }
+  }
+}
+
+.btn-cast-edit {
+  display: flex;
+}

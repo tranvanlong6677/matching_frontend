@@ -1,0 +1,129 @@
+   <svg xmlns="http://www.w3.org/2000/svg" width="59.176" height="59.176" viewBox="0 0 59.176 59.176">
+              <defs>
+                <clipPath id="clip-path">
+                  <circle
+                    id="Ellipse_47"
+                    data-name="Ellipse 47"
+                    cx="28.958"
+                    cy="28.958"
+                    r="28.958"
+                    transform="translate(6000.346 5909.148)"
+                    fill="none"
+                  />
+                </clipPath>
+              </defs>
+              <g id="Group_474" data-name="Group 474" transform="translate(-49.717 -179.911)">
+                <circle
+                  id="Ellipse_46"
+                  data-name="Ellipse 46"
+                  cx="28.958"
+                  cy="28.958"
+                  r="28.958"
+                  transform="translate(50.346 180.541)"
+                  fill="#fff"
+                />
+              </g>
+              <g id="Group_92" data-name="Group 92" transform="translate(-5999.717 -5908.519)">
+                <g id="Group_91" data-name="Group 91" clip-path="url(#clip-path)">
+                  <path
+                    id="Path_123"
+                    data-name="Path 123"
+                    d="M6039.982,5926.332v10.276a7.978,7.978,0,0,1-3.036,6.264l-3.892,3.073a5.754,5.754,0,0,1-3.568,1.239h-.362a5.756,5.756,0,0,1-3.569-1.239l-3.892-3.073a7.981,7.981,0,0,1-3.036-6.264v-10.276a10.678,10.678,0,0,1,10.678-10.677h0A10.677,10.677,0,0,1,6039.982,5926.332Z"
+                    fill="none"
+                    stroke="#000"
+                    stroke-miterlimit="10"
+                    stroke-width="1.259"
+                  />
+                  <path
+                    id="Path_124"
+                    data-name="Path 124"
+                    d="M6016.855,5930.166h-1.9a1.162,1.162,0,0,0-1.163,1.162v2.412a1.163,1.163,0,0,0,.4.874l2.87,2.519"
+                    fill="none"
+                    stroke="#000"
+                    stroke-miterlimit="10"
+                    stroke-width="1.259"
+                  />
+                  <path
+                    id="Path_125"
+                    data-name="Path 125"
+                    d="M6041.755,5930.166h1.9a1.162,1.162,0,0,1,1.163,1.162v2.412a1.164,1.164,0,0,1-.4.874l-2.869,2.519"
+                    fill="none"
+                    stroke="#000"
+                    stroke-miterlimit="10"
+                    stroke-width="1.259"
+                  />
+                  <line
+                    id="Line_231"
+                    data-name="Line 231"
+                    y2="4.166"
+                    transform="translate(6022.31 5946.107)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-miterlimit="10"
+                    stroke-width="1.259"
+                  />
+                  <path
+                    id="Path_126"
+                    data-name="Path 126"
+                    d="M6026.171,5958.317l-7.847-4.5,1.4-5.251,6.45,3.7"
+                    fill="none"
+                    stroke="#000"
+                    stroke-miterlimit="10"
+                    stroke-width="1.259"
+                  />
+                  <line
+                    id="Line_232"
+                    data-name="Line 232"
+                    y2="4.166"
+                    transform="translate(6036.3 5946.107)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-miterlimit="10"
+                    stroke-width="1.259"
+                  />
+                  <path
+                    id="Path_127"
+                    data-name="Path 127"
+                    d="M6032.438,5958.317l7.847-4.5-1.4-5.251-9.117,5.234v11.887"
+                    fill="none"
+                    stroke="#000"
+                    stroke-miterlimit="10"
+                    stroke-width="1.259"
+                  />
+                  <line
+                    id="Line_233"
+                    data-name="Line 233"
+                    x1="11.772"
+                    y2="5.67"
+                    transform="translate(6006.552 5953.812)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-miterlimit="10"
+                    stroke-width="1.259"
+                  />
+                  <line
+                    id="Line_234"
+                    data-name="Line 234"
+                    x2="11.772"
+                    y2="5.67"
+                    transform="translate(6040.285 5953.812)"
+                    fill="none"
+                    stroke="#000"
+                    stroke-miterlimit="10"
+                    stroke-width="1.259"
+                  />
+                </g>
+              </g>
+              <circle
+                id="Ellipse_48"
+                data-name="Ellipse 48"
+                cx="28.958"
+                cy="28.958"
+                r="28.958"
+                transform="translate(0.63 0.63)"
+                fill="none"
+                stroke="#000"
+                stroke-miterlimit="10"
+                stroke-width="1.259"
+              />
+            </svg>

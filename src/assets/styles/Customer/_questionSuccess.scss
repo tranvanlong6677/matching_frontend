@@ -1,0 +1,45 @@
+.question-success-wrapper {
+  .text-description {
+    line-height: convertToVw(62px);
+    margin-bottom: convertToVw(290px);
+
+    @include mq_min_750 {
+      line-height: 62px;
+      margin-bottom: 290px;
+    }
+  }
+
+  .confirm-btn-container.block-btn {
+    margin: 0;
+  }
+
+  .confirm-btn-container {
+    margin-bottom: convertToVw(55px);
+
+    .btn-confirm {
+      column-gap: convertToVw(10px);
+
+      img {
+        background-color: $white-color;
+        border-radius: 50%;
+        width: convertToVw(57px);
+        height: convertToVw(57px);
+        margin: 0 0 0 convertToVw(-10px);
+      }
+    }
+
+    @include mq_min_750 {
+      margin-bottom: 55px;
+
+      .btn-confirm {
+        column-gap: 10px;
+
+        img {
+          width: 57px;
+          height: 57px;
+          margin: 0 0 0 -10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+.booking-soji-container {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  input,
+  textarea {
+    // color: $placeholder-color;
+
+    &::placeholder {
+      color: $placeholder-color;
+    }
+  }
+
+  .title {
+    gap: convertToVw(14px);
+    margin-bottom: convertToVw(35px);
+    @include flexbox(flex, flex-start, center, nowrap);
+
+    h1 {
+      font-size: convertToVw(30px);
+      font-weight: 400;
+    }
+
+    img {
+      width: convertToVw(64px);
+      height: convertToVw(64px);
+    }
+
+    @include mq_min_750 {
+      gap: 14px;
+      margin-bottom: 35px;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      img {
+        width: 64px;
+        height: 64px;
+      }
+    }
+  }
+
+  .note {
+    font-weight: 400;
+    font-size: convertToVw(18px);
+    letter-spacing: convertToVw(-1px);
+
+    @include mq_min_750 {
+      letter-spacing: -1px;
+      font-size: 20px;
+    }
+  }
+
+  .label-form-cleaning-service {
+    font-weight: 300;
+    font-size: convertToVw(24px);
+    margin: convertToVw(45px) 0 convertToVw(7px) 0;
+
+    @include mq_min_750 {
+      margin: 45px 0 7px 0;
+      font-size: 24px;
+    }
+  }
+
+  .ant-form {
+    .ant-form-item {
+      .textarea-global {
+        height: convertToVw(236px) !important;
+        padding: convertToVw(31px) convertToVw(29px);
+        font-size: convertToVw(24px);
+
+        &::-webkit-scrollbar {
+          background-color: $white-color;
+          width: convertToVw(8px);
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: $bg-color-input;
+          border-bottom-right-radius: convertToVw(16px);
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #595757;
+          border-radius: convertToVw(4px);
+        }
+
+        @include mq_min_750 {
+          height: 236px !important;
+          padding: 31px 29px;
+          font-size: 24px;
+
+          &::-webkit-scrollbar {
+            width: 8px;
+          }
+
+          &::-webkit-scrollbar-track {
+            border-bottom-right-radius: 16px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+
+    .ant-form-item:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+
+  .button-block {
+    gap: convertToVw(30px);
+    margin: convertToVw(55px) 0 0;
+    @include flexbox(flex, space-between, center, nowrap);
+
+    .ant-btn {
+      background-color: $button-disable;
+      color: $white-color;
+    }
+
+    @include mq_min_750 {
+      gap: 30px;
+      margin: 55px 0 0;
+    }
+  }
+
+  .ant-form {
+    .ant-form-item:nth-child(2) {
+      margin-bottom: convertToVw(71px);
+
+      @include mq_min_750 {
+        margin-bottom: 71px;
+      }
+    }
+  }
+}
+
+.booking-soji-modal-container {
+  .react-calendar__navigation {
+    justify-content: flex-end;
+
+    .react-calendar__navigation__label {
+      max-width: convertToVw(408px);
+
+      @include mq_min_750 {
+        max-width: 408px;
+      }
+    }
+
+    span {
+      line-height: convertToVw(44px);
+
+      @include mq_min_750 {
+        line-height: 44px;
+      }
+    }
+  }
+}

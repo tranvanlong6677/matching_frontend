@@ -1,0 +1,493 @@
+.customer-dashboard-block {
+  position: relative;
+
+  .content-top {
+    .account-setting-element {
+      cursor: pointer;
+      position: relative;
+      padding-bottom: convertToVw(38px);
+      @include flexbox(flex, flex-start, center, nowrap);
+
+      @include mq_min_750 {
+        padding-bottom: 38px;
+      }
+
+      .icon {
+        margin: 0 convertToVw(26px) 0 convertToVw(17px);
+        width: convertToVw(58px);
+        height: convertToVw(58px);
+
+        @include mq_min_750 {
+          margin: 0 26px 0 17px;
+          width: 58px;
+          height: 58px;
+        }
+      }
+
+      .calendar {
+        img {
+          width: convertToVw(58px);
+          height: convertToVw(58px);
+        }
+
+        @include mq_min_750 {
+          img {
+            width: 58px;
+            height: 58px;
+          }
+        }
+      }
+
+      .detail {
+        font-size: convertToVw(26px);
+        font-weight: 500;
+
+        @include mq_min_750 {
+          font-size: 26px;
+        }
+      }
+
+      .icon-plus-minus {
+        position: absolute;
+        right: convertToVw(24px);
+        width: convertToVw(21px);
+        height: convertToVw(21px);
+
+        @include mq_min_750 {
+          right: 24px;
+          width: 21px;
+          height: 21px;
+        }
+      }
+    }
+
+    .account-setting-element.cast {
+      border-bottom: 2px solid $ct-allow !important;
+    }
+
+    .account-setting-element-calendar {
+      margin-bottom: 0;
+      border-bottom-color: $button-color-first;
+    }
+
+    .account-setting-element.name {
+      cursor: auto;
+      border-bottom: 2px solid $button-color-first;
+      padding-bottom: convertToVw(21px);
+
+      @include mq_min_750 {
+        padding-bottom: 21px;
+      }
+
+      .icon {
+        img {
+          width: convertToVw(58px);
+          height: convertToVw(58px);
+        }
+
+        @include mq_min_750 {
+          img {
+            width: 58px;
+            height: 58px;
+          }
+        }
+      }
+
+      .detail {
+        flex-direction: column;
+        gap: convertToVw(8px);
+        @include flexbox(flex, flex-start, flex-start, nowrap);
+
+        span:nth-child(1) {
+          @include font(convertToVw(31px), 500, convertToVw(37px));
+        }
+
+        span:nth-child(2) {
+          @include font(convertToVw(19px), 500, convertToVw(19px));
+        }
+
+        @include mq_min_750 {
+          gap: 8px;
+
+          span:nth-child(1) {
+            @include font(31px, null, 37px);
+          }
+
+          span:nth-child(2) {
+            @include font(19px, null, 19px);
+          }
+        }
+      }
+    }
+
+    .name.account-setting-element-customer {
+      border-bottom-color: $button-color-first;
+    }
+    .screen21ft-container.hidden {
+      visibility: hidden;
+      height: convertToVw(45px);
+      @include mq_min_750 {
+        height: 45px;
+      }
+    }
+    .first-time {
+      padding: convertToVw(55px) convertToVw(25px) convertToVw(105px);
+      text-align: center;
+
+      @include mq_min_750 {
+        padding: 55px 25px 105px;
+      }
+
+      .greeting {
+        font-weight: 600;
+        letter-spacing: -1px;
+        font-size: convertToVw(30px);
+        margin-bottom: convertToVw(50px);
+
+        @include mq_min_750 {
+          font-size: 30px;
+          margin-bottom: 50px;
+        }
+      }
+
+      .instruct {
+        width: 100%;
+        margin-bottom: convertToVw(45px);
+        letter-spacing: -1px;
+        @include font(convertToVw(26px), 400, convertToVw(46px));
+
+        @include mq_min_750 {
+          @include font(26px, 400, 46px);
+          margin-bottom: 45px;
+        }
+      }
+
+      .btn {
+        background-color: #9d9e9e;
+        color: $white-color;
+        max-width: convertToVw(630px);
+
+        @include mq_min_750 {
+          max-width: 630px;
+        }
+      }
+
+      .active {
+        background-color: $button-color-first;
+        color: $white-color;
+      }
+
+      .verification {
+        font-weight: 500;
+        margin-bottom: convertToVw(40px);
+        @include font(convertToVw(24px), 400, convertToVw(22px));
+
+        @include mq_min_750 {
+          @include font(24px, 500, 22px);
+          margin-bottom: 40px;
+        }
+      }
+
+      .arrow {
+        margin-bottom: convertToVw(38px);
+        width: convertToVw(70px);
+        height: convertToVw(44px);
+
+        @include mq_min_750 {
+          width: 70px;
+          height: 44px;
+          margin-bottom: 38px;
+        }
+      }
+
+      .instruct-2 {
+        margin-bottom: convertToVw(29px);
+        width: 100%;
+        letter-spacing: convertToVw(-1px);
+        @include font(convertToVw(26px), 400, convertToVw(46px));
+
+        @include mq_min_750 {
+          @include font(26px, 400, 46px);
+          letter-spacing: -1px;
+          margin-bottom: 29px;
+        }
+      }
+
+      .reserve {
+        font-weight: 500;
+        font-size: convertToVw(24px);
+        margin-bottom: convertToVw(37px);
+
+        @include mq_min_750 {
+          font-size: 24px;
+          margin-bottom: 37px;
+        }
+      }
+
+      .attention {
+        color: $danger-color;
+        font-weight: 500;
+        font-size: convertToVw(20px);
+
+        @include mq_min_750 {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .calendar-list {
+      background-color: $white-color;
+      border-bottom: 2px solid $button-color-first;
+
+      .calendar-list-element {
+        width: 100%;
+        padding: convertToVw(30px) convertToVw(33px) convertToVw(26px) convertToVw(32px);
+        border-bottom: 1px solid $border-bottom-default;
+        @include flexbox(flex, space-between, center, nowrap);
+
+        @include mq_min_750 {
+          padding: 30px 33px 26px 32px;
+        }
+
+        .calendar-list-element-field {
+          flex: 1;
+          display: block;
+          font-weight: 500;
+          font-size: convertToVw(20px);
+          margin-right: convertToVw(20px);
+
+          @include mq_min_750 {
+            font-size: 20px;
+            margin-right: 20px;
+          }
+        }
+
+        .calendar-list-element-value {
+          flex: 2;
+          text-align: right;
+          @include font(convertToVw(24px), 500, convertToVw(29px));
+
+          @include mq_min_750 {
+            @include font(24px, 500, 29px);
+          }
+        }
+      }
+
+      .calendar-list-element:last-child {
+        padding: convertToVw(39px) convertToVw(33px) convertToVw(41px) convertToVw(32px);
+        border-bottom: none;
+
+        @include mq_min_750 {
+          padding: 39px 33px 41px 32px;
+          margin-bottom: -5px;
+
+          .calendar-list-element-field {
+            font-size: convertToVw(26px);
+
+            @include mq_min_750 {
+              font-size: 26px;
+            }
+          }
+
+          .calendar-list-element-value {
+            font-size: convertToVw(29px);
+
+            @include mq_min_750 {
+              font-size: 29px;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-collapse {
+      background-color: $transparent-color;
+      border: none;
+
+      .ant-collapse-item {
+        border-radius: 0;
+
+        .ant-collapse-header {
+          border-bottom: 2px solid $button-color-first;
+          padding: 0;
+          border-radius: 0;
+
+          .ant-collapse-expand-icon {
+            margin: convertToVw(18px) convertToVw(24px) 0 0;
+            padding-inline-start: 0;
+
+            span {
+              svg {
+                width: convertToVw(21px);
+                height: convertToVw(21px);
+              }
+            }
+
+            @include mq_min_750 {
+              margin: 18px 24px 0 0;
+
+              span {
+                svg {
+                  width: 21px;
+                  height: 21px;
+                }
+              }
+            }
+          }
+        }
+
+        .ant-collapse-content {
+          .ant-collapse-content-box {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .content-bot {
+    .account-setting-element {
+      cursor: pointer;
+      position: relative;
+      border-bottom: 1px solid $border-bottom-default;
+      padding: convertToVw(32px) convertToVw(28px) convertToVw(31px) convertToVw(17px);
+      margin: 0;
+      @include flexbox(flex, flex-start, center, nowrap);
+
+      @include mq_min_750 {
+        padding: 32px 28px 31px 17px;
+      }
+
+      .icon {
+        margin-right: convertToVw(10px);
+
+        img {
+          width: convertToVw(28px);
+          height: convertToVw(28px);
+        }
+
+        @include mq_min_750 {
+          margin-right: 10px;
+
+          img {
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+
+      .detail {
+        @include font(convertToVw(24px), 500, null);
+
+        @include mq_min_750 {
+          font-size: 24px;
+        }
+      }
+
+      .arrow-right {
+        position: absolute;
+        transform: translateY(-50%);
+        top: calc(50% + 2px);
+        right: convertToVw(28px);
+
+        img {
+          width: convertToVw(21px);
+          height: convertToVw(21px);
+        }
+
+        @include mq_min_750 {
+          top: calc(50% + 2px);
+          right: 28px;
+
+          img {
+            width: 21px;
+            height: 21px;
+          }
+        }
+      }
+
+      .arrow-right-survey {
+        gap: convertToVw(36px);
+        @include flexbox(flex, center, center, nowrap);
+
+        .text-notification-survey {
+          color: #c30d23;
+          font-weight: 500;
+          font-size: convertToVw(24px);
+        }
+
+        @include mq_min_750 {
+          gap: 36px;
+
+          .text-notification-survey {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .account-setting-element:first-child {
+      padding-top: convertToVw(55px);
+
+      @include mq_min_750 {
+        padding-top: 55px;
+      }
+    }
+
+    .account-setting-element:last-child {
+      margin-bottom: convertToVw(61px);
+
+      @include mq_min_750 {
+        margin-bottom: 61px;
+      }
+    }
+
+    .account-setting-element-navigate {
+      cursor: pointer;
+      border-top: 1px solid $border-bottom-default;
+      border-bottom: 1px solid $border-bottom-default;
+      font-size: convertToVw(24px);
+      margin: convertToVw(10px) 0;
+      padding: convertToVw(42px) 0 convertToVw(37px) convertToVw(60px);
+
+      .detail {
+        color: $black-color;
+      }
+
+      &:last-child {
+        margin-bottom: convertToVw(160px);
+
+        @include mq_min_750 {
+          margin-bottom: 160px;
+        }
+      }
+
+      @include mq_min_750 {
+        font-size: 24px;
+        margin: 10px 0;
+        padding: 42px 0 37px 60px;
+      }
+    }
+  }
+
+  .empty-item {
+    background-color: $white-color;
+  }
+}
+
+.background-mypage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  img {
+    width: convertToVw(385px);
+    height: convertToVw(480px);
+
+    @include mq_min_750 {
+      width: 385px;
+      height: 480px;
+    }
+  }
+}

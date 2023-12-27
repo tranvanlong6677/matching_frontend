@@ -1,0 +1,67 @@
+pipelines:
+  branches:
+    main: 
+      - step:
+          name: Building the app
+          image: node:latest
+          script:
+            - npm install --save --legacy-peer-deps
+            - CI='' npm run build:production
+          artifacts:
+            - build/**
+      - step:
+          name: Deployment the app to Production
+          deployment: production
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.2.4
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                S3_BUCKET: $S3_BUCKET_PRODUCT
+                ACL: "public-read"
+                LOCAL_PATH: "build"
+    
+    staging: 
+      - step:
+          name: Building the app
+          image: node:latest
+          script:
+            - npm install --save --legacy-peer-deps
+            - CI='' npm run build:staging
+          artifacts:
+            - build/**
+      - step:
+          name: Deployment the app to STG
+          deployment: staging
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.2.4
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                S3_BUCKET: $S3_BUCKET_STG
+                ACL: "public-read"
+                LOCAL_PATH: "build"
+
+    dev: 
+      - step:
+          name: Building the app
+          image: node:latest
+          script:
+            - yarn install --non-interactive
+            - CI='' yarn build:development
+          artifacts:
+            - build/**
+      - step:
+          name: Deployment the app to develop
+          deployment: test
+          script:
+            - pipe: atlassian/aws-s3-deploy:1.2.0
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                S3_BUCKET: $S3_BUCKET_DEV
+                ACL: "public-read"
+                LOCAL_PATH: "build"

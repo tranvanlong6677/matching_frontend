@@ -1,0 +1,56 @@
+ <svg xmlns="http://www.w3.org/2000/svg" width="41.969" height="50.464" viewBox="0 0 41.969 50.464">
+            <g id="Group_42" data-name="Group 42" transform="translate(-9408.243 -5936.065)">
+              <g id="Group_40" data-name="Group 40">
+                <path
+                  id="Path_38"
+                  data-name="Path 38"
+                  d="M9408.837,5939.659v43.277a3,3,0,0,0,3,3h34.781a3,3,0,0,0,3-3v-36.744l-9.533-9.533h-28.248A3,3,0,0,0,9408.837,5939.659Z"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="1.188"
+                />
+              </g>
+              <path
+                id="Path_39"
+                data-name="Path 39"
+                d="M9440.085,5936.746v9.457h9.365"
+                fill="none"
+                stroke="#000"
+                stroke-miterlimit="10"
+                stroke-width="1.188"
+              />
+              <g id="Group_41" data-name="Group 41">
+                <line
+                  id="Line_89"
+                  data-name="Line 89"
+                  x2="24.708"
+                  transform="translate(9416.873 5955.167)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="1.188"
+                />
+                <line
+                  id="Line_90"
+                  data-name="Line 90"
+                  x2="24.708"
+                  transform="translate(9416.873 5961.714)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="1.188"
+                />
+                <line
+                  id="Line_91"
+                  data-name="Line 91"
+                  x2="17.309"
+                  transform="translate(9416.873 5968.261)"
+                  fill="none"
+                  stroke="#000"
+                  stroke-miterlimit="10"
+                  stroke-width="1.188"
+                />
+              </g>
+            </g>
+          </svg>

@@ -1,0 +1,717 @@
+.block-btn {
+  margin: convertToVw(400px) 0 0;
+
+  @include mq_min_750 {
+    margin: 400px 0 0;
+  }
+}
+
+.select-global {
+  background-image: url('../../images/mockup/arrowSelectTag.svg');
+  background-repeat: no-repeat;
+  text-indent: convertToVw(1px);
+  text-overflow: '';
+  background-position: calc(100% - convertToVw(37px)) calc(50%);
+  background-size: convertToVw(21px);
+
+  @include mq_min_750 {
+    text-indent: 1px;
+    background-size: 21px;
+    background-position: calc(100% - 37px) calc(50%);
+  }
+}
+
+.input-global,
+.select-global,
+.textarea-global {
+  max-width: convertToVw($width-input) !important;
+  border-radius: convertToVw(8px);
+  background-color: $bg-color-input;
+  border: none;
+  margin-bottom: convertToVw(21px);
+  height: convertToVw($height-input) !important;
+  font-size: convertToVw(24px);
+  padding: convertToVw(32px) convertToVw(30px);
+
+  @include mq_min_750 {
+    padding: 32px 30px;
+    font-size: 24px;
+    margin-bottom: 21px;
+    height: $height-input !important;
+    max-width: $width-input !important;
+    border-radius: 8px;
+  }
+}
+
+.status-bar {
+  margin-top: convertToVw(12px);
+  @include flexbox(flex, center, flex-start, nowrap);
+
+  @include mq_min_750 {
+    margin-top: 12px;
+  }
+
+  .status-element {
+    position: relative;
+    width: 100%;
+    background-color: $bg-color-input;
+    color: $white-color;
+    max-width: convertToVw(183.33px);
+    height: convertToVw(58px);
+    border-radius: convertToVw(8px);
+
+    @include mq_min_750 {
+      max-width: 183.33px;
+      height: 58px;
+      border-radius: 8px;
+    }
+
+    .status-element-content {
+      flex-direction: column;
+      padding: 0 convertToVw(2px);
+      @include flexbox(flex, center, center, nowrap);
+
+      @include mq_min_750 {
+        padding: 0 2px;
+      }
+
+      img {
+        background-color: $white-color;
+        border-radius: 50%;
+        margin: convertToVw(7px) 0 convertToVw(5px) 0;
+        height: convertToVw(23px);
+        width: convertToVw(23px);
+
+        @include mq_min_750 {
+          margin: 7px 0 5px 0;
+          height: 23px;
+          width: 23px;
+        }
+      }
+
+      span {
+        text-align: center;
+        font-weight: 500;
+        font-size: convertToVw(10px);
+
+        @include mq_min_750 {
+          font-size: 10px;
+        }
+      }
+    }
+
+    &::before {
+      content: url('../../../assets/images/mockup/Arrow.svg');
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: convertToVw(-35px);
+      font-size: convertToVw(10px);
+
+      @include mq_min_750 {
+        left: -30px;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .status-element:nth-child(2) {
+    &::before {
+      content: url('../../../assets/images/svg/iconStatusBar.svg');
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: convertToVw(-35px);
+      scale: 0.8;
+
+      @include mq_min_750 {
+        left: -30px;
+        scale: 1;
+      }
+    }
+  }
+
+  .active {
+    background-color: $button-color-first;
+
+    &::before {
+      content: url('../../../assets/images/mockup/Arrow-active.svg');
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: convertToVw(-35px);
+      scale: 0.8;
+
+      @include mq_min_750 {
+        left: -30px;
+        scale: 1;
+      }
+    }
+  }
+
+  .active-custom {
+    background-color: $button-color-first;
+
+    &::before {
+      content: url('../../../assets/images/mockup/Arrow-active.svg');
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: convertToVw(-35px);
+      scale: 0.8;
+
+      @include mq_min_750 {
+        left: -30px;
+        scale: 1;
+      }
+    }
+  }
+
+  .status-element:nth-child(2) {
+    margin: 0 convertToVw(40px);
+
+    @include mq_min_750 {
+      margin: 0 40px;
+    }
+  }
+
+  .status-element:nth-child(1):before {
+    content: none;
+  }
+
+  margin-top: convertToVw(22px);
+
+  .status-element {
+    position: relative;
+    width: 100%;
+    background-color: $bg-color-input;
+    color: $white-color;
+    max-width: convertToVw(183.33px);
+    border-radius: convertToVw(8px);
+    height: convertToVw(116px);
+
+    @include mq_min_750 {
+      max-width: 183.33px;
+      border-radius: 8px;
+      height: 116px;
+    }
+    .status-element-content {
+      flex-direction: column;
+      padding: 0 convertToVw(4px);
+      @include flexbox(flex, center, center, nowrap);
+
+      @include mq_min_750 {
+        padding: 0 4px;
+      }
+
+      img {
+        background-color: $white-color;
+        border-radius: 50%;
+        margin: convertToVw(14px) 0;
+        height: convertToVw(46px);
+        width: convertToVw(46px);
+
+        @include mq_min_750 {
+          margin: 14px 0;
+          height: 46px;
+          width: 46px;
+        }
+      }
+
+      span {
+        text-align: center;
+        font-weight: 500;
+        font-size: convertToVw(20px);
+
+        @include mq_min_750 {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &::before {
+      content: url('../../../assets/images/mockup/Arrow.svg');
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: convertToVw(-35px);
+      scale: 0.8;
+
+      @include mq_min_750 {
+        left: -30px;
+        scale: 1;
+      }
+    }
+  }
+
+  .status-element:nth-child(2) {
+    &::before {
+      content: url('../../../assets/images/svg/iconStatusBar.svg');
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: convertToVw(-35px);
+      scale: 0.8;
+
+      @include mq_min_750 {
+        scale: 1;
+        left: -30px;
+      }
+    }
+  }
+
+  .active {
+    background-color: $button-color-first;
+
+    &::before {
+      content: url('../../../assets/images/svg/iconStatusBar.svg');
+      position: absolute;
+      top: 50%;
+      left: convertToVw(-35px);
+      transform: translateY(-50%);
+
+      @include mq_min_750 {
+        left: -30px;
+      }
+    }
+  }
+
+  .active-custom {
+    background-color: $button-color-first;
+
+    &::before {
+      content: url('../../../assets/images/mockup/Arrow-active.svg');
+      position: absolute;
+      top: 50%;
+      left: convertToVw(-35px);
+      transform: translateY(-50%);
+
+      @include mq_min_750 {
+        left: -30px;
+      }
+    }
+  }
+
+  .status-element:nth-child(2) {
+    margin: 0 convertToVw(40px);
+
+    @include mq_min_750 {
+      margin: 0 40px;
+    }
+  }
+
+  .status-element:nth-child(1):before {
+    content: none;
+  }
+}
+
+.status-bar-user {
+  margin-top: convertToVw(12px);
+  @include flexbox(flex, center, flex-start, nowrap);
+
+  @include mq_min_750 {
+    margin-top: 12px;
+  }
+
+  .status-element {
+    position: relative;
+    width: 100%;
+    background-color: $bg-color-input;
+    color: $white-color;
+    max-width: convertToVw(183.33px);
+    height: convertToVw(58px);
+    border-radius: convertToVw(8px);
+
+    @include mq_min_750 {
+      max-width: 183.33px;
+      height: 58px;
+      border-radius: 8px;
+    }
+
+    .status-element-content {
+      flex-direction: column;
+      padding: 0 convertToVw(2px);
+      @include flexbox(flex, center, center, nowrap);
+
+      @include mq_min_750 {
+        padding: 0 2px;
+      }
+
+      img {
+        background-color: $white-color;
+        border-radius: 50%;
+        margin: convertToVw(7px) 0 convertToVw(5px) 0;
+        height: convertToVw(23px);
+        width: convertToVw(23px);
+
+        @include mq_min_750 {
+          margin: 7px 0 5px 0;
+          height: 23px;
+          width: 23px;
+        }
+      }
+
+      span {
+        text-align: center;
+        font-size: convertToVw(10px);
+        font-weight: 500;
+
+        @include mq_min_750 {
+          font-size: 10px;
+        }
+      }
+    }
+
+    &::before {
+      content: url('../../../assets/images/mockup/Arrow.svg');
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: convertToVw(10px);
+      left: convertToVw(-35px);
+      scale: 0.8;
+
+      @include mq_min_750 {
+        left: -30px;
+        scale: 1;
+      }
+    }
+  }
+
+  .status-element:nth-child(2) {
+    &::before {
+      content: url('../../../assets/images/svg/Arrow-active-user.svg');
+      position: absolute;
+      top: 50%;
+      left: convertToVw(-35px);
+      transform: translateY(-50%);
+      scale: 0.8;
+
+      @include mq_min_750 {
+        left: -30px;
+        scale: 1;
+      }
+    }
+  }
+
+  .active {
+    background-color: $button-color-first;
+
+    &::before {
+      content: url('../../../assets/images/svg/Arrow-active-user.svg');
+      position: absolute;
+      top: 50%;
+      left: convertToVw(-35px);
+      transform: translateY(-50%);
+      scale: 0.8;
+
+      @include mq_min_750 {
+        left: -30px;
+        scale: 1;
+      }
+    }
+  }
+
+  .active-custom {
+    background-color: $button-color-first;
+
+    &::before {
+      content: url('../../../assets/images/svg/Arrow-active-user.svg');
+      position: absolute;
+      top: 50%;
+      left: convertToVw(-35px);
+      transform: translateY(-50%);
+
+      @include mq_min_750 {
+        left: -30px;
+      }
+    }
+  }
+
+  .status-element:nth-child(2) {
+    margin: 0 convertToVw(40px);
+
+    @include mq_min_750 {
+      margin: 0 40px;
+    }
+  }
+
+  .status-element:nth-child(1):before {
+    content: none;
+  }
+
+  margin-top: convertToVw(22px);
+
+  .status-element {
+    position: relative;
+    width: 100%;
+    background-color: $bg-color-input;
+    color: $white-color;
+    max-width: convertToVw(183.33px);
+    border-radius: convertToVw(8px);
+    height: convertToVw(116px);
+
+    @include mq_min_750 {
+      max-width: 183.33px;
+      border-radius: 8px;
+      height: 116px;
+    }
+
+    .status-element-content {
+      flex-direction: column;
+      padding: 0 convertToVw(4px);
+      @include flexbox(flex, center, center, nowrap);
+
+      @include mq_min_750 {
+        padding: 0 4px;
+      }
+
+      img {
+        background-color: $white-color;
+        border-radius: 50%;
+        margin: convertToVw(14px) 0;
+        height: convertToVw(46px);
+        width: convertToVw(46px);
+
+        @include mq_min_750 {
+          margin: 14px 0;
+          height: 46px;
+          width: 46px;
+        }
+      }
+
+      span {
+        text-align: center;
+        font-weight: 500;
+        font-size: convertToVw(20px);
+
+        @include mq_min_750 {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &::before {
+      content: url('../../../assets/images/mockup/Arrow.svg');
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: convertToVw(-35px);
+      scale: 0.8;
+
+      @include mq_min_750 {
+        left: -30px;
+        scale: 1;
+      }
+    }
+  }
+
+  .status-element:nth-child(2) {
+    &::before {
+      content: url('../../../assets/images/svg/Arrow-active-user.svg');
+      position: absolute;
+      top: 50%;
+      left: convertToVw(-35px);
+      transform: translateY(-50%);
+      scale: 0.8;
+
+      @include mq_min_750 {
+        left: -30px;
+        scale: 1;
+      }
+    }
+  }
+
+  .active {
+    background-color: $button-color-first;
+
+    &::before {
+      content: url('../../../assets/images/svg/Arrow-active-user.svg');
+      position: absolute;
+      top: 50%;
+      left: convertToVw(-35px);
+      transform: translateY(-50%);
+      scale: 0.8;
+
+      @include mq_min_750 {
+        left: -30px;
+        scale: 1;
+      }
+    }
+  }
+
+  .active-custom {
+    background-color: $button-color-first;
+
+    &::before {
+      content: url('../../../assets/images/svg/Arrow-active-user.svg');
+      position: absolute;
+      top: 50%;
+      left: convertToVw(-35px);
+      transform: translateY(-50%);
+      scale: 0.8;
+
+      @include mq_min_750 {
+        left: -30px;
+        scale: 1;
+      }
+    }
+  }
+
+  .status-element:nth-child(2) {
+    margin: 0 convertToVw(40px);
+
+    @include mq_min_750 {
+      margin: 0 40px;
+    }
+  }
+
+  .status-element:nth-child(1):before {
+    content: none;
+  }
+}
+
+.block-signup {
+  margin: convertToVw(60px) 0;
+
+  @include mq_min_750 {
+    margin: 60px 0;
+  }
+
+  .btn-signup {
+    margin: 0px auto;
+  }
+
+  .btn {
+    background: #afa96e;
+    color: $white-color;
+    margin-top: 0;
+
+    & .btn-register {
+      width: 100%;
+      max-width: 100%;
+      background: #d8ba9a;
+      color: $black-color-v2;
+      border-radius: convertToVw(9px);
+      margin-top: convertToVw(25px);
+
+      @include mq_min_750 {
+        border-radius: 9px;
+        margin-top: 25px;
+      }
+    }
+
+    & .btn-login {
+      background: #ffcc00;
+      margin-bottom: convertToVw(40px);
+
+      @include mq_min_750 {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.btn {
+  width: 100%;
+  background: $button-disable;
+  color: $white-color;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+  font-weight: 500;
+  height: 100%;
+  padding: 0 convertToVw(20px);
+  border-radius: convertToVw(40px);
+  max-width: convertToVw(300px);
+  min-height: convertToVw(80px);
+  font-size: convertToVw(24px);
+
+  @include mq_min_750 {
+    padding: 0 20px;
+    border-radius: 40px;
+    font-size: 24px;
+    max-width: 300px;
+    min-height: 80px;
+  }
+
+  &.btn-large {
+    max-width: convertToVw(630px);
+
+    @include mq_min_750 {
+      max-width: 630px;
+    }
+  }
+
+  &.btn-small {
+    width: 100%;
+    max-width: convertToVw(270px);
+
+    @include mq_min_750 {
+      max-width: 270px;
+    }
+  }
+
+  &.ct-allow {
+    background-color: $button-color-first !important;
+    color: $white-color !important;
+  }
+
+  &.cr-allow {
+    background-color: $button-color-first !important;
+    color: $white-color !important;
+  }
+
+  &.not-allowed {
+    cursor: not-allowed;
+    background-color: #9b9c9c !important;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.cr-allow.coupon-btn {
+    margin: 0;
+    width: fit-content;
+    min-width: convertToVw(202px);
+    min-height: convertToVw(68px);
+    @include flexbox(flex, center, center, nowrap);
+
+    @include mq_min_750 {
+      min-width: 202px;
+      min-height: 68px;
+    }
+
+    &.not-allowed {
+      background-color: $button-disable !important;
+      color: $white-color !important;
+    }
+  }
+}
+
+.ant-checkbox-checked {
+  &:after {
+    border: none !important;
+    animation: none !important;
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+textarea {
+  resize: none !important;
+}
+
+.btn-customer {
+  background-color: $button-color-first !important;
+}

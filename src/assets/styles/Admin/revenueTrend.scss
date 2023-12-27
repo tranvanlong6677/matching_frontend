@@ -1,0 +1,23 @@
+.revenue-total-price {
+  margin-top: 22px;
+  display: flex;
+  justify-content: flex-end;
+
+  input {
+    min-width: 167px;
+    width: fit-content !important;
+  }
+
+  .admin-listct-label {
+    width: 83px;
+  }
+
+  .admin-input-item {
+    height: 30px;
+  }
+
+  .input-admin-global {
+    height: 30px;
+    border: 1px solid #b5b5b6;
+  }
+}

@@ -1,0 +1,101 @@
+.customer-detail-content {
+  .note-detail-block {
+    margin-top: 40px;
+  }
+
+  .month-used-admin {
+    display: block;
+    margin-top: 32px;
+
+    .table-block-user {
+      margin-bottom: 30px;
+    }
+
+    .admin-input-group.label-center {
+      text-align: center;
+    }
+
+    .admin-input-group {
+      .admin-listct-label {
+        max-width: 140px;
+      }
+    }
+
+    h2 {
+      margin-bottom: 7px;
+      @include font(14px, 400, 25px);
+    }
+  }
+}
+
+.admin-wrapper {
+  .block-detail {
+    display: flex;
+    margin-top: 15px;
+    column-gap: 10px;
+
+    .btn-save-detail {
+      padding: 10px 16px;
+      @include font(14px, 400, 17px);
+      border: none;
+      cursor: pointer;
+      background-color: #978475;
+      color: $white-color;
+      border-radius: 5px;
+    }
+  }
+}
+
+.admin-wrapper {
+  .rank-item-admin {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 6px;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+.admin-wrapper {
+  .ant-dropdown {
+    .ant-dropdown-menu {
+      border-radius: 0;
+      border: 1px solid #a28f80;
+      margin-top: 5px;
+
+      .ant-dropdown-menu-item {
+        padding: 5px 5px;
+      }
+    }
+  }
+}
+
+.dropdown-hearing {
+  width: 100px;
+}
+
+.dropdown-detail {
+  width: calc(100% - 51.5 * 2px);
+  max-height: 150px;
+  overflow: auto;
+  left: 102px !important;
+
+  &::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    margin-top: 3px;
+  }
+
+  &::-webkit-scrollbar {
+    max-width: 6px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #595757;
+  }
+}

@@ -1,0 +1,246 @@
+.ant-table .ant-table-container .ant-table-content table thead.ant-table-thead .ant-table-cell,
+.ant-table-wrapper .ant-table-thead > tr > th {
+  background-color: #978475;
+  color: $white-color;
+  font-weight: 500;
+}
+
+.admin-wrapper .ant-table-cell {
+  @include font(14px, 400, 26px);
+  word-break: break-all;
+  height: 40px !important;
+  padding: 0 10px !important;
+  border: 1px solid #b5b5b6 !important;
+
+  .underline {
+    text-decoration: underline;
+    color: #036eb8;
+    list-style: none;
+    height: 100%;
+
+    .name-assign {
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-top: 0;
+      }
+    }
+  }
+
+  span {
+    @include font(14px, 400, 26px);
+    word-break: break-all;
+    @include flexbox(flex, start, start, null);
+    height: 100%;
+    padding: 5px 0;
+  }
+}
+
+.admin-wrapper .detail-user-table .ant-table-tbody .ant-table-cell,
+.detail-cast-wrapper .ant-table-tbody .ant-table-cell {
+  height: 70px !important;
+}
+
+.ant-table-wrapper .ant-table-container table > thead > tr:first-child > *:last-child,
+.ant-table-wrapper .ant-table-container table > thead > tr:first-child > :first-child {
+  border-start-end-radius: 0px;
+  border-start-start-radius: 0px;
+}
+
+.admin-input-item {
+  display: flex;
+  height: 35px;
+  button {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    border: none;
+    background-color: $transparent-color;
+    color: #036eb8;
+    cursor: pointer;
+    @include font(14px, 400, 18px);
+  }
+
+  .admin-listct-label {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #a28f80;
+    color: $white-color;
+    width: 100%;
+    max-width: 100px;
+    @include font(14px, 400, 18px);
+
+    span {
+      margin-left: 10px;
+    }
+  }
+
+  .input-admin-global {
+    border-radius: 0;
+    border: 2px solid #a28f80;
+    width: 100%;
+    height: 35px;
+    @include font(14px, 400, 18px);
+    padding-left: 5px;
+    background-color: $white-color;
+  }
+
+  .input-admin-global.input-salary {
+    padding-right: 46px;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
+
+.admin-wrapper {
+  .input-admin-global.disable,
+  textarea.disable {
+    pointer-events: none;
+  }
+}
+
+.detail-user-table {
+  margin: 30px 0;
+}
+
+.ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before,
+.ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  height: 2.6em;
+}
+
+.detail-table {
+  @include flexbox(flex, center, null, null);
+}
+
+.admin-wrapper.ant-table-body {
+  .ant-table-cell {
+    padding: 8px 8px;
+  }
+}
+
+.ant-menu .ant-menu-item,
+:where(.css-dev-only-do-not-override-1poc1a7).ant-menu .ant-menu-submenu-title {
+  transition: none;
+}
+
+.row-color {
+  background-color: #f2f2f2 !important;
+}
+
+.customer-detail-content,
+.detail-cast-wrapper {
+  .ant-form-item .ant-form-item-control-input {
+    min-height: 0;
+  }
+
+  .ant-form-item {
+    width: 100%;
+  }
+
+  .ant-form {
+    width: 100%;
+  }
+
+  .block-btn-detail {
+    width: 100%;
+    margin-top: 30px;
+    @include flexbox(flex, center, null, null);
+
+    .btn-save-detail {
+      padding: 10px 16px;
+      color: $white-color;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #978475;
+      @include font(14px, 400, 17px);
+    }
+  }
+
+  .ant-input {
+    height: 30px;
+    border-radius: 0;
+    border: 2px solid #a28f80;
+    @include font(14px, 400, 18px);
+  }
+}
+
+.interview-notes .interview-notes-content textarea {
+  @include font(14px, 400, 18px);
+}
+
+.item-icon-delete {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+
+  .icon-item {
+    display: block !important;
+    margin-top: 0 !important;
+  }
+
+  .anticon-delete {
+    margin-top: 0 !important;
+  }
+
+  .anticon svg {
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+  }
+}
+
+.modal-delete-matching {
+  top: 35%;
+
+  .ant-modal-content {
+    border-radius: 0;
+    text-align: center;
+    border: 1px solid $black-color;
+
+    .title-delete-matching {
+      @include font(24px, 600, 46px);
+      margin-top: 20px;
+    }
+
+    .delete-content {
+      @include font(18px, 400, 36px);
+    }
+  }
+
+  .btn-modal-delete-matching {
+    padding-bottom: 30px;
+    column-gap: 15px;
+    @include flexbox(flex, center, null, null);
+
+    button {
+      padding: 22px 26px;
+      min-width: 200px;
+      border-radius: 0;
+      border: 1px solid $black-color;
+      @include flexbox(flex, null, center, null);
+
+      span {
+        margin: 0 auto;
+        @include font(18px, 400, 36px);
+      }
+    }
+
+    .btn-back {
+      background-color: #d0cece;
+    }
+
+    .btn-delete-matching {
+      background-color: #4472c4;
+    }
+  }
+}

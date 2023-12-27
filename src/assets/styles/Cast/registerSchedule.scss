@@ -1,0 +1,333 @@
+.block-calendar {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .content .menu-content .head-title {
+    .item-title {
+      @include font(convertToVw(30px), 500, convertToVw(49px));
+      @include mq_min_750 {
+        margin-left: 12px;
+        @include font(30px, null, 49px);
+      }
+    }
+
+    .icon {
+      img {
+        height: convertToVw(26px);
+        width: convertToVw(32px);
+
+        @include mq_min_750 {
+          height: 26px;
+          width: 32px;
+        }
+      }
+    }
+  }
+
+  .checkbox-custom {
+    width: convertToVw(43px);
+    height: convertToVw(43px);
+    background-color: $white-color;
+
+    @include mq_min_750 {
+      width: 43px;
+      height: 43px;
+    }
+  }
+  .head-title {
+    margin-left: 0;
+    max-width: convertToVw(700px);
+
+    & .head-calendar {
+      display: flex;
+      padding-left: convertToVw(24px);
+
+      .icon {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    @include mq_min_750 {
+      max-width: 700px;
+
+      & .head-calendar {
+        padding-left: 24px;
+      }
+    }
+  }
+  .item-des {
+    font-family: 'Hiragino Sans', sans-serif !important;
+
+    & .arrow-calendar {
+      width: convertToVw(18px);
+      height: convertToVw(37px);
+
+      @include mq_min_750 {
+        width: 18px;
+        height: 37px;
+      }
+    }
+
+    .calendar-content {
+      max-width: convertToVw(600px);
+      margin: 0 auto;
+      width: 100%;
+
+      @include mq_min_750 {
+        max-width: 600px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .react-calendar__navigation {
+        margin-top: convertToVw(20px);
+
+        @include mq_min_750 {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    & .calendar-description {
+      padding: convertToVw(40px) 0 convertToVw(42px);
+      border-bottom: 2px solid $divided-color;
+      white-space: nowrap;
+      @include font(convertToVw(23px), 400, convertToVw(46px));
+
+      @include mq_min_750 {
+        padding: 40px 0 42px;
+        letter-spacing: -2px;
+        @include font(26px, null, 46px);
+      }
+    }
+
+    .item-selected {
+      & .item-date {
+        @include font(convertToVw(20px), 500, convertToVw(35px));
+
+        @include mq_min_750 {
+          @include font(20px, null, 35px);
+        }
+      }
+
+      .btn-date {
+        @include font(convertToVw(29px), 400, convertToVw(90px));
+
+        @include mq_min_750 {
+          @include font(29px, null, 90px);
+        }
+      }
+      .item-hour-line {
+        .type-hour-item {
+          display: flex;
+          grid-gap: convertToVw(20px);
+          margin-top: convertToVw(20px);
+          padding-bottom: convertToVw(40px);
+          border-bottom: 2px solid $ct-allow;
+
+          @include mq_min_750 {
+            margin-top: 20px;
+            padding-bottom: 40px;
+            grid-gap: 20px;
+          }
+
+          .btn-type-hour {
+            width: 100%;
+            max-width: convertToVw(186px);
+            column-gap: convertToVw(20px);
+            background-color: rgba(201, 188, 156, 0.4);
+            @include font(convertToVw(23px), 400, convertToVw(90px));
+
+            @include mq_min_750 {
+              max-width: 186px;
+              column-gap: 20px;
+              @include font(23px, null, 90px);
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .btn-type-hour.active {
+            background-color: $selected-color;
+            color: $white-color !important;
+          }
+        }
+        .list-hour {
+          grid-template-columns: repeat(3, 1fr);
+          column-gap: convertToVw(20px);
+          grid-gap: convertToVw(20px);
+
+          @include mq_min_750 {
+            @include flexbox(flex, flex-start, center, wrap);
+            grid-gap: 20px;
+            column-gap: 20px;
+          }
+        }
+
+        & .btn-type-hour,
+        button {
+          border-radius: convertToVw(9px);
+          @include flexbox(flex, center, center, null);
+          border: none;
+          cursor: pointer;
+          background-color: $white-color;
+          max-width: convertToVw(186px);
+          height: convertToVw(80px);
+          white-space: nowrap;
+          color: $black-color !important;
+          @include font(convertToVw(24px), 400, convertToVw(90px));
+
+          @include mq_min_750 {
+            max-width: 186px;
+            height: 80px;
+            border-radius: 9px;
+            @include font(24px, null, 90px);
+          }
+        }
+
+        & .btn-hour {
+          font-family: 'Hiragino Sans', sans-serif;
+        }
+
+        & .btn-hour-active {
+          background-color: $selected-color;
+          color: $white-color !important;
+        }
+
+        .btn-hour-wrapper.matched {
+          cursor: not-allowed;
+
+          .btn-hour-active {
+            color: $danger-color !important;
+            pointer-events: none;
+          }
+        }
+      }
+      & .check-hour {
+        &:nth-child(3) {
+          margin-bottom: convertToVw(20px);
+        }
+
+        .checkbox-warning {
+          color: $danger-color !important;
+          @include font(convertToVw(18px), 500, convertToVw(25px));
+
+          @include mq_min_750 {
+            @include font(18px, null, 25px);
+          }
+        }
+
+        & span {
+          @include font(convertToVw(25px), 400, convertToVw(44px));
+
+          &:nth-child(1) {
+            @include font(convertToVw(21px), null, convertToVw(37px));
+          }
+
+          @include mq_min_750 {
+            @include font(25px, 400, 44px);
+
+            &:nth-child(1) {
+              @include font(21px, null, 37px);
+            }
+          }
+        }
+        & .checkbox-confirm {
+          .ant-checkbox-wrapper {
+            display: flex;
+            align-items: center;
+          }
+
+          input {
+            width: convertToVw(43px);
+            height: convertToVw(42px);
+            margin-left: convertToVw(26px);
+
+            @include mq_min_750 {
+              width: 43px;
+              height: 42px;
+              margin-left: 26px;
+            }
+          }
+        }
+      }
+
+      & .calendar-modal-bottom {
+        .checkbox-warning {
+          color: $danger-color !important;
+          @include font(convertToVw(18px), 500, convertToVw(45px));
+
+          @include mq_min_750 {
+            @include font(18px, null, 45px);
+          }
+        }
+
+        .calendar-frequency {
+          @include font(convertToVw(20px), null, convertToVw(31px));
+          color: #ea5514;
+          margin-top: convertToVw(30px);
+
+          @include mq_min_750 {
+            @include font(20px, null, 31px);
+            margin-top: 30px;
+          }
+        }
+
+        & #calendar-frequency-item {
+          border-bottom: none;
+          padding: 0 !important;
+          @include font(convertToVw(20px), null, convertToVw(31px));
+
+          @include mq_min_750 {
+            @include font(20px, null, 31px);
+          }
+        }
+      }
+    }
+  }
+  .block-calendar-btn {
+    @include flexbox(flex, center, center, wrap);
+    gap: convertToVw(15px);
+    margin-top: convertToVw(70px);
+
+    @include mq_min_750 {
+      gap: 15px;
+      margin-top: 70px;
+    }
+  }
+  .close-icon {
+    @include flexbox(flex, center, center, null);
+    cursor: pointer;
+    margin-top: convertToVw(50px);
+
+    @include mq_min_750 {
+      margin-top: 50px;
+    }
+
+    img {
+      width: convertToVw(35px);
+      height: convertToVw(35px);
+
+      @include mq_min_750 {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    span {
+      margin-left: convertToVw(10px);
+      @include font(convertToVw(24px), 500, convertToVw(42px));
+
+      @include mq_min_750 {
+        margin-left: 10px;
+        @include font(24px, null, 42px);
+      }
+    }
+  }
+}

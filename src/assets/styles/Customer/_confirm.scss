@@ -1,0 +1,414 @@
+.confirm-booking-container {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .field {
+    color: $font-color-new;
+  }
+
+  .title {
+    margin: 0 0 convertToVw(70px);
+    padding: 0 convertToVw(12px);
+    font-weight: 500;
+    font-size: convertToVw(30px);
+
+    @include mq_min_750 {
+      margin: 0 0 70px;
+      padding: 0 12px;
+      font-size: 30px;
+    }
+  }
+
+  .line-price {
+    width: 100%;
+    height: convertToVw(1px);
+    padding-top: convertToVw(10px);
+    border-bottom: 1px solid $border-bottom-default;
+
+    @include mq_min_750 {
+      width: 100%;
+      height: 1px;
+      padding-top: 10px;
+    }
+  }
+
+  .note-block {
+    width: 100%;
+    height: convertToVw(2px);
+    margin-top: convertToVw(20px);
+    border-bottom: 1px solid $border-bottom-default;
+
+    @include mq_min_750 {
+      height: 2px;
+      margin-top: 20px;
+    }
+  }
+
+  .price-total-block {
+    background-color: rgba($color: #e60012, $alpha: 0.14);
+    width: 100%;
+    min-height: convertToVw(105px);
+    border-radius: convertToVw(7px);
+    padding: convertToVw(25px) convertToVw(13px) convertToVw(16px);
+    margin-bottom: convertToVw(50px);
+
+    @include flexbox(flex, space-between, center, nowrap);
+
+    .field {
+      flex: 3;
+      font-weight: 500;
+      font-size: convertToVw(20px);
+    }
+
+    .value {
+      color: #c30d23;
+      flex: 2;
+      text-align: end;
+      font-weight: 500;
+      font-size: convertToVw(24px);
+    }
+
+    @include mq_min_750 {
+      min-height: 105px;
+      border-radius: 7px;
+      padding: 25px 13px 16px;
+      margin-bottom: 50px;
+
+      @include flexbox(flex, space-between, center, nowrap);
+
+      .field {
+        font-size: 20px;
+      }
+
+      .value {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .no-border {
+    border-bottom: none !important;
+  }
+
+  .info-content {
+    margin-bottom: convertToVw(40px);
+
+    @include mq_min_750 {
+      margin-bottom: 40px;
+    }
+
+    .info-content-element {
+      border-bottom: 1px solid $border-bottom-default;
+      padding: convertToVw(25px) convertToVw(12px) convertToVw(16px);
+      @include flexbox(flex, space-between, center, nowrap);
+
+      .field {
+        flex: 1;
+        font-size: convertToVw(20px);
+        font-weight: 500;
+      }
+
+      .value {
+        flex: 2;
+        text-align: right;
+        font-size: convertToVw(24px);
+        font-weight: 500;
+      }
+
+      &:nth-child(5),
+      &:nth-child(7) {
+        .field {
+          flex: 4;
+        }
+
+        .value {
+          flex: 1;
+        }
+      }
+
+      &:nth-child(2) {
+        .field {
+          flex: 1;
+        }
+
+        .value {
+          flex: 4;
+        }
+      }
+
+      @include mq_min_750 {
+        padding: 25px 12px 16px;
+
+        .field {
+          font-size: 20px;
+        }
+
+        .value {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .reservation-time {
+      .field {
+        flex: 1;
+      }
+
+      .value {
+        flex: 3;
+      }
+    }
+
+    .red {
+      color: #c30d23;
+    }
+  }
+
+  .attention {
+    margin-bottom: convertToVw(55px);
+
+    p {
+      font-size: convertToVw(20px);
+      line-height: convertToVw(27.5px);
+      font-weight: 300;
+      letter-spacing: -1px;
+    }
+
+    .info-attention-item {
+      margin: 0 0 convertToVw(80px);
+      border-bottom: 1px solid $border-bottom-default;
+      @include flexbox(flex, space-between, center, nowrap);
+
+      .field {
+        flex: 1;
+        font-weight: 500;
+        font-size: convertToVw(20px);
+      }
+
+      .value {
+        flex: 3;
+        font-weight: 500;
+        text-align: end;
+        font-size: convertToVw(24px);
+      }
+    }
+
+    .content-attention {
+      padding: convertToVw(30px) convertToVw(31px) 0;
+    }
+
+    @include mq_min_750 {
+      margin-bottom: 55px;
+
+      p {
+        font-size: 20px;
+        line-height: 27.5px;
+      }
+
+      .info-attention-item {
+        margin: 0 0 80px;
+        border-bottom: 1px solid $border-bottom-default;
+        @include flexbox(flex, space-between, center, nowrap);
+
+        .field {
+          font-size: 20px;
+        }
+
+        .value {
+          font-size: 24px;
+        }
+      }
+
+      .content-attention {
+        padding: 30px 31px 0;
+      }
+    }
+  }
+
+  .attention.hidden {
+    display: none;
+  }
+
+  .reason {
+    .hidden {
+      display: none;
+    }
+
+    .reason-detail.hidden {
+      display: none;
+    }
+
+    .title-reason {
+      font-weight: 500;
+      font-size: convertToVw(24px);
+      margin-bottom: convertToVw(24px);
+
+      @include mq_min_750 {
+        margin-bottom: 24px;
+        font-size: 24px;
+      }
+
+      .red {
+        color: $danger-color;
+        font-size: convertToVw(18px);
+
+        @include mq_min_750 {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .ant-form {
+      .ant-form-item {
+        margin-bottom: convertToVw(30px);
+
+        .checkbox-text {
+          font-size: convertToVw(20px) !important;
+        }
+
+        .checkbox-custom {
+          width: convertToVw(44px);
+          height: convertToVw(44px);
+        }
+
+        @include mq_min_750 {
+          margin-bottom: 30px;
+
+          .checkbox-custom {
+            width: 44px;
+            height: 44px;
+          }
+
+          .checkbox-text {
+            font-size: 20px !important;
+          }
+        }
+
+        .ant-row {
+          .ant-col {
+            .ant-form-item-control-input {
+              .ant-form-item-control-input-content {
+                .ant-checkbox-wrapper {
+                  gap: convertToVw(20px);
+                  @include flexbox(flex, flex-start, center, nowrap);
+
+                  span {
+                    padding: 0;
+                    font-size: convertToVw(20px);
+                    font-weight: 500;
+                  }
+                }
+
+                textarea {
+                  min-height: convertToVw(156px);
+                  margin: 0;
+
+                  &::-webkit-scrollbar {
+                    background-color: $white-color;
+                    width: convertToVw(8px);
+                  }
+
+                  &::-webkit-scrollbar-track {
+                    background-color: $bg-color-input;
+                    border-bottom-right-radius: convertToVw(16px);
+                  }
+
+                  &::-webkit-scrollbar-thumb {
+                    background-color: #595757;
+                    border-radius: convertToVw(4px);
+                  }
+                }
+
+                @include mq_min_750 {
+                  .ant-checkbox-wrapper {
+                    gap: 20px;
+
+                    span {
+                      font-size: 20px;
+                    }
+                  }
+
+                  textarea {
+                    min-height: 156px;
+
+                    &::-webkit-scrollbar {
+                      width: 8px;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                      border-bottom-right-radius: 16px;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                      border-radius: 4px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .ant-form-item:nth-child(5) {
+        margin-bottom: convertToVw(18px);
+
+        @include mq_min_750 {
+          margin-bottom: 18px;
+        }
+      }
+
+      .ant-form-item:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .button-block.confirm-booking-btn {
+    margin-top: convertToVw(258px);
+
+    @include mq_min_750 {
+      margin-top: 258px;
+    }
+  }
+
+  .button-block {
+    gap: convertToVw(28px);
+    margin-top: convertToVw(50px);
+    padding: 0 convertToVw(27px);
+    @include flexbox(flex, center, center, nowrap);
+
+    .ant-btn {
+      background-color: $button-disable;
+      color: $white-color;
+      margin: 0;
+      font-size: convertToVw(24px);
+      font-weight: 500;
+    }
+
+    @include mq_min_750 {
+      gap: 28px;
+      margin-top: 50px;
+      padding: 0 27px;
+
+      .ant-btn {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .attention-reason-wrapper {
+    padding: 0 convertToVw(31px);
+
+    @include mq_min_750 {
+      padding: 0 31px;
+    }
+
+    .button-block {
+      padding: 0;
+    }
+  }
+}

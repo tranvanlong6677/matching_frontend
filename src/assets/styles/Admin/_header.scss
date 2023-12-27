@@ -1,0 +1,28 @@
+.admin-header-wrapper {
+  margin-bottom: 24px;
+  .logo {
+    padding: 18px 20px 14px;
+    img {
+      width: 135px;
+      height: 44px;
+    }
+  }
+  .info {
+    color: $white-color;
+
+    .container {
+      padding: 12px 10px 10px 28px;
+      background-color: $main-color-admin;
+
+      @include flexbox(flex, space-between, center, nowrap);
+
+      .name {
+        @include font(16px, 300, 28px);
+      }
+
+      .logout {
+        @include font(12px, 600, 21px);
+      }
+    }
+  }
+}

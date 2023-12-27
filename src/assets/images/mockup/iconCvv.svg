@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50.006" height="50.021" viewBox="0 0 50.006 50.021">
+                <circle
+    id="Ellipse_98"
+    data-name="Ellipse 98"
+    cx="25.003"
+    cy="25.003"
+    r="25.003"
+    transform="translate(0 0.015)"
+    fill="gray"
+  />
+                <text
+    id="_"
+    data-name="?"
+    transform="translate(16.81 37)"
+    fill="#fff"
+    font-size="34.094"
+    font-family="SegoeUI, Segoe UI"
+  >
+                  <tspan x="0" y="0">
+                    ?
+                  </tspan>
+                </text>
+              </svg>

@@ -1,0 +1,395 @@
+.customer-booking-detail {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .title {
+    gap: convertToVw(16px);
+    padding: 0 0 convertToVw(21px) convertToVw(35px);
+    border-bottom: 2px solid $button-color-first;
+    @include flexbox(flex, flex-start, center, nowrap);
+
+    img {
+      width: convertToVw(32px);
+      height: convertToVw(32px);
+    }
+
+    h1 {
+      font-size: convertToVw(30px);
+      font-weight: 500;
+    }
+
+    @include mq_min_750 {
+      gap: 16px;
+      padding: 0 0 21px 35px;
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .booking-details-list {
+    .booking-details-item {
+      background-color: $white-color;
+      border-bottom: 2px solid $button-color-first;
+
+      .booking-details-line {
+        padding: convertToVw(29px) convertToVw(35px) convertToVw(23px) convertToVw(30px);
+        border-bottom: 2px solid $border-bottom-default;
+        @include flexbox(flex, space-between, center, nowrap);
+
+        .field {
+          flex: 1;
+          font-size: convertToVw(20px);
+          font-weight: 400;
+        }
+
+        .field.total {
+          @include font(convertToVw(26px), 500, convertToVw(16px));
+        }
+
+        .value {
+          line-height: convertToVw(42px);
+          flex: 2;
+          text-align: right;
+          font-size: convertToVw(24px);
+          font-weight: 500;
+        }
+
+        p.value {
+          @include flexbox(flex, flex-end, center, nowrap);
+          @include font(convertToVw(29px), 500, convertToVw(29px));
+
+          .note {
+            font-size: convertToVw(20px);
+            margin-left: convertToVw(6px);
+            line-height: convertToVw(24px);
+          }
+          .unit {
+            font-size: convertToVw(24px);
+            line-height: convertToVw(24px);
+          }
+        }
+
+        @include mq_min_750 {
+          padding: 29px 35px 23px 30px;
+
+          .field {
+            font-size: 20px;
+          }
+
+          .field.total {
+            @include font(26px, 500, 16px);
+          }
+
+          .value {
+            font-size: 24px;
+            line-height: 1.4;
+          }
+
+          p.value {
+            @include font(29px, 500, 29px);
+
+            .note {
+              font-size: 20px;
+              margin-left: 6px;
+              line-height: 24px;
+            }
+
+            .unit {
+              font-size: 24px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+
+      .booking-details-line:last-child {
+        border-bottom: none;
+      }
+
+      .red {
+        color: #c30d23;
+      }
+    }
+  }
+
+  .attention {
+    font-weight: 400;
+    font-size: convertToVw(20px);
+    margin-bottom: convertToVw(18px);
+
+    p {
+      line-height: convertToVw(27.5px);
+    }
+
+    @include mq_min_750 {
+      font-size: 20px;
+      margin-bottom: 18px;
+
+      p {
+        line-height: 27.5px;
+      }
+    }
+  }
+
+  .coupon-group {
+    padding: convertToVw(34px) convertToVw(28px);
+
+    @include mq_min_750 {
+      padding: 34px 28px;
+    }
+  }
+
+  .discount {
+    margin-bottom: convertToVw(32px);
+
+    @include mq_min_750 {
+      margin-bottom: 32px;
+    }
+
+    .discount-input-tag {
+      &::placeholder {
+        color: $placeholder-color;
+        font-weight: normal;
+      }
+    }
+
+    .discount-input {
+      padding: 0 convertToVw(27px) 0 convertToVw(28px);
+      gap: convertToVw(45px);
+      margin-bottom: convertToVw(31px);
+      @include flexbox(flex, space-between, center, nowrap);
+
+      @include mq_min_750 {
+        padding: 0 27px 0 28px;
+        gap: 45px;
+        margin-bottom: 31px;
+      }
+
+      .discount-input-tag {
+        margin: 0;
+        max-width: convertToVw(383px);
+
+        @include mq_min_750 {
+          max-width: 383px;
+        }
+      }
+
+      .btn {
+        height: 100%;
+        margin: 0;
+        color: $black-color;
+        font-weight: 500;
+        max-width: convertToVw(202px);
+        min-height: convertToVw(67px);
+        font-size: convertToVw(24px);
+
+        @include mq_min_750 {
+          max-width: 202px;
+          min-height: 67px;
+          font-size: 24px;
+        }
+      }
+    }
+
+    .discount-info-container {
+      margin-top: convertToVw(56px);
+
+      @include mq_min_750 {
+        margin-top: 56px;
+      }
+
+      .discount-info {
+        background-color: rgba(255, 240, 0, 0.16);
+        gap: convertToVw(80px);
+        padding: convertToVw(28px) convertToVw(16px) convertToVw(26px) convertToVw(20px);
+        @include flexbox(flex, flex-start, flex-start, nowrap);
+
+        img {
+          width: convertToVw(28px);
+          height: convertToVw(28px);
+        }
+
+        .info {
+          font-weight: 500;
+          font-size: convertToVw(24px);
+          line-height: convertToVw(40px);
+        }
+
+        @include mq_min_750 {
+          gap: 120px;
+          padding: 28px 20px 26px 20px;
+
+          img {
+            width: 28px;
+            height: 28px;
+          }
+
+          .info {
+            font-size: 24px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .discount-show {
+    margin-bottom: convertToVw(180px);
+
+    @include mq_min_750 {
+      margin-bottom: 180px;
+    }
+  }
+
+  .payment-container {
+    .payment {
+      border-top: 1px solid $border-bottom-default;
+      border-bottom: 2px solid $cr-allow;
+      padding: convertToVw(34px) convertToVw(8px) convertToVw(31px) convertToVw(19px);
+      @include flexbox(flex, space-between, center, nowrap);
+
+      .field {
+        flex: 1;
+        font-size: convertToVw(26px);
+        font-weight: 500;
+      }
+
+      .value {
+        flex: 1;
+        text-align: right;
+      }
+
+      div.value {
+        @include flexbox(flex, flex-end, flex-end, nowrap);
+        @include font(convertToVw(29px), 500, convertToVw(29px));
+
+        .note {
+          font-size: convertToVw(20px);
+          margin-left: convertToVw(6px);
+        }
+      }
+    }
+
+    @include mq_min_750 {
+      .payment {
+        padding: 34px 8px 31px 19px;
+
+        .field {
+          font-size: 26px;
+        }
+
+        div.value {
+          @include font(29px, 500, 29px);
+
+          .note {
+            font-size: 20px;
+            margin-left: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  .button-block {
+    gap: convertToVw(30px);
+    padding: 0 convertToVw(26px);
+    @include flexbox(flex, space-between, center, nowrap);
+
+    .ant-btn {
+      font-size: convertToVw(24px);
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .btn.ant-btn:nth-child(1) {
+      background-color: $button-disable;
+      color: $white-color;
+    }
+
+    .btn.ant-btn:nth-child(2) {
+      color: $black-color;
+    }
+
+    @include mq_min_750 {
+      gap: 30px;
+      padding: 0 26px;
+
+      .ant-btn {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .instruct {
+    padding: convertToVw(20px) convertToVw(20px) 0 convertToVw(20px);
+    margin-bottom: convertToVw(26px);
+
+    span {
+      font-size: convertToVw(20px);
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    @include mq_min_750 {
+      padding: 20px 20px 0 20px;
+      margin-bottom: 26px;
+
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .instruct-show {
+    margin-bottom: convertToVw(180px);
+
+    @include mq_min_750 {
+      margin-bottom: 180px;
+    }
+
+    a {
+      color: #036eb7;
+    }
+  }
+
+  .coupon-actions {
+    gap: convertToVw(30px);
+    margin-top: convertToVw(9px);
+    @include flexbox(flex, center, center, nowrap);
+
+    @include mq_min_750 {
+      gap: 30px;
+      margin-top: 9px;
+    }
+  }
+
+  .title-booking-price {
+    padding: 0 convertToVw(23px) convertToVw(21px) convertToVw(23px);
+
+    @include mq_min_750 {
+      padding: 0 23px 21px 23px;
+    }
+  }
+
+  .booking-date-time-line.booking-details-line {
+    .field {
+      flex: 1;
+    }
+
+    .value {
+      flex: 3;
+    }
+  }
+}

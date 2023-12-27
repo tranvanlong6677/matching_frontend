@@ -1,0 +1,138 @@
+.register-container {
+  .ant-form-item .ant-form-item-explain-error {
+    margin: convertToVw(17px) 0 convertToVw(16px);
+
+    font-weight: 500;
+
+    @include mq_min_750 {
+      margin: 17px 0 16px;
+    }
+  }
+
+  .title {
+    max-width: 100%;
+    text-align: center;
+    margin: convertToVw(83px) 0 convertToVw(44px) 0;
+
+    span {
+      font-weight: 600;
+      font-size: convertToVw(30px);
+    }
+
+    h1 {
+      font-weight: 500;
+      font-size: convertToVw(30px);
+    }
+
+    h1.register-title {
+      font-weight: 600;
+      font-size: convertToVw(30px);
+    }
+
+    @include mq_min_750 {
+      margin: 83px 0 44px 0;
+
+      span {
+        font-size: 30px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      h1.register-title {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .description {
+    text-align: center;
+    margin: 0 0 convertToVw(44px);
+
+    span {
+      font-size: convertToVw(25px);
+      font-weight: 300;
+      line-height: convertToVw(48px);
+    }
+
+    @include mq_min_750 {
+      margin: 0 0 44px;
+
+      span {
+        font-size: 26px;
+        line-height: 48px;
+      }
+    }
+  }
+  .email-register-input {
+    width: 100%;
+
+    input {
+      border: 1px solid $transparent-color;
+      margin: 0;
+      &::placeholder {
+        color: $placeholder-color;
+        font-weight: normal;
+      }
+    }
+
+    .block-input {
+      margin-top: convertToVw(44px);
+
+      @include mq_min_750 {
+        margin-top: 44px;
+      }
+
+      a {
+        @include flexbox(flex, center, center, nowrap);
+      }
+    }
+  }
+
+  .send {
+    display: block;
+    background-color: $ct-allow;
+    color: $white-color;
+  }
+
+  .send-disabled {
+    display: block;
+    background-color: #9b9c9c;
+    color: $white-color;
+    cursor: not-allowed;
+  }
+
+  .block-btn {
+    margin-top: convertToVw(344px);
+
+    @include mq_min_750 {
+      margin-top: 344px;
+    }
+  }
+
+  .employee {
+    .title-txt {
+      display: block;
+      text-align: center;
+      margin-bottom: convertToVw(33px);
+      font-size: convertToVw(30px);
+      font-weight: 500;
+    }
+
+    button {
+      margin-bottom: convertToVw(58px);
+    }
+
+    @include mq_min_750 {
+      .title-txt {
+        margin-bottom: 33px;
+        font-size: 30px;
+
+        button {
+          margin-bottom: 58px;
+        }
+      }
+    }
+  }
+}

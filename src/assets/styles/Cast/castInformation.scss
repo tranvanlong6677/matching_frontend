@@ -1,0 +1,105 @@
+.block-information {
+  text-align: start;
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+  .content {
+    .head-title.title-information-block .icon {
+      margin-left: convertToVw(16px);
+      @include mq_min_750 {
+        margin-left: 16px;
+      }
+    }
+
+    & .menu-content {
+      .head-title-info {
+        @include font(convertToVw(30px), 500, convertToVw(49px));
+        margin-left: convertToVw(16px);
+
+        @include mq_min_750 {
+          @include font(30px, null, 49px);
+          margin-left: 16px;
+        }
+      }
+      & .item-menu {
+        font-size: convertToVw(24px);
+
+        @include mq_min_750 {
+          font-size: 24px;
+        }
+
+        & li {
+          border-bottom: 1px solid $border-bottom-default;
+          @include font(convertToVw(24px), 400, convertToVw(50px));
+
+          @include mq_min_750 {
+            @include font(24px, null, 50px);
+          }
+
+          & a {
+            color: $black-color;
+            display: block;
+            position: relative;
+            padding: convertToVw(25.5px) 0 convertToVw(25.5px) convertToVw(30px);
+
+            @include mq_min_750 {
+              padding: 25.5px 0 25.5px 30px;
+            }
+
+            &::after {
+              content: url('../../../assets/images/mockup/icon-arrow.svg');
+              float: right;
+              transform: scale(0.6);
+
+              @include mq_min_576 {
+                transform: scale(1);
+              }
+            }
+          }
+        }
+      }
+      & .question-item {
+        @include font(convertToVw(24px), 400, convertToVw(50px));
+
+        & li {
+          border-bottom: 1px solid $border-bottom-default;
+          padding: convertToVw(21px) 0 convertToVw(27px);
+
+          &:last-child {
+            border-bottom: none;
+            padding-bottom: convertToVw(62px);
+          }
+
+          & a {
+            text-decoration: none;
+            color: $black-color;
+            font-weight: 500;
+          }
+        }
+
+        @include mq_min_750 {
+          @include font(24px, null, 50px);
+
+          & li {
+            padding: 21px 0 27px;
+
+            &:last-child {
+              padding-bottom: 62px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .block-info-btn {
+    display: flex;
+    margin-top: convertToVw(395px);
+
+    @include mq_min_750 {
+      margin-top: 395px;
+    }
+  }
+}

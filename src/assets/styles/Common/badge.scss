@@ -1,0 +1,29 @@
+.ant-badge .ant-badge-dot {
+  width: convertToVw(16px);
+  height: convertToVw(16px);
+  background-color: $btn-dot;
+
+  @include mq_min_750 {
+    width: 16px;
+    height: 16px;
+  }
+}
+.ant-space-item .ant-badge {
+  & .date {
+    @include font(convertToVw(24px), 400, convertToVw(38px));
+
+    @include mq_min_750 {
+      @include font(24px, null, 38px);
+    }
+  }
+
+  .name-rq {
+    margin-right: convertToVw(30px);
+    @include font(convertToVw(24px), 400, convertToVw(38px));
+
+    @include mq_min_750 {
+      margin-right: 30px;
+      @include font(24px, null, 38px);
+    }
+  }
+}

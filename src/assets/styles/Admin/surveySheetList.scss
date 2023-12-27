@@ -1,0 +1,117 @@
+.survey-sheetlist-wrapper {
+  .survey-title {
+    text-align: center;
+    margin: 10px 0 10px 0;
+  }
+
+  .th-question {
+    max-width: 140px;
+    padding: 10px;
+  }
+
+  .th-question.second {
+    max-width: 160px;
+  }
+
+  .th-question.fifth {
+    height: 100%;
+  }
+
+  .survey-satisfied {
+    border-left: 1.42px solid $bg-border-table !important;
+  }
+
+  th.survey-satisfied {
+    background-color: $th-bg-fa !important;
+    color: $primary-font-color !important;
+    border-left: 1px solid rgb(181, 181, 182) !important;
+  }
+
+  th.survey-sub-satisfied {
+    background-color: $th-bg-93 !important;
+    color: $primary-font-color !important;
+  }
+
+  th.survey-complaint {
+    background-color: $th-bg-72 !important;
+  }
+
+  .survey-q5 {
+    border-left: 1.42px solid $bg-border-table !important;
+  }
+
+  .ant-table-thead {
+    td.survey-q5 {
+      border-left: 1px solid rgb(181, 181, 182) !important;
+    }
+  }
+
+  .survey-actions {
+    @include flexbox(flex, center, center, nowrap);
+  }
+
+  .survey-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $primary-font-color;
+  }
+
+  .survey-vertical {
+    color: $primary-font-color !important;
+  }
+
+  .ant-table-cell.total {
+    background-color: $bg-brown-97;
+    color: $white-color;
+  }
+
+  .ant-table-wrapper .ant-table-tbody > tr.ant-table-row:hover > td.total {
+    background-color: $bg-brown-97 !important;
+  }
+
+  //  SET FONT
+  td.ant-table-cell {
+    font-size: 12px;
+  }
+
+  .chart-container {
+    margin-top: 60px;
+
+    .row {
+      @include flexbox(flex, space-around, center, nowrap);
+
+      .chart-component-wrapper {
+        margin-bottom: 38px;
+        width: 230px !important;
+
+        .title {
+          margin-bottom: 10px;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 16.5px;
+        }
+      }
+    }
+  }
+
+  .survey-sheetlist-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  //    CUSTOM ANTD
+  .ant-select-selector {
+    height: 36px !important;
+    align-items: center;
+  }
+
+  .survey-empty {
+    width: 230px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}

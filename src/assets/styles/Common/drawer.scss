@@ -1,0 +1,56 @@
+.drawer-wrapper {
+  position: relative;
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+  .content-bot {
+    .account-setting-element:first-child {
+      border-top: 1px solid $border-bottom-default;
+      padding-top: convertToVw(32px) !important;
+    }
+
+    .account-setting-element {
+      border-bottom-width: 1px !important;
+    }
+
+    @include mq_min_750 {
+      .account-setting-element:first-child {
+        padding-top: 32px !important;
+      }
+    }
+  }
+}
+
+.ant-drawer {
+  position: absolute;
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+  .ant-drawer-content-wrapper {
+    .ant-drawer-wrapper-body {
+      .customer-dashboard-block {
+        padding: 0;
+      }
+
+      .ant-drawer-header {
+        display: none;
+
+        .ant-drawer-header-title {
+          display: none;
+        }
+
+        .ant-drawer-extra {
+          width: 100%;
+          flex: 1;
+          @include flexbox(flex, space-between, center, nowrap);
+        }
+      }
+    }
+  }
+
+  .btn-account-setting {
+    margin-bottom: 0 !important;
+  }
+}

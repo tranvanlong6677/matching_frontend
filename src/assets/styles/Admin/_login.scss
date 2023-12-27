@@ -1,0 +1,72 @@
+.admin-login-wrapper#admin-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .ant-space-item {
+    width: 100%;
+  }
+
+  .admin-login-inner {
+    width: 30%;
+    margin-top: -10%;
+  }
+
+  .admin-login-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .admin-login-logo {
+    width: 60%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .admin-login-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4em;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 2px;
+  }
+
+  .admin-login-btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  label {
+    width: 200px;
+    font-size: 24px;
+  }
+
+  .form-item-group {
+    width: 100%;
+    display: flex;
+  }
+
+  .username.ant-input:focus {
+    border: 1px solid #4096ff;
+    box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+  }
+
+  .ant-form-item .ant-form-item-explain-error {
+    margin: 0;
+  }
+}

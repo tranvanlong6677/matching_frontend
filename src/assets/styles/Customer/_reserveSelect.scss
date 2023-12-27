@@ -1,0 +1,154 @@
+.reserve-select-container {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .ant-btn-primary:not(:disabled):active {
+    background-color: $button-disable !important;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: convertToVw(30px);
+    margin: 0 0 convertToVw(67px);
+
+    @include mq_min_750 {
+      font-size: 30px;
+      margin: 0 0 67px;
+    }
+  }
+
+  .service-info {
+    font-weight: 500;
+    border-bottom: 1px solid $border-user-color;
+    font-size: convertToVw(24px);
+    padding: 0 convertToVw(32px) convertToVw(34px) convertToVw(5px);
+    margin-bottom: convertToVw(41px);
+    @include flexbox(flex, space-between, center, nowrap);
+
+    @include mq_min_750 {
+      font-size: 24px;
+      padding: 0 32px 34px 5px;
+      margin-bottom: 41px;
+    }
+  }
+
+  .form-change {
+    padding-bottom: convertToVw(59px);
+    margin-bottom: convertToVw(33px);
+    border-bottom: 1px solid $border-user-color;
+
+    @include mq_min_750 {
+      padding-bottom: 59px;
+      margin-bottom: 33px;
+    }
+
+    .ant-form {
+      .change-employee-label {
+        margin-bottom: convertToVw(14px);
+        font-size: convertToVw(24px);
+        font-weight: 500;
+
+        @include mq_min_750 {
+          margin-bottom: 14px;
+          font-size: 24px;
+        }
+      }
+
+      .change-time-label {
+        font-weight: 500;
+        color: #c30d23;
+        margin-bottom: convertToVw(14px);
+        font-size: convertToVw(24px);
+
+        @include mq_min_750 {
+          margin-bottom: 14px;
+          font-size: 24px;
+        }
+      }
+
+      .ant-form-item {
+        .ant-form-item-control {
+          .ant-form-item-control-input {
+            .ant-form-item-control-input-content {
+              .ant-input {
+                font-size: convertToVw(24px);
+                font-weight: 500;
+
+                @include mq_min_750 {
+                  font-size: 24px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .ant-form-item:first-child {
+        margin-bottom: convertToVw(55px);
+
+        @include mq_min_750 {
+          margin-bottom: 55px;
+        }
+      }
+    }
+
+    .change-time-container {
+      .change-time-element {
+        margin-top: convertToVw(16px);
+
+        @include mq_min_750 {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+
+  .time-request {
+    font-weight: 500;
+    border-bottom: 1px solid $border-user-color;
+    padding: 0 convertToVw(32px) convertToVw(28px) convertToVw(7px);
+    margin-bottom: convertToVw(17px);
+    font-size: convertToVw(24px);
+    @include flexbox(flex, space-between, center, nowrap);
+
+    @include mq_min_750 {
+      padding: 0 32px 28px 7px;
+      margin-bottom: 17px;
+      font-size: 24px;
+    }
+  }
+
+  .instruct {
+    display: block;
+    font-weight: 500;
+    font-size: convertToVw(20px);
+    margin-bottom: convertToVw(184px);
+
+    @include mq_min_750 {
+      font-size: 20px;
+      margin-bottom: 184px;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #036eb7;
+    }
+  }
+
+  .button-block {
+    gap: convertToVw(28px);
+    @include flexbox(flex, space-between, center, nowrap);
+
+    @include mq_min_750 {
+      gap: 28px;
+    }
+
+    .btn {
+      background-color: $button-disable;
+      color: $white-color;
+    }
+  }
+}

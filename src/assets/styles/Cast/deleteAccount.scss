@@ -1,0 +1,121 @@
+.block-procedure {
+  .ant-checkbox-wrapper {
+    align-items: center;
+  }
+
+  .ant-checkbox .ant-checkbox-inner {
+    border-radius: convertToVw(9px);
+
+    @include mq_min_750 {
+      border-radius: 9px;
+    }
+  }
+
+  :where(.css-dev-only-do-not-override-1poc1a7).ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+    .ant-checkbox-checked:not(.ant-checkbox-disabled)
+    .ant-checkbox-inner {
+    border-color: $transparent-color !important;
+    background-color: $bg-color-input !important;
+  }
+
+  .ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner {
+    border-color: $transparent-color !important;
+    background-color: $bg-color-input !important;
+  }
+
+  .item-des-procedure {
+    @include textAlign(center);
+
+    .title-delete-item {
+      @include font(convertToVw(30px), 600, convertToVw(53.5px));
+      margin-bottom: convertToVw(43px);
+
+      @include mq_min_750 {
+        @include font(30px, null, 53.5px);
+        margin-bottom: 43px;
+      }
+    }
+    .des-procedure {
+      margin-top: convertToVw(40px);
+
+      @include mq_min_750 {
+        margin-top: 40px;
+      }
+    }
+
+    & .check-term {
+      @include flexbox(flex, center, center, null);
+      margin-top: convertToVw(28px);
+      @include font(convertToVw(24px), 300, convertToVw(46px));
+
+      @include mq_min_750 {
+        margin-top: 28px;
+        @include font(24px, 300, 46px);
+      }
+    }
+  }
+  .text-delete-account {
+    @include font(convertToVw(26px), 400, convertToVw(46px));
+
+    @include mq_min_750 {
+      @include font(26px, 400, 46px);
+    }
+  }
+  .check-term {
+    @include flexbox(flex, center, center, null);
+    margin-top: convertToVw(28px);
+    @include font(convertToVw(24px), 300, convertToVw(46px));
+
+    @include mq_min_750 {
+      column-gap: 10px;
+      margin-top: 28px;
+      @include font(24px, 300, 46px);
+    }
+
+    .ant-checkbox-wrapper {
+      column-gap: convertToVw(10px);
+    }
+
+    & span {
+      @include font(convertToVw(24px), 400, convertToVw(46px));
+
+      @include mq_min_750 {
+        @include font(24px, 400, 46px);
+      }
+    }
+
+    & .checkbox-button {
+      background-color: $bg-color-input;
+      border: none;
+      border-radius: convertToVw(9px);
+      width: convertToVw(57px);
+      height: convertToVw(56px);
+
+      @include mq_min_750 {
+        border-radius: 9px;
+        width: 57px;
+        height: 56px;
+      }
+    }
+  }
+}
+
+.block-btn-produce {
+  margin-top: convertToVw(390px);
+  display: flex;
+  width: 100%;
+  column-gap: convertToVw(15px);
+
+  @include mq_min_750 {
+    margin-top: 390px;
+    column-gap: 15px;
+  }
+
+  .btn {
+    color: $white-color;
+  }
+
+  .btn.isCustomerDelete {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,272 @@
+.booking-container {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .title {
+    @include flexbox(flex, flex-start, center, nowrap);
+    border-bottom: 2px solid $button-color-first;
+
+    padding: 0 convertToVw(22px) convertToVw(28px);
+    margin-bottom: convertToVw(48px);
+
+    gap: convertToVw(12px);
+
+    img {
+      width: convertToVw(26px);
+      height: convertToVw(26px);
+    }
+
+    h1 {
+      font-size: convertToVw(30px);
+      line-height: convertToVw(30px);
+      font-weight: 500;
+    }
+
+    @include mq_min_750 {
+      padding: 0 22px 28px;
+      margin-bottom: 48px;
+
+      gap: 12px;
+
+      img {
+        width: 26px;
+        height: 26px;
+      }
+
+      h1 {
+        font-size: 30px;
+        line-height: 49px;
+      }
+    }
+  }
+  .question {
+    .question-title {
+      padding: 0 convertToVw(22px);
+      margin-bottom: convertToVw(19px);
+
+      font-weight: 400;
+      font-size: convertToVw(30px);
+      line-height: convertToVw(45px);
+
+      @include mq_min_750 {
+        padding: 0 22px;
+        margin-bottom: 19px;
+
+        font-size: 30px;
+        line-height: 45px;
+      }
+    }
+
+    .instruct {
+      display: block;
+      padding: 0 convertToVw(16px);
+      margin-bottom: convertToVw(46px);
+
+      font-weight: 400;
+      letter-spacing: convertToVw(-2.4px);
+      font-size: convertToVw(21px);
+
+      @include mq_min_750 {
+        margin-bottom: 46px;
+        padding: 0 16px;
+
+        letter-spacing: -2.4px;
+        font-size: 24px;
+      }
+    }
+    .ant-form {
+      padding: 0 convertToVw(22px);
+
+      .ant-form-item {
+        margin-bottom: convertToVw(30px);
+      }
+
+      .ant-form-item:nth-child(3) {
+        margin-bottom: convertToVw(73px);
+      }
+
+      .ant-form-item:last-child {
+        margin-bottom: 0;
+
+        .ant-btn {
+          color: $black-color;
+          background-color: $button-color-first;
+
+          max-width: convertToVw(630px);
+
+          font-size: convertToVw(24px);
+        }
+      }
+
+      @include mq_min_750 {
+        padding: 0 22px;
+
+        .ant-form-item {
+          margin-bottom: 30px;
+        }
+
+        .ant-form-item:nth-child(3) {
+          margin-bottom: 73px;
+        }
+
+        .ant-form-item:last-child {
+          .ant-btn {
+            max-width: 630px;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .checkbox-custom {
+      width: convertToVw(44px);
+      height: convertToVw(44px);
+
+      @include mq_min_750 {
+        width: 44px;
+        height: 44px;
+      }
+    }
+  }
+
+  .button-block {
+    .ant-btn {
+      background-color: $button-disable;
+      color: $white-color;
+
+      font-weight: 500;
+      font-size: convertToVw(24px);
+
+      @include mq_min_750 {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .ant-btn-primary:not(:disabled):active {
+    background-color: $button-color-first !important;
+  }
+}
+
+.form-calendar-request {
+  .choose-service-form {
+    min-height: convertToVw(700px);
+
+    @include mq_min_750 {
+      min-height: 700px;
+    }
+
+    .checkbox-wrapper {
+      .checkbox-custom {
+        width: convertToVw(55px);
+        height: convertToVw(55px);
+
+        @include mq_min_750 {
+          width: 55px;
+          height: 55px;
+        }
+      }
+    }
+  }
+
+  .ant-checkbox-group {
+    display: block;
+  }
+
+  .choose-service-bottom {
+    span {
+      color: $white-color;
+    }
+
+    .btn-request {
+      margin-top: convertToVw(220px);
+
+      @include mq_min_750 {
+        margin-top: 220px;
+      }
+    }
+  }
+
+  .btn-calendar-request {
+    & .btn-calendar {
+      background-color: #ffcc00;
+
+      width: convertToVw(630px);
+      height: convertToVw(80px);
+
+      border-radius: convertToVw(40px);
+
+      @include font(convertToVw(24px), 400, convertToVw(42px));
+
+      @include mq_min_750 {
+        width: 630px;
+        height: 80px;
+        border-radius: 40px;
+
+        @include font(24px, 400, 42px);
+      }
+    }
+    .button-block {
+      color: $black-color-v2;
+    }
+  }
+  .service-detail {
+    background-color: $bg-color-input;
+    width: 100%;
+    height: 100%;
+    max-height: convertToVw(361px);
+    margin-bottom: convertToVw(75px);
+    padding: convertToVw(33px) convertToVw(30.75px) convertToVw(33px) convertToVw(30.75px);
+
+    @include mq_min_750 {
+      max-height: 361px;
+      margin-bottom: 75px;
+      padding: 33px 25px 33px 25px;
+    }
+
+    .service-detail-title {
+      display: flex;
+      margin-bottom: convertToVw(28px);
+
+      img {
+        width: convertToVw(54px);
+        height: convertToVw(54px);
+      }
+
+      h2 {
+        display: flex;
+        align-items: center;
+        margin-left: convertToVw(20px);
+        @include font(convertToVw(26px), 400, convertToVw(43px));
+      }
+
+      @include mq_min_750 {
+        margin-bottom: 28px;
+
+        img {
+          width: 54px;
+          height: 54px;
+        }
+
+        h2 {
+          margin-left: 20px;
+          @include font(26px, 400, 43px);
+        }
+      }
+    }
+
+    .service-detail-description {
+      min-height: convertToVw(238px);
+
+      @include font(convertToVw(20px), 300, convertToVw(44px));
+
+      @include mq_min_750 {
+        min-height: 238px;
+        @include font(24px, 300, 44px);
+      }
+    }
+  }
+}

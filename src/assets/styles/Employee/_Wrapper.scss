@@ -1,0 +1,77 @@
+.wrapper {
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Hiragino Sans', sans-serif;
+  background-color: rgba($color: #d9c8a1, $alpha: 0.2);
+  max-width: convertToVw(1000px);
+
+  @include mq_min_750 {
+    max-width: 1000px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .input-global,
+  .select-global {
+    max-width: convertToVw(630px);
+    margin: 0 auto convertToVw(21px);
+
+    @include mq_min_750 {
+      max-width: 630px;
+      margin: 0 auto 21px;
+    }
+  }
+}
+
+.login-container {
+  max-width: convertToVw(610px);
+  margin: 0 auto;
+
+  @include mq_min_750 {
+    max-width: 610px;
+  }
+}
+
+.wrapper-login {
+  min-height: 100vh;
+  background-image: url(../../images/png/background-login.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .btn-login-container-bottom {
+    button {
+      cursor: pointer;
+    }
+  }
+}
+
+.container-680 {
+  margin: 0 auto;
+  max-width: convertToVw(680px);
+  padding: 0 0 convertToVw(120px);
+
+  @include mq_min_750 {
+    max-width: 680px;
+    padding: 0 0 120px;
+  }
+}
+
+.container-680.container-mp {
+  position: relative;
+}
+
+.container-630 {
+  margin: 0 auto;
+  max-width: convertToVw(630px);
+  padding: 0 0 convertToVw(120px);
+
+  @include mq_min_750 {
+    max-width: 630px;
+    padding: 0 0 120px;
+  }
+}

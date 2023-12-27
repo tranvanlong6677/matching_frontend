@@ -1,0 +1,114 @@
+.confirm-hearing-container {
+  margin-top: convertToVw(68px);
+
+  @include mq_min_750 {
+    margin-top: 68px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .head-title {
+    margin-left: convertToVw(-13px);
+
+    @include mq_min_750 {
+      margin-left: 0px;
+    }
+  }
+
+  & .text-rule {
+    width: 100%;
+    margin-top: convertToVw(10px);
+    text-align: center !important;
+    @include font(convertToVw(26px), normal, convertToVw(46px));
+
+    @include mq_min_750 {
+      margin-top: 10px;
+      @include font(26px, normal, 46px);
+    }
+  }
+
+  & .item-confirm {
+    width: 100%;
+    margin-top: convertToVw(96px);
+    border-bottom: 1px solid $border-user-color;
+    @include font(convertToVw(24px), 300, convertToVw(42px));
+
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+
+    @include mq_min_750 {
+      margin-top: 96px;
+      @include font(24px, null, 42px);
+    }
+
+    & .confirm-description {
+      padding: convertToVw(30px) convertToVw(10px) convertToVw(44px) convertToVw(20px);
+      @include flexbox(flex, space-between, null, null);
+
+      @include mq_min_750 {
+        padding: 30px 10px 44px 20px;
+      }
+
+      span:first-child {
+        flex: 2.55;
+      }
+
+      span:last-child {
+        flex: 1;
+      }
+    }
+
+    p {
+      display: block;
+      padding: 0 convertToVw(20px);
+
+      @include mq_min_750 {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .block-btn-info {
+    margin: convertToVw(250px) 0 0 0;
+    gap: convertToVw(30px);
+    @include flexbox(flex, space-between, center, nowrap);
+
+    .btn {
+      margin: 0;
+    }
+
+    @include mq_min_750 {
+      gap: 30px;
+      margin: 250px 0 0 0;
+    }
+
+    .btn {
+      color: $white-color;
+
+      &:nth-child(2) {
+        color: $black-color;
+      }
+    }
+  }
+}
+.hearing-confirm-title {
+  font-weight: 500;
+  font-size: convertToVw(30px);
+  line-height: convertToVw(49.5px);
+  margin-top: convertToVw(80px);
+  padding: 0 convertToVw(44px);
+
+  @include mq_min_750 {
+    padding: 0 53px;
+    font-size: 30px;
+    line-height: 49.5px;
+    margin-top: 80px;
+  }
+
+  @include mq_min_900 {
+    padding: 0 160px;
+  }
+}

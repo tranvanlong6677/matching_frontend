@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "label": "Ba Dinh - Ha Noi",
+    "bankId": 1,
+    "value":"Ba Dinh"
+  },
+  {
+    "id": 2,
+    "label": "Dong Da - Ha Noi",
+    "bankId": 1,
+    "value":"Dong Da"
+  },
+  {
+    "id": 3,
+    "label": "Thanh Xuan - Ha Noi",
+    "bankId": 1,
+    "value":"Thanh Xuan"
+  },
+  {
+    "id": 4,
+    "label": "Gia Lam - Ha Noi",
+    "bankId": 2,
+    "value":"Gia Lam"
+  },
+  {
+    "id": 5,
+    "label": "Thanh Tri - Ha Noi",
+    "bankId": 2,
+    "value":"Thanh Tri"
+  },
+  {
+    "id": 6,
+    "label": "Hoang Mai - Ha Noi",
+    "bankId": 2,
+    "value":"Hoang Mai"
+  },
+  {
+    "id": 7,
+    "label": "Nam Tu Liem - Ha Noi",
+    "bankId": 3,
+    "value":"Nam Tu Liem"
+  },
+  {
+    "id": 8,
+    "label": "Bac Tu Liem - Ha Noi",
+    "bankId": 3,
+    "value":"Bac Tu Liem"
+  },
+  {
+    "id": 9,
+    "label": "Tay Ho - Ha Noi",
+    "bankId": 3,
+    "value":"Tay Ho"
+  },
+  {
+    "id": 10,
+    "label": "Ha Dong - Ha Noi",
+    "bankId": 4,
+    "value":"Ha Dong"
+  },
+  {
+    "id": 11,
+    "label": "Hoan Kiem - Ha Noi",
+    "bankId": 4,
+    "value":"Hoan Kiem"
+  },
+  {
+    "id": 12,
+    "label": "Hai Ba Trung - Ha Noi",
+    "bankId": 4,
+    "value":"Hai Ba Trung"
+  },
+  {
+    "id": 13,
+    "label": "Cau Giay - Ha Noi",
+    "bankId": 5,
+    "value":"Cau Giay"
+  },
+  {
+    "id": 14,
+    "label": "Long Bien - Ha Noi",
+    "bankId": 5,
+    "value":"Long Bien"
+  },
+  {
+    "id": 15,
+    "label": "Son Tay - Ha Noi",
+    "bankId": 5,
+    "value":"Son Tay"
+  },
+  {
+    "id": 16,
+    "label": "Ba Vi - Ha Noi",
+    "bankId": 6,
+    "value":"Ba Vi"
+  },
+  {
+    "id": 17,
+    "label": "My Dinh - Ha Noi",
+    "bankId": 6,
+    "value":"My Dinh"
+  },
+  {
+    "id": 18,
+    "label": "Thuong Tin - Ha Noi",
+    "bankId": 6,
+    "value":"Thuong Tin"
+  }
+]

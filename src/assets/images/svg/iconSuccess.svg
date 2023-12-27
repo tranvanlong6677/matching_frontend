@@ -1,0 +1,64 @@
+ <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+            <path
+              id="Path_157"
+              data-name="Path 157"
+              d="M3133.036,5934.822h3.893a1.175,1.175,0,0,0,1.058-.665l.536-1.111a6.4,6.4,0,0,1,5.762-3.62h.343a7.828,7.828,0,0,0,4.974-1.784l1.3-1.071a6.31,6.31,0,0,0,1.842-2.51l.415-1.025a1.26,1.26,0,0,1,1.167-.788h0a1.26,1.26,0,0,1,1.26,1.26v1.664a7.416,7.416,0,0,1-2.53,5.579h0"
+              transform="translate(-3124.833 -5914.17)"
+              fill="none"
+              stroke="#000"
+              stroke-miterlimit="10"
+              stroke-width="1"
+            />
+            <path
+              id="Path_158"
+              data-name="Path 158"
+              d="M3145.547,5932.3h13.9a2.179,2.179,0,0,1,2.178,2.179h0a2.177,2.177,0,0,1-2.178,2.178H3152"
+              transform="translate(-3124.833 -5914.17)"
+              fill="none"
+              stroke="#000"
+              stroke-miterlimit="10"
+              stroke-width="1"
+            />
+            <path
+              id="Path_159"
+              data-name="Path 159"
+              d="M3152,5936.654h6.842a2.179,2.179,0,0,1,2.178,2.179h0a2.178,2.178,0,0,1-2.178,2.178H3152"
+              transform="translate(-3124.833 -5914.17)"
+              fill="none"
+              stroke="#000"
+              stroke-miterlimit="10"
+              stroke-width="1"
+            />
+            <path
+              id="Path_160"
+              data-name="Path 160"
+              d="M3152,5941.011h6.235a2.179,2.179,0,0,1,2.179,2.179h0a2.178,2.178,0,0,1-2.179,2.178H3152"
+              transform="translate(-3124.833 -5914.17)"
+              fill="none"
+              stroke="#000"
+              stroke-miterlimit="10"
+              stroke-width="1"
+            />
+            <path
+              id="Path_161"
+              data-name="Path 161"
+              d="M3152,5945.368h3.3a2.179,2.179,0,0,1,2.178,2.179h0a2.178,2.178,0,0,1-2.178,2.178h-12.369l-6.254-2.881h-3.647"
+              transform="translate(-3124.833 -5914.17)"
+              fill="none"
+              stroke="#000"
+              stroke-miterlimit="10"
+              stroke-width="1"
+            />
+            <circle
+              id="Ellipse_60"
+              data-name="Ellipse 60"
+              cx="23"
+              cy="23"
+              r="23"
+              transform="translate(0.5 0.5)"
+              fill="none"
+              stroke="#000"
+              stroke-miterlimit="10"
+              stroke-width="1"
+            />
+          </svg>

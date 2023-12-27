@@ -1,0 +1,13 @@
+api - Call api
+assets - Images, Styles
+components - Components dùng chung
+config - định nghĩa path routes
+helper - viết function commom
+hooks - custom hooks
+layouts - config components Layout
+modules - viết các children component cho pages
+redux: 
+    + services: viết Slice
+    + store: đăng ký reducer
+types - Viết types cho typescript
+utils: một số data hardcode 

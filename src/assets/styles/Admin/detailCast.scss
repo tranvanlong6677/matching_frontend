@@ -1,0 +1,166 @@
+.detail-cast-wrapper {
+  .navigate {
+    margin-top: 28px;
+
+    span {
+      color: #679dc9;
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  .salary-hour {
+    justify-content: flex-start;
+    margin: 30px 0;
+
+    .block-detail {
+      margin: 0 20px;
+
+      .btn-save-detail {
+        padding: 6px 12px;
+      }
+    }
+
+    input {
+      height: 100%;
+
+      &::placeholder {
+        font-weight: normal;
+        color: $black-color;
+      }
+    }
+  }
+
+  .ant-table-wrapper {
+    margin-top: 12px;
+  }
+
+  .block-table .ant-table-wrapper {
+    margin-top: 0;
+  }
+
+  .title-month {
+    display: inline-block;
+    margin-top: 45px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .table-calendar-current-month {
+    .ant-table-cell {
+      height: 30px !important;
+    }
+  }
+}
+
+.interview-notes {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 400;
+
+  .title {
+    background-color: #a28f80;
+    color: $white-color;
+    padding: 10px;
+  }
+  .interview-notes-content {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+
+    .textarea-content-detail,
+    textarea {
+      width: 100%;
+      min-height: 80px;
+      padding: 10px;
+      border: none;
+      overflow: auto;
+      outline: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      resize: none;
+    }
+
+    button,
+    .redact {
+      border: none;
+      background-color: $transparent-color;
+      position: absolute;
+      right: 20px;
+      top: 14px;
+      color: #036eb8;
+      cursor: pointer;
+      text-decoration: underline;
+      @include font(14px, 400, 18px);
+    }
+  }
+}
+
+.admin-input-group {
+  width: 100%;
+  @include flexbox(flex, null, center, nowrap);
+
+  .admin-input-item {
+    flex: 1;
+    flex-shrink: 1;
+    max-width: calc(100% / 4);
+    margin: 0;
+    position: relative;
+  }
+}
+
+.admin-input-group.cast-bottom,
+.admin-input-group.salary-hour {
+  .admin-input-item {
+    .admin-listct-label {
+      max-width: 130px;
+    }
+  }
+}
+
+.detail-cast-wrapper,
+.customer-detail-content {
+  .ant-table-cell {
+    word-break: break-all;
+
+    span {
+      @include flexbox(flex, flex-start, flex-start, null);
+      height: 100%;
+    }
+
+    .btn-icon-dropdown {
+      height: 100%;
+      @include flexbox(flex, space-between, flex-start, nowrap);
+
+      span {
+        margin-top: 0;
+      }
+
+      .ant-dropdown-trigger {
+        background-color: #e4e4e4;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        border-radius: 2px;
+        margin-top: 10px;
+        cursor: pointer;
+        @include flexbox(flex, center, center, null);
+      }
+    }
+  }
+
+  .navigate {
+    margin-top: 28px;
+  }
+}
+
+.underline {
+  .name-assign {
+    span {
+      margin-top: 0;
+    }
+  }
+}

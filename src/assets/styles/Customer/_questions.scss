@@ -1,0 +1,119 @@
+.questions-wrapper {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .questions-title {
+    border-bottom: 2px solid $button-color-first;
+    gap: convertToVw(12px);
+    padding: 0 convertToVw(22px) convertToVw(28px) convertToVw(20px);
+    @include flexbox(flex, flex-start, center, nowrap);
+
+    .icon {
+      img {
+        width: convertToVw(26px);
+        height: convertToVw(26px);
+      }
+    }
+
+    .title {
+      font-weight: 500;
+      font-size: convertToVw(30px);
+      line-height: convertToVw(49px);
+    }
+
+    @include mq_min_750 {
+      gap: 12px;
+      padding: 0 22px 28px 20px;
+
+      .icon {
+        img {
+          width: 26px;
+          height: 26px;
+        }
+      }
+
+      .title {
+        font-size: 30px;
+        line-height: 49px;
+      }
+    }
+  }
+
+  .questions-list {
+    min-height: convertToVw(600px);
+
+    .questions-element {
+      cursor: pointer;
+      font-weight: 400;
+      border-bottom: 1px solid $border-bottom-default;
+      padding: convertToVw(33px) convertToVw(23px) convertToVw(31px) convertToVw(20px);
+      line-height: convertToVw(38px);
+      font-size: convertToVw(24px);
+      @include flexbox(flex, space-between, center, nowrap);
+
+      .text {
+        flex: 1;
+        display: flex;
+
+        .date {
+          flex: 1;
+          max-width: convertToVw(180px);
+        }
+      }
+
+      .status {
+        margin-left: convertToVw(15px);
+        color: $bg-btn-add-hour;
+      }
+
+      .status-unanswered {
+        color: #c30d23 !important;
+      }
+    }
+
+    .empty {
+      display: block;
+      font-weight: 500;
+      padding: convertToVw(48px) convertToVw(24px) 0;
+      font-size: convertToVw(24px);
+      line-height: convertToVw(38px);
+    }
+
+    @include mq_min_750 {
+      min-height: 600px;
+
+      .questions-element {
+        padding: 33px 23px 31px 20px;
+        line-height: 38px;
+        font-size: 24px;
+
+        .text {
+          .date {
+            max-width: 180px;
+          }
+        }
+
+        .status {
+          margin-left: 15px;
+        }
+      }
+
+      .empty {
+        padding: 48px 24px 0;
+        font-size: 24px;
+        line-height: 38px;
+      }
+    }
+  }
+
+  .button-block {
+    margin: convertToVw(60px) 0 0;
+
+    @include mq_min_750 {
+      margin: 60px 0 0;
+    }
+  }
+}

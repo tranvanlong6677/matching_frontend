@@ -1,0 +1,6 @@
+@use 'sass:math';
+
+@function convertToVw($px, $metric: 'vw', $break-point: 7.5px) {
+  $result: #{math.div($px, $break-point) + $metric};
+  @return $result;
+}

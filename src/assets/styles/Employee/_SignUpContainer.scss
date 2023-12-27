@@ -1,0 +1,752 @@
+.signup-container {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .signup-container-content {
+    margin: 0 auto;
+    max-width: convertToVw(630px);
+
+    @include mq_min_750 {
+      max-width: 630px;
+    }
+  }
+
+  .star-label {
+    color: $btn-dot;
+  }
+
+  .checkbox-wrapper {
+    margin-top: 0px;
+
+    @include mq_min_750 {
+      margin-left: 0px;
+    }
+  }
+
+  textarea::placeholder {
+    color: $placeholder-color;
+  }
+
+  #description {
+    min-height: convertToVw(360px);
+
+    @include mq_min_750 {
+      min-height: 360px;
+    }
+  }
+
+  .head-title {
+    border-bottom: 2px solid $button-color-first;
+    padding: 0 convertToVw(25px) convertToVw(28px);
+
+    @include font(convertToVw(30px), 500, convertToVw(49px));
+
+    @include mq_min_750 {
+      padding: 0 25px 28px;
+      @include font(30px, null, 49px);
+    }
+  }
+
+  .signup-form {
+    .head {
+      display: block;
+      color: $btn-dot;
+      text-align: right;
+
+      margin: convertToVw(34px) 0 convertToVw(10px);
+
+      font-weight: 500;
+      font-size: 14px;
+
+      span {
+        font-size: convertToVw(18px);
+      }
+
+      @include mq_min_750 {
+        margin: 34px 0 10px 0;
+
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .block-passwd {
+      position: relative;
+    }
+
+    form {
+      .form-group {
+        position: relative;
+
+        @include mq_min_750 {
+          margin-bottom: 16px;
+        }
+
+        .star {
+          position: absolute;
+          color: $btn-dot;
+
+          left: convertToVw(20px);
+          top: convertToVw(34px);
+
+          font-size: convertToVw(24px);
+
+          @include mq_min_750 {
+            left: 20px;
+            top: 34px;
+            font-size: 24px;
+          }
+        }
+
+        input {
+          &::placeholder {
+            color: $placeholder-color;
+            font-size: convertToVw(24px);
+            font-weight: normal;
+
+            @include mq_min_750 {
+              font-size: 24px;
+            }
+          }
+        }
+
+        .select {
+          padding-right: convertToVw(36px);
+          font-size: convertToVw(24px);
+
+          @include mq_min_750 {
+            padding-right: 36px;
+            font-size: 24px;
+          }
+        }
+
+        .postal_code {
+          padding-right: convertToVw(16px);
+          max-width: convertToVw(212px);
+
+          input {
+            margin-right: convertToVw(10px);
+          }
+
+          @include mq_min_750 {
+            padding-right: 16px;
+            max-width: 212px;
+
+            input {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+      .form-group-textarea {
+        position: relative;
+
+        .ant-form-item-label {
+          position: absolute;
+          z-index: 1;
+
+          line-height: convertToVw(42px);
+          top: convertToVw(28px);
+          left: convertToVw(30px);
+
+          label {
+            color: $placeholder-color !important;
+            font-weight: 500;
+            font-size: convertToVw(24px) !important;
+          }
+
+          @include mq_min_750 {
+            line-height: 42px;
+            top: 35px;
+            left: 30px;
+
+            label {
+              font-weight: 500;
+              font-size: 24px !important;
+
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+
+        textarea {
+          padding: convertToVw(80px) convertToVw(30px) convertToVw(32px);
+          min-height: convertToVw(360px);
+          margin-bottom: convertToVw(40px);
+
+          @include mq_min_750 {
+            padding: 80px 30px 32px;
+            min-height: 360px;
+            margin-bottom: 40px;
+          }
+        }
+      }
+
+      .input-password {
+        position: relative;
+
+        img {
+          position: absolute;
+          width: convertToVw(40px);
+          top: convertToVw(calc(50% - 26px));
+          right: convertToVw(37px);
+
+          @include mq_min_750 {
+            width: 40px;
+            top: calc(50% - 26px);
+            right: 37px;
+          }
+        }
+      }
+
+      .form-checkbox {
+        @include flexbox(flex, right, center, nowrap);
+        position: absolute;
+        right: 0;
+        top: convertToVw(120px);
+        column-gap: convertToVw(10px);
+
+        input {
+          width: convertToVw(20px);
+          height: convertToVw(20px);
+          margin: 0 auto;
+        }
+
+        span {
+          font-size: convertToVw(20px);
+          font-weight: 400;
+        }
+
+        @include mq_min_750 {
+          top: 120px;
+          column-gap: 10px;
+
+          input {
+            accent-color: $bg-color-input;
+            width: 20px;
+            height: 20px;
+            margin: 0 4px 0 0;
+          }
+
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .form-checkbox-error-password-confirm {
+        margin-top: convertToVw(-50px);
+
+        @include mq_min_750 {
+          margin-top: -65px;
+        }
+      }
+
+      .form-checkbox-error-password {
+        margin-top: convertToVw(-85px);
+        margin-bottom: convertToVw(65px);
+
+        @include mq_min_750 {
+          margin-bottom: 65px;
+          margin-top: -100px;
+        }
+      }
+
+      .form-check-gender {
+        .ant-form-item {
+          padding: 0;
+
+          @include mq_min_750 {
+            padding: 0 16px;
+          }
+
+          .checkbox-wrapper {
+            @include flexbox(flex, center, center, nowrap);
+            gap: 0;
+
+            .checkbox-item {
+              margin-right: convertToVw(40px);
+
+              @include mq_min_750 {
+                margin-right: 40px;
+              }
+            }
+          }
+
+          .ant-form-item-control-input-content {
+            display: flex;
+
+            .checkbox-wrapper {
+              & label {
+                margin-left: convertToVw(10px);
+                @include font(convertToVw(24px), 400, convertToVw(32px));
+              }
+
+              @include mq_min_750 {
+                & label {
+                  margin-left: 10px;
+                  @include font(24px, null, 32px);
+                }
+
+                .checkbox-item {
+                  margin-right: 40px;
+
+                  &:last-child {
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .dob {
+        width: 100%;
+        flex-direction: row;
+        max-width: $width-input;
+        margin: convertToVw(36px) 0 convertToVw(22px) 0;
+        @include flexbox(flex, center, center, nowrap);
+
+        @include mq_min_750 {
+          flex-direction: row;
+          align-items: center;
+          margin: 36px 0 22px;
+        }
+
+        label {
+          width: 100%;
+          color: $border-bottom-v2;
+          margin-left: convertToVw(16px);
+          max-width: convertToVw(108px);
+          font-size: convertToVw(24px);
+
+          @include mq_min_750 {
+            margin-left: 16px;
+            max-width: 108px;
+            font-size: 24px;
+          }
+
+          span {
+            font-weight: 500;
+          }
+        }
+
+        .dob-input {
+          @include flexbox(flex, center, center, nowrap);
+          margin: convertToVw(10px) 0 0 convertToVw(16px);
+
+          @include mq_min_750 {
+            margin: 10px 0 0 16px;
+          }
+
+          .dob-element {
+            @include flexbox(flex, flex-start, center, nowrap);
+
+            span {
+              color: $black-color;
+            }
+
+            input {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              text-align: center;
+              height: convertToVw($height-input);
+              max-width: convertToVw(119px);
+
+              &::placeholder {
+                font-size: convertToVw(24px);
+                color: $placeholder-color;
+                font-weight: normal;
+              }
+
+              @include mq_min_750 {
+                height: $height-input;
+                max-width: 119px;
+
+                &::placeholder {
+                  font-size: 24px;
+                  color: $placeholder-color;
+                }
+              }
+            }
+          }
+
+          .dob-element:nth-child(1) {
+            input {
+              width: 100%;
+              max-width: convertToVw(147px);
+
+              @include mq_min_750 {
+                max-width: 147px;
+              }
+            }
+          }
+
+          .dob-element:nth-child(3) {
+            span {
+              margin: 0 0 0 convertToVw(10px);
+
+              @include mq_min_750 {
+                margin: 0 0 0 10px;
+              }
+            }
+          }
+
+          span {
+            color: $border-bottom-v2;
+            margin: 0 convertToVw(10px);
+            font-size: convertToVw(24px);
+
+            @include mq_min_750 {
+              margin: 0 10px;
+              font-size: 24px;
+            }
+          }
+        }
+      }
+
+      .note.letter-phone {
+        margin-top: convertToVw(3.5px);
+
+        @include mq_min_750 {
+          margin-top: 3.5px;
+        }
+      }
+
+      .note {
+        width: 100%;
+        text-align: left;
+        margin-bottom: convertToVw(30px);
+        line-height: convertToVw(29px);
+        font-size: convertToVw(20px);
+        margin-top: convertToVw(35px);
+        letter-spacing: -1px;
+        white-space: nowrap;
+
+        @include mq_min_750 {
+          margin-bottom: 30px;
+          line-height: 29px;
+          font-size: 20px;
+          margin-top: 35px;
+        }
+      }
+
+      .age-note {
+        color: #e30012;
+        text-align: left;
+        font-weight: 500;
+        margin-bottom: convertToVw(45px);
+        font-size: convertToVw(20px);
+        display: flex;
+        flex-direction: column;
+
+        .error-age {
+          order: 2;
+        }
+
+        @include mq_min_750 {
+          margin-bottom: 45px;
+          font-size: 20px;
+        }
+      }
+
+      .gender {
+        margin-left: convertToVw(16px);
+
+        @include flexbox(flex, flex-start, center, nowrap);
+        width: 100%;
+        font-size: convertToVw(24px);
+
+        @include mq_min_750 {
+          gap: 52px;
+          margin-left: 16px;
+          font-size: 24px;
+          width: 100%;
+        }
+
+        .label {
+          flex: 1;
+          color: $border-bottom-v2;
+          font-size: convertToVw(24px);
+          max-width: convertToVw(108px);
+          width: 100%;
+
+          @include mq_min_750 {
+            font-size: 24px;
+            max-width: 108px;
+          }
+
+          span {
+            font-weight: 500;
+          }
+        }
+      }
+
+      .error-bank {
+        .text-danger {
+          font-weight: 500;
+          font-size: convertToVw(20px);
+          line-height: convertToVw(35px);
+
+          @include mq_min_750 {
+            font-size: 20px;
+            line-height: 35px;
+          }
+        }
+      }
+
+      .auto-search-container {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: convertToVw(26px);
+        gap: convertToVw(16px);
+
+        .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(
+            .ant-input-affix-wrapper-borderless
+          ).ant-input-affix-wrapper {
+          border: none;
+          background-color: $transparent-color;
+        }
+
+        @include mq_min_750 {
+          margin-bottom: 16px;
+          gap: 26px;
+        }
+
+        input {
+          width: 100%;
+          max-width: convertToVw(212px);
+          margin: 0 convertToVw(26px) 0 convertToVw(-8px);
+
+          @include mq_min_750 {
+            max-width: 212px;
+            margin: 0 26px 0px -8px;
+          }
+        }
+
+        .auto-search {
+          background-color: $button-color-first;
+          width: 100%;
+          color: $white-color;
+          max-width: convertToVw(202px);
+          min-height: convertToVw(67px);
+          font-size: convertToVw(24px);
+          margin: convertToVw(17px) 0 0 0;
+
+          @include mq_min_750 {
+            max-width: 202px;
+            min-height: 67px;
+            font-size: 24px;
+            margin: 17px 0 0 0;
+          }
+        }
+      }
+
+      .note-bottom {
+        font-weight: 500;
+        font-size: convertToVw(20px);
+        margin: convertToVw(-9px) convertToVw(17px) convertToVw(31px) convertToVw(17px);
+        line-height: convertToVw(29px);
+
+        span:nth-child(1) {
+          margin-left: convertToVw(-17px);
+
+          @include mq_min_750 {
+            margin-left: -17px;
+          }
+        }
+
+        @include mq_min_750 {
+          font-size: 20px;
+          margin: -9px 17px 31px 17px;
+          line-height: 29px;
+        }
+      }
+    }
+
+    .ant-input-affix-wrapper-status-error {
+      background-color: $white-color;
+    }
+  }
+
+  .btn-signup-bottom {
+    .btn-cast-edit {
+      @include flexbox(flex, space-between, center, nowrap);
+      gap: convertToVw(30px);
+    }
+
+    .auto-search {
+      background-color: #afa96e;
+      color: $white-color;
+    }
+
+    @include mq_min_750 {
+      .btn-cast-edit {
+        gap: 30px;
+      }
+    }
+  }
+
+  textarea::placeholder {
+    font-weight: 500;
+  }
+
+  .modal-nearest-station-wrapper {
+    .modal-nearest-station {
+      .ant-modal-content {
+        .ant-modal-header {
+          .ant-modal-title {
+            padding: convertToVw(25px);
+            background-color: $white-color;
+
+            @include mq_min_750 {
+              padding: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ant-input-number-input-wrap {
+    .ant-input-number-input {
+      font-size: convertToVw(24px);
+
+      @include mq_min_750 {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input {
+    background-color: $white-color !important;
+  }
+
+  .checkbox-wrapper .error-checkbox {
+    background-color: $white-color;
+  }
+}
+
+.signup-container-edit-title {
+  padding: 0 convertToVw(30px);
+  margin-bottom: convertToVw(-37px);
+
+  @include mq_min_750 {
+    padding: 0;
+    margin-bottom: -37px;
+  }
+
+  .signup-title {
+    margin: 0 auto;
+    max-width: convertToVw(680px);
+    font-size: convertToVw(30px);
+    padding: 0 0 convertToVw(27px) convertToVw(27px);
+    border-bottom: 2px solid $cr-allow;
+
+    @include mq_min_750 {
+      max-width: 680px;
+      font-size: 30px;
+      padding: 0 0 27px 27px;
+    }
+  }
+}
+
+.signup-container,
+.bank-container,
+.signup-credit-container {
+  .required {
+    color: #e30012;
+  }
+
+  .input-global {
+    padding: convertToVw(20px) convertToVw(30px);
+
+    @include mq_min_750 {
+      padding: 20px 30px;
+    }
+  }
+
+  .ant-input-group-addon {
+    font-size: convertToVw(28px);
+    color: $btn-dot;
+    border: none;
+    background-color: $transparent-color;
+    padding: 0;
+
+    @include mq_min_750 {
+      font-size: 28px;
+    }
+  }
+
+  .ant-input-affix-wrapper-focused {
+    box-shadow: none;
+  }
+
+  .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(
+      .ant-input-affix-wrapper-borderless
+    ).ant-input-affix-wrapper:focus {
+    box-shadow: none;
+  }
+
+  .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(
+      .ant-input-affix-wrapper-borderless
+    ).ant-input-affix-wrapper {
+    border: none;
+    box-shadow: none;
+  }
+
+  .ant-input-group-wrapper-status-error {
+    background-color: $white-color;
+  }
+
+  .form-no-required {
+    .ant-input-affix-wrapper > input.ant-input {
+      padding: convertToVw(4px) convertToVw(20px);
+
+      @include mq_min_750 {
+        padding: 4px 20px;
+      }
+    }
+
+    .ant-input-suffix {
+      margin-right: convertToVw(32px);
+
+      @include mq_min_750 {
+        margin-right: 32px;
+      }
+    }
+
+    .ant-input-affix-wrapper {
+      background-color: $bg-color-input !important;
+    }
+  }
+
+  .ant-input-affix-wrapper {
+    background-color: $transparent-color !important;
+    border-width: unset;
+    border-style: none;
+    padding: convertToVw(4px) convertToVw(11px);
+    @include font(convertToVw(24px), 400, convertToVw(49px));
+
+    @include mq_min_750 {
+      padding: 4px 11px;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    @include mq_min_750 {
+      @include font(24px, null, 49px);
+    }
+  }
+}

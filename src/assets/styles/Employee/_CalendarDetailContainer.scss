@@ -1,0 +1,241 @@
+.calendar-detail-container {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .block-change-schedule-info {
+    margin-top: convertToVw(30px);
+    margin-bottom: convertToVw(220px);
+
+    @include mq_min_750 {
+      margin-top: 30px;
+      margin-bottom: 220px;
+    }
+  }
+
+  .no-border {
+    border-bottom: none !important;
+  }
+
+  .calendar-title {
+    @include flexbox(flex, flex-start, center, nowrap);
+    border-bottom: convertToVw(2px) solid $button-color-first;
+    padding-bottom: convertToVw(23px);
+
+    .change-schedule-title {
+      border-bottom: none;
+      padding-left: convertToVw(28px);
+      font-size: convertToVw(30px);
+      font-weight: 500;
+      line-height: convertToVw(49px);
+
+      @include mq_min_750 {
+        padding-left: 28px;
+        font-size: 30px;
+        line-height: 49px;
+      }
+    }
+
+    @include mq_min_750 {
+      border-bottom: 2px solid $button-color-first;
+      padding-bottom: 23px;
+    }
+
+    .icon {
+      margin: 0 convertToVw(26px) 0 convertToVw(27px);
+
+      img {
+        width: convertToVw(41px);
+        height: convertToVw(49px);
+      }
+    }
+
+    .title {
+      font-size: convertToVw(26px);
+      font-weight: 500;
+    }
+
+    @include mq_min_750 {
+      padding-bottom: 23px;
+
+      .icon {
+        margin: 0 26px 0 27px;
+
+        img {
+          width: 41px;
+          height: 49px;
+        }
+      }
+
+      .title {
+        font-size: 26px;
+      }
+    }
+  }
+  .customer {
+    border-bottom: convertToVw(1px) solid $border-bottom-default;
+    padding: convertToVw(42px) convertToVw(36px) convertToVw(33px) convertToVw(32px);
+    font-size: convertToVw(24px);
+
+    .customer-date {
+      margin-right: convertToVw(25px);
+    }
+
+    @include mq_min_750 {
+      padding: 42px 36px 33px 32px;
+      font-size: 24px;
+
+      .customer-date {
+        margin-right: 25px;
+      }
+    }
+  }
+
+  .fee-change {
+    .calendar-info {
+      border-bottom: none;
+
+      .calendar-info-field,
+      .calendar-info-value {
+        color: #c30d23;
+      }
+    }
+  }
+
+  .calendar-info {
+    border-bottom: convertToVw(1px) solid $border-bottom-default;
+    padding: convertToVw(21px) convertToVw(36px) convertToVw(21px) convertToVw(32px);
+    @include flexbox(flex, space-between, flex-start, nowrap);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .calendar-info-field {
+      flex: 3;
+      color: $font-color-new;
+      width: convertToVw(300px);
+      @include font(convertToVw(20px), 400, convertToVw(35px));
+    }
+
+    .calendar-info-value {
+      text-align: right;
+      flex: 7;
+      white-space: nowrap;
+      @include font(convertToVw(24px), 400, convertToVw(40px));
+    }
+
+    @include mq_min_750 {
+      padding: 21px 36px 21px 32px;
+
+      .calendar-info-field {
+        @include font(20px, null, 35px);
+        width: 300px;
+      }
+
+      .calendar-info-value {
+        @include font(24px, null, 40px);
+      }
+    }
+  }
+
+  .request-content {
+    border-bottom: convertToVw(2px) solid $button-color-first;
+    margin-top: convertToVw(30px);
+    padding-bottom: convertToVw(360px);
+
+    @include mq_min_750 {
+      border-bottom: 2px solid $button-color-first;
+      padding-bottom: 360px;
+      margin-top: 30px;
+    }
+
+    .request-content-title {
+      margin-left: convertToVw(30px);
+      color: $font-color-new;
+      @include font(convertToVw(20px), 400, convertToVw(35px));
+    }
+
+    @include mq_min_750 {
+      padding-bottom: 360px;
+
+      .request-content-title {
+        margin-left: 30px;
+        @include font(20px, null, 35px);
+      }
+    }
+
+    p {
+      margin-left: convertToVw(32px);
+      max-width: convertToVw(700px);
+      @include font(convertToVw(24px), 400, convertToVw(30px));
+
+      @include mq_min_750 {
+        margin-left: 32px;
+        max-width: 700px;
+        @include font(24px, null, 30px);
+      }
+    }
+  }
+
+  .btn-calendar-info {
+    column-gap: convertToVw(30px);
+    margin: convertToVw(62px) 0 convertToVw(30px) 0;
+    @include flexbox(flex, center, center, nowrap);
+
+    @include mq_min_750 {
+      margin: 62px 0 30px 0;
+    }
+
+    @include mq_min_750 {
+      column-gap: 30px;
+    }
+
+    button {
+      border: convertToVw(1px) solid $transparent-color;
+      margin: 0;
+      font-size: convertToVw(24px);
+      color: $white-color;
+
+      @include mq_min_750 {
+        font-size: 24px;
+      }
+
+      &:nth-child(1) {
+        background-color: $border-bottom-v2;
+      }
+
+      &:nth-child(2) {
+        background-color: $button-color-first;
+      }
+    }
+  }
+
+  .back {
+    margin: 0 0 0 convertToVw(28px);
+    font-size: convertToVw(20px);
+    font-weight: 400;
+
+    a {
+      font-size: convertToVw(20px);
+      text-decoration: underline;
+      color: #036eb7;
+      font-weight: 400;
+    }
+
+    @include mq_min_750 {
+      margin: 0 0 0 28px;
+      font-size: 20px;
+
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.bg-detail {
+  background-color: $white-color;
+}

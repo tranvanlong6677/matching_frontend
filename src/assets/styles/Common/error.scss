@@ -1,0 +1,12 @@
+.page_404 {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  text-align: center;
+  font-size: convertToVw(35px);
+
+  @include mq_min_750 {
+    font-size: 35px;
+  }
+}

@@ -1,0 +1,528 @@
+.signup-credit-container {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .head-title {
+    padding: 0 convertToVw(25px) convertToVw(28px);
+    border-bottom: 2px solid $cr-allow;
+    @include font(convertToVw(30px), 400, convertToVw(50px));
+
+    @include mq_min_750 {
+      @include font(30px, 400, 50px);
+      padding: 0 25px 28px;
+    }
+  }
+
+  .logo-container {
+    width: 100%;
+    max-width: convertToVw(630px);
+    margin: convertToVw(61px) auto convertToVw(35px);
+    @include flexbox(flex, space-between, center, nowrap);
+
+    img {
+      width: 100%;
+    }
+
+    @include mq_min_750 {
+      max-width: 630px;
+      margin: 61px auto 35px;
+    }
+  }
+
+  .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(
+      .ant-input-affix-wrapper-borderless
+    ).ant-input-affix-wrapper {
+    background-color: $white-color;
+  }
+
+  .form-expiration-date
+    .ant-form-item
+    .ant-form-item-control-input
+    .ant-form-item-control-input-content
+    .ant-select-status-error {
+    background-color: $white-color;
+  }
+
+  .form-credit-user {
+    .head {
+      color: $btn-dot;
+      text-align: right;
+      font-size: convertToVw(18px);
+      margin: 0 convertToVw(25px) convertToVw(9px);
+
+      @include mq_min_750 {
+        margin: 0 25px 9px;
+        font-size: 18px;
+      }
+    }
+
+    .ant-form {
+      width: 100%;
+
+      .expiration-date {
+        padding: 0 convertToVw(6px) 0 convertToVw(25px);
+        margin-bottom: convertToVw(21px);
+        @include flexbox(flex, null, center, nowrap);
+
+        @include mq_min_750 {
+          padding: 0 6px 0 25px;
+          margin-bottom: 21px;
+        }
+
+        .title {
+          margin-right: convertToVw(22px);
+
+          span {
+            font-weight: 500;
+            font-size: convertToVw(24px);
+          }
+
+          .star {
+            color: $btn-dot;
+          }
+
+          @include mq_min_750 {
+            margin-right: 22px;
+
+            span {
+              font-size: 24px;
+            }
+          }
+        }
+
+        .form-expiration-date {
+          flex: 1;
+          gap: convertToVw(16px);
+          @include flexbox(flex, flex-start, center, nowrap);
+
+          @include mq_min_750 {
+            gap: 16px;
+          }
+
+          .ant-row {
+            width: 100%;
+          }
+
+          .ant-form-item {
+            display: flex;
+
+            @include mq_min_750 {
+              .ant-row {
+                width: 100%;
+              }
+            }
+            .ant-form-item-explain {
+              display: none;
+            }
+
+            .ant-form-item-control-input {
+              .ant-form-item-control-input-content {
+                .ant-select-status-error {
+                  border: convertToVw(3px) solid $danger-color-v2;
+                }
+              }
+            }
+          }
+
+          .ant-select {
+            display: flex;
+            align-items: center;
+            background-image: none;
+            border: none;
+            position: relative;
+            margin: 0;
+            padding: convertToVw(35px) 0 convertToVw(33px);
+
+            @include mq_min_750 {
+              margin-right: 17px;
+              padding: 35px 0px 33px;
+            }
+
+            .ant-select-selector {
+              border: none;
+              box-shadow: none;
+              background-color: $transparent-color;
+              padding: 0;
+              font-size: convertToVw(24px);
+
+              @include mq_min_750 {
+                font-size: 24px;
+              }
+
+              .ant-select-selection-item {
+                color: $placeholder-color;
+                padding: 0 convertToVw(44px);
+
+                @include mq_min_750 {
+                  padding: 0 44px;
+                }
+              }
+
+              .ant-select-selection-placeholder {
+                width: 100%;
+                padding-inline-end: 0;
+                line-height: normal;
+                @include flexbox(flex, center, center, null);
+              }
+            }
+
+            .ant-select-arrow {
+              position: absolute;
+              transform: translateY(-50%);
+              right: convertToVw(16px);
+              top: convertToVw(calc(50% + 4px));
+
+              @include mq_min_750 {
+                right: 16px;
+                top: calc(50% + 4px);
+              }
+
+              span {
+                img {
+                  width: convertToVw(18px);
+                  height: convertToVw(28px);
+                  margin-top: 10px;
+
+                  @include mq_min_650 {
+                    margin-top: 0;
+                  }
+
+                  @include mq_min_750 {
+                    width: 21px;
+                    height: 32px;
+                  }
+                }
+              }
+            }
+          }
+
+          .month-label {
+            font-weight: 500;
+            font-size: convertToVw(24px) !important;
+            margin-right: convertToVw(34px);
+
+            @include mq_min_750 {
+              font-size: 24px !important;
+              margin-right: 34px;
+            }
+          }
+
+          .year-label {
+            font-weight: 500;
+            font-size: convertToVw(24px) !important;
+            @include mq_min_750 {
+              font-size: 24px !important;
+            }
+          }
+
+          .month {
+            text-align: center;
+            max-width: convertToVw(140px);
+            width: 100%;
+
+            @include mq_min_750 {
+              max-width: 140px;
+            }
+          }
+
+          .year {
+            text-align: center;
+            width: 100%;
+            max-width: convertToVw(210px);
+            padding: convertToVw(34px) 0;
+
+            @include mq_min_750 {
+              max-width: 210px;
+              padding: 34px 0;
+            }
+          }
+
+          .form-month {
+            flex: 4;
+            max-width: convertToVw(140px);
+
+            @include mq_min_750 {
+              max-width: 140px;
+            }
+
+            @include mq_min_1024 {
+              flex: 3;
+            }
+          }
+
+          .form-year {
+            max-width: convertToVw(210px);
+            flex: 5;
+
+            @include mq_min_750 {
+              max-width: 210px;
+            }
+
+            .ant-form-item-control-input-content {
+              justify-content: flex-end;
+            }
+          }
+        }
+      }
+
+      .text-danger {
+        width: 100%;
+        color: #e30012;
+        font-weight: 500;
+        line-height: convertToVw(20px);
+        font-size: convertToVw(20px);
+        margin: convertToVw(21px) 0 convertToVw(31px);
+        padding: 0 convertToVw(25px);
+
+        @include mq_min_750 {
+          line-height: 20px;
+          font-size: 20px;
+          padding: 0 25px;
+          margin: 21px 0 31px;
+        }
+      }
+
+      .form-item-pseudo {
+        margin: convertToVw(-40px) 0 convertToVw(31px) !important;
+
+        @include mq_min_750 {
+          margin: -40px 0 31px;
+        }
+      }
+
+      .code-cvv {
+        position: relative;
+        @include flexbox(flex, center, center, nowrap);
+
+        .label-cvv {
+          position: absolute;
+          z-index: 10;
+          color: $placeholder-color;
+          top: convertToVw(calc(50% - 30px));
+          left: convertToVw(28px);
+          @include font(convertToVw(24px), 400, convertToVw(49px));
+
+          @include mq_min_750 {
+            top: calc(50% - 30px);
+            left: 28px;
+            @include font(24px, 400, 49px);
+          }
+        }
+
+        .star {
+          color: $btn-dot;
+        }
+
+        .ant-form-item.security-code {
+          flex: 1;
+
+          .ant-form-item-control-input {
+            .ant-form-item-control-input-content {
+              .ant-input {
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+
+        .ant-form-item {
+          height: convertToVw(122px);
+
+          @include mq_min_750 {
+            height: 122px;
+          }
+        }
+      }
+
+      .button-block {
+        display: flex;
+        margin-top: convertToVw(192px);
+        gap: convertToVw(26px);
+
+        .btn {
+          font-weight: 500;
+          font-size: convertToVw(24px);
+        }
+
+        @include mq_min_750 {
+          margin-top: 192px;
+          gap: 26px;
+
+          .btn {
+            font-size: 24px;
+          }
+        }
+
+        .btn {
+          &:hover {
+            color: $white-color;
+          }
+        }
+
+        .ant-btn:hover {
+          opacity: 0.7;
+        }
+      }
+
+      .ant-form-item-explain-error {
+        font-weight: 500;
+        padding: 0 convertToVw(25px);
+        font-size: convertToVw(20px);
+        line-height: convertToVw(35px);
+
+        @include mq_min_750 {
+          padding: 0 25px;
+          font-size: 20px;
+          line-height: 35px;
+        }
+      }
+    }
+
+    .ant-input:focus,
+    .ant-input-focused {
+      box-shadow: none;
+    }
+
+    .ant-tooltip {
+      .ant-tooltip-content {
+        .ant-tooltip-inner {
+          .content-tooltip-wrapper {
+            width: fit-content;
+            padding: convertToVw(20px);
+
+            @include mq_min_750 {
+              padding: 20px;
+            }
+
+            img {
+              width: convertToVw(260px);
+
+              @include mq_min_750 {
+                width: 260px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .input-global {
+      @include flexbox(flex, flex-start, center, nowrap);
+
+      .label-cvv {
+        flex: 5;
+        color: $placeholder-color;
+        opacity: 0.7;
+      }
+
+      .ant-form-item {
+        flex: 2;
+
+        .ant-form-item-control-input {
+          .ant-form-item-control-input-content {
+            @include flexbox(flex, flex-start, center, nowrap);
+
+            .input-cvv {
+              background-color: $transparent-color;
+              border: none;
+              box-shadow: none;
+              padding: 0;
+              font-size: convertToVw(24px);
+              margin-right: convertToVw(20px);
+
+              @include mq_min_750 {
+                font-size: 24px;
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+
+        .ant-form-item-explain {
+          display: none;
+        }
+      }
+
+      img {
+        flex: 1;
+        width: convertToVw(50px);
+        height: convertToVw(50px);
+
+        @include mq_min_750 {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+
+    .error-cvv {
+      border: convertToVw(3px) solid $danger-color-v2;
+      background-color: $white-color;
+
+      @include mq_min_750 {
+        border: 3px solid $danger-color-v2;
+      }
+    }
+
+    .text-danger {
+      width: 100%;
+      color: #e30012;
+      font-weight: 500;
+      line-height: convertToVw(20px);
+      margin-top: convertToVw(12px);
+      font-size: convertToVw(20px);
+
+      @include mq_min_750 {
+        line-height: 20px;
+        margin-top: 12px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .tooltip-cvv {
+    border-radius: convertToVw(8px);
+
+    .ant-tooltip-arrow {
+      right: convertToVw(0px);
+    }
+
+    .ant-tooltip-content {
+      .ant-tooltip-inner {
+        border-radius: convertToVw(12px);
+        padding: 0;
+
+        @include mq_min_750 {
+          border-radius: 12px;
+        }
+
+        img {
+          width: convertToVw(260px);
+
+          @include mq_min_750 {
+            width: 260px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  box-shadow: none;
+  border: none;
+}
+
+.ant-btn-default:not(:disabled):active {
+  color: $white-color;
+}
+
+.cr-allow.ant-btn-default:not(:disabled):active {
+  color: $black-color;
+}

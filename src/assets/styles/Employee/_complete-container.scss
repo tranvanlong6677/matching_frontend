@@ -1,0 +1,116 @@
+.complete-container {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .title {
+    max-width: 100%;
+    font-weight: 600;
+    text-align: center;
+    font-size: convertToVw(30px);
+    margin-bottom: convertToVw(44px);
+
+    @include mq_min_750 {
+      font-size: 30px;
+      margin-bottom: 44px;
+    }
+  }
+
+  .description {
+    text-align: center;
+    margin: 0 0 convertToVw(61px);
+    font-size: convertToVw(26px);
+    line-height: convertToVw(46px);
+
+    @include mq_min_750 {
+      margin: 0 0 61px;
+      font-size: 26px;
+      line-height: 46px;
+    }
+  }
+
+  .attention {
+    border-radius: convertToVw(6px);
+    background-color: $bg-color-input;
+    line-height: convertToVw(24px);
+    padding: convertToVw(32px) convertToVw(20px) convertToVw(48px) convertToVw(24px);
+    margin: 0 0 convertToVw(342px);
+
+    @include mq_min_750 {
+      padding: 32px 20px 48px 24px;
+      margin: 0 0 342px;
+      line-height: 24px;
+    }
+
+    .attention-title {
+      text-align: left;
+      font-weight: 500;
+      gap: convertToVw(8px);
+      font-size: convertToVw(24px);
+      @include flexbox(flex, flex-start, center, nowrap);
+
+      img {
+        display: inline-block;
+        width: convertToVw(30px);
+        height: convertToVw(30px);
+        margin: 0 convertToVw(8px) 0 0;
+      }
+
+      h1 {
+        display: inline-block;
+        font-size: convertToVw(24px);
+        font-weight: 600;
+      }
+
+      @include mq_min_750 {
+        gap: 8px;
+        font-size: 24px;
+
+        img {
+          width: 30px;
+          height: 30px;
+          margin: 0 8px 0 0;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .attention-content {
+      flex-direction: column;
+      text-align: left;
+      margin-top: convertToVw(28px);
+      gap: convertToVw(13px);
+      @include flexbox(flex, center, flex-start, nowrap);
+
+      span {
+        font-weight: 400;
+        line-height: convertToVw(24px);
+        font-size: convertToVw(20px);
+        letter-spacing: -0.059em;
+
+        @include mq_min_750 {
+          line-height: 24px;
+          font-size: 20px;
+        }
+      }
+
+      @include mq_min_750 {
+        margin-top: 28px;
+        gap: 13px;
+      }
+    }
+  }
+
+  .btn-attention {
+    margin-bottom: convertToVw(58px);
+
+    @include mq_min_750 {
+      margin-bottom: 58px;
+    }
+  }
+}

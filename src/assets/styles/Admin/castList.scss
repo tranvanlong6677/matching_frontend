@@ -1,0 +1,51 @@
+.cast-list-wrapper {
+  .ant-table-tbody {
+    .ant-table-row {
+      .ant-table-cell:first-child {
+        padding: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .number-of {
+    display: flex;
+    align-items: center;
+  }
+
+  .detail-table {
+    display: block;
+    text-align: center;
+  }
+
+  .pagination-bar {
+    margin: 20px 0;
+    width: 100%;
+    .ant-space-item {
+      margin: 0 auto;
+    }
+  }
+}
+
+.csv-block {
+  text-align: right;
+  margin: 10px 0;
+
+  button {
+    height: 35px;
+    width: 110px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: $white-color;
+    font-weight: 400;
+    margin-left: 10px;
+    @include font(14px, 400, 26px);
+  }
+
+  //CUSTOM ANTD
+  .ant-select-selector {
+    height: 36px !important;
+    align-items: center;
+  }
+}

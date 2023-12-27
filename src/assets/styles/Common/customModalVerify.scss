@@ -1,0 +1,281 @@
+.modal-emotion {
+  .ant-modal-content .ant-modal-body {
+    max-height: convertToVw(800px) !important;
+    overflow: hidden;
+
+    @include mq_min_750 {
+      max-height: 800px !important;
+    }
+
+    .icon-modal {
+      margin-top: convertToVw(40px);
+
+      img {
+        width: convertToVw(100px);
+        height: convertToVw(95px);
+      }
+
+      @include mq_min_750 {
+        margin-top: 40px;
+
+        img {
+          width: 100px;
+          height: 95px;
+        }
+      }
+    }
+    .customer-item {
+      max-width: convertToVw(480px);
+      margin: 0 auto;
+
+      .text-emotion-first {
+        @include font(convertToVw(30px), 400, convertToVw(44px));
+      }
+
+      .text-emotion-second {
+        margin-top: convertToVw(25px);
+        margin-bottom: convertToVw(50px);
+        padding: 0px !important;
+        border-bottom: none;
+        @include font(convertToVw(26px), 400, convertToVw(40px));
+      }
+
+      @include mq_min_750 {
+        max-width: 480px;
+
+        .text-emotion-first {
+          @include font(30px, null, 44px);
+        }
+
+        .text-emotion-second {
+          margin-top: 25px;
+          @include font(26px, null, 40px);
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    .cast-item {
+      max-width: convertToVw(510px);
+      margin: 0 auto;
+
+      .text-emotion-first {
+        white-space: nowrap;
+        @include font(convertToVw(26px), 400, convertToVw(50px));
+      }
+
+      .text-emotion-second {
+        margin: convertToVw(20px) 0 convertToVw(30px);
+        padding: 0px !important;
+        border-bottom: none !important;
+        @include font(convertToVw(21px), 300, convertToVw(34px));
+      }
+
+      @include mq_min_750 {
+        max-width: 510px;
+
+        .text-emotion-first {
+          @include font(26px, null, 50px);
+        }
+
+        .text-emotion-second {
+          margin: 20px 0 30px;
+          @include font(21px, null, 34px);
+        }
+      }
+    }
+
+    .btn-bottom-emotion {
+      .block-modal-btn {
+        margin-bottom: convertToVw(10px);
+      }
+
+      .btn-confirm-modal {
+        margin-bottom: convertToVw(150px);
+      }
+
+      &.btn:nth-child(1) {
+        margin-top: convertToVw(20px);
+      }
+
+      & .btn-check {
+        margin-top: convertToVw(65px);
+        margin-bottom: convertToVw(20px);
+      }
+
+      .detail-verify {
+        margin-top: convertToVw(20px);
+        @include font(convertToVw(20px), 300, convertToVw(30px));
+
+        a {
+          text-decoration: underline;
+          color: #036eb7;
+        }
+      }
+
+      @include mq_min_750 {
+        .block-modal-btn {
+          margin-bottom: 10px;
+        }
+
+        .btn-confirm-modal {
+          margin-bottom: 150px;
+        }
+
+        &.btn:nth-child(1) {
+          margin-top: 20px;
+        }
+
+        & .btn-check {
+          margin-top: 65px;
+          margin-bottom: 20px;
+        }
+
+        .detail-verify {
+          margin-top: 20px;
+          @include font(20px, null, 30px);
+        }
+      }
+    }
+
+    .delete-booking-btn-modal-block {
+      margin: convertToVw(40px) 0 convertToVw(160px);
+
+      button {
+        margin-bottom: convertToVw(24px);
+      }
+
+      .btn.btn-booking-custom {
+        background-color: #ffcd00;
+        color: $black-color-v2;
+      }
+      span,
+      a {
+        font-weight: 500;
+        font-size: convertToVw(20px);
+
+        @include mq_min_750 {
+          font-size: 20px;
+        }
+      }
+
+      @include mq_min_750 {
+        margin: 40px 0 160px;
+
+        button {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
+
+.modal-container-emotion.kyc-hearing-modal-success-wrapper {
+  .icon-modal {
+    display: none;
+  }
+  .text-emotion-description.customer-item {
+    max-width: 680px;
+    margin: convertToVw(240px) auto convertToVw(44px);
+
+    .text-emotion-first {
+      font-weight: 600;
+      font-size: convertToVw(30px);
+    }
+    .text-emotion-second {
+      font-weight: 300;
+      font-size: convertToVw(26px);
+      margin: convertToVw(33px) 0 0;
+    }
+
+    @include mq_min_750 {
+      margin: 240px auto 44px;
+
+      .text-emotion-first {
+        font-size: 30px;
+      }
+
+      .text-emotion-second {
+        font-size: 26px;
+        margin: 33px 0 0;
+      }
+    }
+  }
+  .btn-bottom-emotion {
+    margin: 0 0 convertToVw(34px);
+
+    @include mq_min_750 {
+      margin: 0 0 34px;
+    }
+
+    .btn-confirm-modal.btn.btn-large {
+      background-color: $cr-allow;
+      color: $white-color;
+      font-weight: 500;
+      font-size: convertToVw(24px);
+      line-height: convertToVw(42px);
+
+      @include mq_min_750 {
+        font-size: 24px;
+        line-height: 42px;
+      }
+    }
+  }
+}
+.modal-container-emotion.kyc-hearing-modal-success-wrapper.kyc-hearing-modal-success-second-wrapper {
+  .text-emotion-description.customer-item {
+    margin-bottom: convertToVw(144px);
+
+    @include mq_min_750 {
+      margin-bottom: 144px;
+    }
+  }
+}
+
+.delete-booking-container {
+  padding-top: convertToVw(40px);
+
+  @include mq_min_750 {
+    padding-top: 40px;
+  }
+}
+
+.btn.cr-allow {
+  background-color: #ffcd00;
+  color: $black-color;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.link-mail {
+  color: #016eb5;
+  text-decoration: underline !important;
+}
+
+.ant-checkbox-checked:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+  background-color: $bg-color-input;
+}
+
+.ant-checkbox .ant-checkbox-input:focus-visible + .ant-checkbox-inner {
+  outline: 1px solid $border-bottom-v2;
+  background-color: $bg-color-input;
+}
+
+:where(.css-dev-only-do-not-override-1poc1a7).ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+  .ant-checkbox-checked:not(.ant-checkbox-disabled)
+  .ant-checkbox-inner {
+  background-color: $bg-color-input !important;
+  border-color: 1px solid $border-bottom-v2 !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  border-color: $transparent-color !important;
+}
+
+:where(.css-dev-only-do-not-override-1poc1a7).ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+  .ant-checkbox-checked:not(.ant-checkbox-disabled)
+  .ant-checkbox-inner {
+  border-color: 1px solid $border-bottom-v2 !important;
+}

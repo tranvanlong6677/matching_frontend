@@ -1,0 +1,13 @@
+.admin-customer-list,
+.cast-list-wrapper {
+  .ant-table-cell {
+    span {
+      @include flexbox(flex, flex-start, center, null);
+      padding-top: 0;
+    }
+    .detail-table {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

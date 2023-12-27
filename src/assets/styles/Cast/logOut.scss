@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+.block-logout {
+  margin-top: convertToVw(305px);
+  text-align: center;
+
+  h2 {
+    font-family: 'Inter', sans-serif;
+    @include font(convertToVw(48px), 600, convertToVw(79px));
+  }
+
+  p {
+    margin-bottom: convertToVw(460px);
+    @include font(convertToVw(32px), 600, convertToVw(50px));
+  }
+
+  @include mq_min_750 {
+    margin-top: 305px;
+
+    h2 {
+      @include font(51px, null, 89px);
+    }
+
+    p {
+      margin-bottom: 460px;
+      @include font(32px, null, 50px);
+    }
+  }
+
+  .confirm-btn-container {
+    .btn-confirm {
+      column-gap: convertToVw(10px);
+
+      img {
+        background-color: $white-color;
+        margin-left: convertToVw(-10px);
+        border-radius: 50%;
+        width: convertToVw(57px);
+        height: convertToVw(57px);
+      }
+    }
+
+    @include mq_min_750 {
+      .btn-confirm {
+        column-gap: 10px;
+        img {
+          width: 57px;
+          height: 57px;
+          margin-left: -10px;
+        }
+      }
+    }
+  }
+}

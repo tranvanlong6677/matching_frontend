@@ -1,0 +1,126 @@
+.confirm-container {
+  .confirm-btn-container.warning-block {
+    margin-top: convertToVw(200px);
+
+    @include mq_min_750 {
+      margin-top: 200px;
+    }
+  }
+
+  .confirm {
+    margin-bottom: convertToVw(187.5px);
+    flex-direction: column;
+    @include flexbox(flex, center, center, nowrap);
+
+    img {
+      margin: convertToVw(151px) 0 convertToVw(95.5px);
+      width: convertToVw(319px);
+      height: convertToVw(319px);
+    }
+    .confirm-content-container.block-delete {
+      // margin-top: convertToVw(270px);
+      // @include mq_min_750 {
+      //   margin-top: 270px;
+      // }
+    }
+    .confirm-content-container {
+      text-align: center;
+
+      h1 {
+        font-size: convertToVw(30px);
+        margin-bottom: convertToVw(17px);
+        line-height: convertToVw(54px);
+        font-weight: 600;
+      }
+
+      span {
+        font-size: convertToVw(23px);
+        line-height: convertToVw(46px);
+        white-space: nowrap;
+        font-weight: 400;
+      }
+
+      .mail-delete-success {
+        display: inline;
+        color: #036eb8;
+        text-decoration: underline;
+      }
+    }
+
+    @include mq_min_750 {
+      margin-bottom: 187.5px;
+
+      img {
+        margin: 151px 0 95.5px;
+        width: 319px;
+        height: 319px;
+      }
+
+      .confirm-content-container {
+        h1 {
+          font-size: 30px;
+          margin-bottom: 17px;
+          line-height: 54px;
+        }
+
+        span {
+          font-size: 26px;
+          line-height: 46px;
+        }
+      }
+    }
+  }
+
+  .confirm-btn-container {
+    display: grid;
+    gap: convertToVw(30px);
+    margin-top: convertToVw(54px);
+
+    .btn {
+      background-color: $black-color-v2;
+      color: $white-color;
+      column-gap: convertToVw(10px);
+
+      img {
+        margin: 0 convertToVw(0px) 0 convertToVw(-8px);
+        width: convertToVw(56px);
+        height: convertToVw(56px);
+        background-color: $white-color;
+        border-radius: 50%;
+      }
+    }
+
+    .btn-change-service {
+      color: white !important;
+    }
+
+    @include mq_min_750 {
+      gap: 30px;
+      margin-top: 54px;
+
+      .btn {
+        column-gap: 10px;
+
+        img {
+          margin: 0 0px 0 -8px;
+          width: 56px;
+          height: 56px;
+        }
+      }
+    }
+  }
+}
+
+.delete-account-container {
+  margin-top: convertToVw(240px);
+
+  @include mq_min_750 {
+    margin-top: 240px;
+  }
+}
+.delete-booking-customer {
+  margin-top: convertToVw(380px);
+  @include mq_min_750 {
+    margin-top: 380px;
+  }
+}

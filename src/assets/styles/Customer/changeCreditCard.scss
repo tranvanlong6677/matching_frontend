@@ -1,0 +1,75 @@
+.change-credit-card-container {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .title {
+    .head-title {
+      padding: 0 convertToVw(26px) convertToVw(27px);
+      border-bottom: 2px solid $cr-allow;
+      @include font(convertToVw(30px), 400, convertToVw(50px));
+
+      @include mq_min_750 {
+        @include font(30px, null, 50px);
+        padding: 0 26px 27px;
+      }
+    }
+  }
+
+  .content {
+    margin: 0 auto convertToVw(350px);
+    max-width: convertToVw(630px);
+
+    @include mq_min_750 {
+      max-width: 630px;
+      margin: 0 auto 350px;
+    }
+
+    .content-element {
+      border-bottom: 1px solid $border-user-color;
+      padding: convertToVw(42px) convertToVw(20px) convertToVw(34px);
+      font-size: convertToVw(24px);
+      @include flexbox(flex, space-between, center, nowrap);
+
+      @include mq_min_750 {
+        font-size: 24px;
+        padding: 42px 20px 34px;
+      }
+
+      .value {
+        img {
+          width: convertToVw(94px);
+          height: convertToVw(31px);
+
+          @include mq_min_750 {
+            width: 94px;
+            height: 31px;
+          }
+        }
+      }
+
+      &:first-child {
+        padding-top: convertToVw(31px);
+
+        @include mq_min_750 {
+          padding-top: 31px;
+        }
+      }
+    }
+  }
+
+  .button-block {
+    gap: convertToVw(30px);
+    @include flexbox(flex, center, center, nowrap);
+
+    @include mq_min_750 {
+      gap: 30px;
+    }
+
+    button:hover {
+      color: $white-color !important;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.header-container-client {
+  width: 100%;
+  margin: 0 auto;
+  max-width: convertToVw(1024px);
+  padding: convertToVw(40px) convertToVw(33px) convertToVw(20px) convertToVw(44px);
+  @include flexbox(flex, space-between, center, nowrap);
+
+  @include mq_min_750 {
+    padding: 40px 33px 20px 53px;
+  }
+
+  @include mq_min_900 {
+    padding: 40px 50px 20px 80px;
+  }
+
+  @include mq_min_1024 {
+    padding: 40px 66px 20px 106px;
+    max-width: 1024px;
+  }
+
+  .logo-client {
+    width: convertToVw(123px);
+    height: convertToVw(62px);
+
+    @include mq_min_750 {
+      width: 123px;
+      height: 62px;
+    }
+  }
+
+  .icon-menu-client {
+    cursor: pointer;
+    margin-right: convertToVw(4px);
+    width: convertToVw(48px);
+    height: convertToVw(28px);
+
+    @include mq_min_750 {
+      margin-right: 4px;
+      width: 48px;
+      height: 28px;
+    }
+  }
+}

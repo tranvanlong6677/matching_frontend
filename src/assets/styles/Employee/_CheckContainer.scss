@@ -1,0 +1,380 @@
+.check-container {
+  margin-top: convertToVw(70px);
+
+  @include mq_min_750 {
+    margin-top: 70px;
+  }
+
+  .information-input {
+    .check {
+      border-bottom: none !important;
+      margin: convertToVw(66px) 0 0 0 !important;
+
+      @include mq_min_750 {
+        margin: 66px 0 0 0;
+      }
+    }
+
+    .information-input-title.information-input-title-check {
+      margin: convertToVw(66px) convertToVw(15px) 0;
+      padding: 0;
+      border-bottom: none;
+
+      @include mq_min_750 {
+        margin: 66px 15px 0;
+      }
+    }
+
+    .information-input-title {
+      font-weight: 500;
+      border-bottom: 2px solid $button-color-first;
+      font-size: convertToVw(30px);
+      line-height: convertToVw(49px);
+      padding: 0 convertToVw(25px) convertToVw(28px);
+
+      @include mq_min_750 {
+        padding: 0 25px 28px;
+        font-size: 30px;
+        line-height: 49px;
+      }
+    }
+
+    .information-input-title-body {
+      font-weight: 500;
+      text-align: left;
+      display: block;
+      margin-top: convertToVw(92px);
+      font-size: convertToVw(30px);
+
+      @include mq_min_750 {
+        margin-top: 92px;
+        font-size: 30px;
+      }
+    }
+
+    .infor-element.time-nearest {
+      .field {
+        flex: 8;
+      }
+
+      .value {
+        flex: 7;
+      }
+    }
+
+    .infor-element-container {
+      padding: 0 convertToVw(25px);
+
+      @include mq_min_750 {
+        padding: 0 25px;
+      }
+    }
+
+    .infor-element.infor-custom {
+      .field {
+        flex: 6;
+      }
+
+      .value {
+        flex: 5;
+        text-align: start;
+      }
+    }
+
+    .infor-element {
+      border-bottom: 1px solid $border-color;
+      margin-top: 0;
+      font-size: convertToVw(24px);
+      padding: convertToVw(34px) convertToVw(25px) convertToVw(33px) convertToVw(22px);
+      font-weight: 500;
+      @include flexbox(flex, space-between, center, nowrap);
+
+      @include mq_min_750 {
+        font-size: 24px;
+        padding: 34px 25px 33px 22px;
+      }
+
+      .field {
+        flex: 2;
+        font-size: convertToVw(24px);
+        font-weight: 400;
+
+        @include mq_min_750 {
+          font-size: 24px;
+        }
+      }
+
+      .value {
+        word-break: break-all;
+        flex: 4;
+        text-align: right;
+        font-size: convertToVw(24px);
+        font-weight: 400;
+        line-height: convertToVw(42px);
+
+        img {
+          width: convertToVw(94px);
+          height: convertToVw(30px);
+
+          @include mq_min_750 {
+            width: 94px;
+            height: 30px;
+          }
+        }
+
+        @include mq_min_750 {
+          font-size: 24px;
+          line-height: 42px;
+        }
+      }
+    }
+
+    .infor-element-comment {
+      flex-direction: column;
+      border-bottom: none;
+      @include flexbox(flex, center, flex-start, nowrap);
+    }
+
+    .infor-element-email {
+      .field {
+        flex: 4;
+      }
+
+      .value {
+        flex: 6;
+      }
+    }
+
+    .infor-element-email {
+      .field {
+        flex: 1;
+      }
+
+      .value {
+        flex: 2;
+      }
+    }
+
+    .boundary {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .rules {
+      border: 2px solid $border-color;
+      min-height: convertToVw(300px);
+      margin: convertToVw(17px) 0 convertToVw(51px) 0;
+
+      @include mq_min_750 {
+        min-height: 300px;
+        margin: 17px 0 51px;
+      }
+
+      .rules-container {
+        border: none;
+        width: 100%;
+        height: convertToVw(280px);
+        padding: convertToVw(46px) convertToVw(18px) convertToVw(21px) convertToVw(22px);
+
+        @include mq_min_750 {
+          height: 280px;
+          padding: 46px 18px 21px 22px;
+        }
+
+        textarea {
+          width: 100%;
+          height: 100%;
+          border: none;
+          background-color: $transparent-color;
+          margin: 0;
+          font-size: convertToVw(24px);
+          line-height: 1.6;
+          resize: none;
+
+          &:focus {
+            border: none;
+            outline: none;
+          }
+
+          @include mq_min_750 {
+            font-size: 24px;
+          }
+
+          &::-webkit-scrollbar {
+            width: convertToVw(8px);
+            background-color: $transparent-color;
+          }
+
+          &::-webkit-scrollbar-track {
+            background-color: $transparent-color;
+            border-bottom-right-radius: convertToVw(16px);
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background-color: #595757;
+            border-radius: convertToVw(4px);
+          }
+
+          @include mq_min_750 {
+            &::-webkit-scrollbar {
+              width: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+              border-bottom-right-radius: 16px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+
+    .checkbox-rules {
+      @include flexbox(flex, center, center, nowrap);
+
+      input {
+        margin: 0 convertToVw(4px) 0 0;
+        width: convertToVw(24px);
+        height: convertToVw(24px);
+
+        @include mq_min_750 {
+          margin: 0 4px 0 0;
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      span {
+        font-size: convertToVw(24px);
+        cursor: pointer;
+
+        @include mq_min_750 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .btn-check-container {
+    margin-top: convertToVw(66px);
+    gap: convertToVw(30px);
+    @include flexbox(flex, center, center, nowrap);
+
+    button {
+      background-color: #9b9c9c;
+      color: $white-color;
+    }
+
+    .block-bank-btn {
+      display: flex;
+      column-gap: convertToVw(30px);
+      margin-top: convertToVw(200px);
+      width: 100%;
+
+      @include mq_min_750 {
+        column-gap: 30px;
+        margin-top: 200px;
+      }
+    }
+
+    @include mq_min_750 {
+      margin-top: 66px;
+      gap: 30px;
+
+      button {
+        margin: 0;
+      }
+    }
+  }
+
+  .settings-details {
+    .information-input {
+      .infor-element {
+        .field {
+          flex: 5;
+        }
+
+        .value {
+          flex: 6;
+        }
+      }
+
+      .time-nearest {
+        .field {
+          flex: 6;
+        }
+
+        .value {
+          overflow-wrap: break-word; /* Dùng cho các trình duyệt hiện đại */
+          white-space: pre-line;
+          flex: 3;
+        }
+      }
+
+      .building-type {
+        .field {
+          flex: 3;
+        }
+
+        .value {
+          flex: 7;
+        }
+      }
+
+      .institution-name {
+        .field {
+          flex: 3;
+        }
+
+        .value {
+          flex: 7;
+          word-break: unset;
+        }
+      }
+    }
+  }
+}
+
+.settings-details {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+}
+
+.infor-element.shipping-details {
+  flex-direction: column;
+  gap: convertToVw(10px);
+  @include flexbox(flex, center, flex-start !important, nowrap);
+
+  @include mq_min_750 {
+    gap: 10px;
+  }
+
+  .field {
+    text-align: left;
+  }
+
+  .value {
+    max-width: convertToVw(633px);
+    line-height: convertToVw(42px);
+    text-align: left !important;
+
+    @include mq_min_750 {
+      max-width: 633px;
+      line-height: 42px;
+    }
+  }
+}
+
+.settings-details-cast {
+  .information-input {
+    .information-input-title {
+      margin-bottom: 0;
+    }
+  }
+}

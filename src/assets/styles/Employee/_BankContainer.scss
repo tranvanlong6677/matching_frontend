@@ -1,0 +1,481 @@
+.bank-container {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .head {
+    display: block;
+    color: $btn-dot;
+    text-align: right;
+    font-weight: 400;
+    font-size: convertToVw(18px);
+    margin: convertToVw(49px) 0 convertToVw(13px);
+
+    @include mq_min_750 {
+      margin: 54px 0 13px;
+      font-size: 18px;
+    }
+  }
+
+  .head-title {
+    border-bottom: 2px solid $button-color-first;
+    padding-bottom: convertToVw(27px);
+    @include font(convertToVw(30px), 500, convertToVw(50px));
+
+    h2 {
+      margin-left: convertToVw(24px);
+    }
+
+    @include mq_min_750 {
+      @include font(30px, null, 50px);
+      padding-bottom: 27px;
+
+      h2 {
+        margin-left: 24px;
+      }
+    }
+  }
+
+  .bank-form {
+    padding: 0 convertToVw(25px);
+
+    @include mq_min_750 {
+      padding: 0 25px;
+    }
+
+    form {
+      .ant-select-status-error {
+        background-color: $white-color !important;
+      }
+
+      .checkbox-wrapper .error-checkbox {
+        background-color: $white-color;
+      }
+
+      .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(
+          .ant-input-affix-wrapper-borderless
+        ).ant-input-affix-wrapper {
+        background-color: $white-color;
+      }
+
+      .ant-select-status-error:not(.ant-select-disabled):not(.ant-select-customize-input):not(
+          .ant-pagination-size-changer
+        )
+        .ant-select-selector {
+        background-color: $white-color;
+      }
+
+      .search {
+        position: relative;
+        display: flex;
+
+        .star {
+          position: absolute;
+          left: convertToVw(20px);
+          top: convertToVw(36px);
+          font-size: convertToVw(24px);
+          color: $btn-dot;
+        }
+
+        .search-icon {
+          left: convertToVw(34px);
+          top: calc(50% - convertToVw(20px));
+          transform: translateY(-50%);
+          width: convertToVw(24px);
+          height: convertToVw(24px);
+        }
+
+        input {
+          padding: convertToVw(30px) 0 convertToVw(33px) convertToVw(30px);
+          margin-bottom: convertToVw(39px);
+
+          &::placeholder {
+            font-size: convertToVw(24px);
+            font-weight: normal;
+          }
+        }
+
+        @include mq_min_750 {
+          .star {
+            left: 20px;
+            top: 36px;
+            font-size: 24px;
+          }
+
+          .search-icon {
+            left: 34px;
+            top: calc(50% - 20px);
+            width: 24px;
+            height: 24px;
+          }
+
+          input {
+            padding: 30px 0 33px 30px;
+            margin-bottom: 39px;
+
+            &::placeholder {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+
+      .search:nth-child(2) {
+        input {
+          margin-bottom: convertToVw(67px);
+        }
+
+        .search-icon {
+          position: absolute;
+          left: convertToVw(34px);
+          top: calc(50% - convertToVw(34px));
+          transform: translateY(-50%);
+        }
+
+        @include mq_min_750 {
+          input {
+            margin-bottom: 67px;
+          }
+
+          .search-icon {
+            left: 34px;
+            top: calc(50% - 34px);
+          }
+        }
+      }
+
+      .ant-select {
+        .ant-select-selector {
+          background-color: $bg-color-input;
+          border: none;
+          box-shadow: none !important;
+          padding: 0;
+
+          input {
+            padding: 0;
+          }
+
+          .ant-select-selection-search {
+            inset-inline-start: 0px;
+            inset-inline-end: 0px;
+          }
+
+          .ant-select-selection-item {
+            font-size: convertToVw(24px);
+          }
+
+          .ant-select-selection-placeholder {
+            @include flexbox(flex, flex-start, center, null);
+            font-size: convertToVw(24px);
+
+            .red {
+              color: $btn-dot;
+            }
+
+            .icon-search {
+              width: convertToVw(24px);
+              height: convertToVw(24px);
+              margin-right: convertToVw(20px);
+            }
+          }
+        }
+
+        @include mq_min_750 {
+          .ant-select-selector {
+            .ant-select-selection-item {
+              font-size: 24px;
+            }
+
+            .ant-select-selection-placeholder {
+              font-size: 24px;
+
+              .icon-search {
+                width: 24px;
+                height: 24px;
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      .bank-select,
+      .branch-select {
+        @include flexbox(flex, center, center, nowrap);
+
+        .ant-select-arrow {
+          inset-inline-start: convertToVw(36px);
+          margin-top: convertToVw(-5px);
+
+          img {
+            width: convertToVw(25px);
+            height: convertToVw(25px);
+          }
+
+          .star {
+            color: $btn-dot;
+            @include font(convertToVw(28px), 500, convertToVw(49px));
+          }
+        }
+
+        .ant-select-selector {
+          max-width: 90%;
+          margin: 1px 0 0 convertToVw(65px);
+
+          .ant-select-selection-item {
+            margin-right: convertToVw(20px);
+          }
+        }
+
+        @include mq_min_750 {
+          .ant-select-arrow {
+            inset-inline-start: 36px;
+            margin-top: -5px;
+
+            img {
+              width: 25px;
+              height: 25px;
+            }
+
+            .star {
+              @include font(28px, 500, 49px);
+            }
+          }
+
+          .ant-select-selector {
+            max-width: 90%;
+            margin: 1px 0 0 60px;
+
+            .ant-select-selection-item {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+
+      .money {
+        max-width: $width-input;
+        width: 100%;
+        gap: convertToVw(44px);
+        padding: 0 convertToVw(17px) 0 convertToVw(34px);
+        margin-top: convertToVw(20px);
+        margin-bottom: convertToVw(40px);
+        white-space: nowrap;
+        @include flexbox(flex, flex-start, center, wrap);
+
+        @include mq_min_750 {
+          gap: 44px;
+          padding: 0 17px 0 34px;
+          margin-top: 20px;
+          margin-bottom: 40px;
+        }
+
+        .label {
+          font-size: convertToVw(24px);
+          font-weight: 400;
+          margin-right: 0;
+          line-height: convertToVw(36px);
+
+          @include mq_min_750 {
+            font-size: 24px;
+            line-height: 36px;
+          }
+
+          .star-label {
+            color: $btn-dot;
+          }
+        }
+
+        .ant-form-item {
+          .ant-form-item-control-input {
+            margin-top: convertToVw(10px);
+
+            .ant-checkbox-group {
+              .ant-checkbox-wrapper {
+                height: convertToVw(48px);
+              }
+            }
+          }
+
+          @include mq_min_750 {
+            .ant-form-item-control-input {
+              margin-top: 10px;
+
+              .ant-checkbox-group {
+                .ant-checkbox-wrapper {
+                  height: 48px;
+                }
+              }
+            }
+          }
+        }
+
+        .money-group {
+          font-size: convertToVw(24px);
+          margin-left: convertToVw(41px);
+          @include flexbox(flex, null, center, null);
+
+          .input {
+            cursor: pointer;
+            position: relative;
+            background-color: $bg-color-input;
+            margin-right: convertToVw(10px);
+            border-radius: convertToVw(8px);
+            width: convertToVw(56px);
+            height: convertToVw(56px);
+
+            img {
+              display: none;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: convertToVw(20px);
+              height: convertToVw(20px);
+            }
+
+            span {
+              font-size: convertToVw(24px);
+              font-weight: 500;
+            }
+          }
+
+          @include mq_min_750 {
+            font-size: 24px;
+            margin-left: 41px;
+
+            .input {
+              margin-right: 10px;
+              border-radius: 8px;
+              width: 56px;
+              height: 56px;
+
+              img {
+                width: 20px;
+                height: 20px;
+              }
+
+              span {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+
+        .money-group:nth-child(4) {
+          margin-right: 0px;
+        }
+
+        .checked {
+          .input {
+            img {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .attention {
+        display: block;
+        margin-bottom: convertToVw(40px);
+        font-size: convertToVw(20px);
+        font-weight: 400;
+
+        @include mq_min_750 {
+          margin-bottom: 40px;
+          font-size: 20px;
+        }
+      }
+
+      .input-account {
+        #account_number_help {
+          position: relative;
+
+          .ant-form-item-explain-error {
+            position: absolute;
+            top: convertToVw(35px);
+
+            @include mq_min_750 {
+              top: 35px;
+            }
+          }
+        }
+      }
+
+      .form-group .final {
+        margin-top: convertToVw(45px);
+
+        @include mq_min_750 {
+          margin-top: 45px;
+        }
+      }
+
+      .form-group-bottom {
+        margin-bottom: convertToVw(16px);
+
+        input {
+          &::placeholder {
+            font-size: convertToVw(24px);
+          }
+        }
+
+        @include mq_min_750 {
+          margin-bottom: 16px;
+
+          input {
+            &::placeholder {
+              font-size: 24px;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+
+      .form-group-bottom.number {
+        margin-bottom: 0;
+      }
+    }
+
+    .note-bank {
+      @include font(convertToVw(20px), 400, convertToVw(29px));
+
+      @include mq_min_750 {
+        @include font(20px, null, 29px);
+      }
+    }
+  }
+
+  .bank-btn {
+    margin-top: convertToVw(66px);
+    gap: convertToVw(30px);
+    @include flexbox(flex, space-between, center, nowrap);
+
+    button:nth-child(1) {
+      color: $white-color;
+      background: #9a9b9b;
+    }
+
+    .btn-bank {
+      color: $white-color;
+      background: $button-color-first;
+    }
+
+    .btn-check {
+      background-color: #9b9c9c;
+      cursor: not-allowed;
+    }
+
+    @include mq_min_750 {
+      margin-top: 66px;
+      gap: 30px;
+    }
+  }
+}
+
+.blur-focus {
+  .ant-select-selection-item {
+    opacity: 0;
+  }
+}

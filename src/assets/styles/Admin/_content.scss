@@ -1,0 +1,104 @@
+.admin-content {
+  background-color: $bg-color-admin;
+
+  .container {
+    .content {
+      padding-bottom: 200px;
+    }
+  }
+
+  .ant-menu {
+    background-color: #c8c8c8;
+    border-top: 2px solid #c8c8c8;
+    border-bottom: 2px solid #c8c8c8;
+    @include flexbox(flex, center, center, nowrap);
+
+    .ant-menu-item {
+      width: 246.67px;
+      max-height: 40px;
+      background-color: #e4e4e4;
+      border-right: 1px solid #c8c8c8;
+      border-bottom: 1px solid #c8c8c8;
+      @include font(14px, 400, 25px);
+      @include flexbox(flex, center, center, null);
+
+      &:hover {
+        &::after {
+          border-bottom: none;
+        }
+      }
+
+      &::after {
+        transition: none;
+        border-bottom: none;
+      }
+
+      .ant-menu-title-content {
+        overflow: hidden;
+        line-height: 40px;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .ant-menu-item:nth-child(1) {
+      border-left: 2px solid #c8c8c8;
+    }
+
+    .ant-menu-item-selected {
+      color: $white-color;
+      background-color: $main-color-admin;
+
+      &::after {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .admin-nav {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s all;
+
+    &-item {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $bg-nav-b5;
+      border: 1px solid $border-color-nav;
+      border-right: 0px;
+      transition: 0.3s all;
+
+      &:last-child {
+        border-right: 1px solid $border-color-nav;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &-item.active {
+      background-color: $main-color-admin;
+      color: $white-color;
+    }
+  }
+
+  .revenue-trend-title {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.ant-menu-item:hover {
+  background-color: inherit;
+}
+
+.ant-menu-item:hover > a {
+  color: inherit;
+}
+
+.ant-menu-item:hover {
+  background-color: unset;
+}

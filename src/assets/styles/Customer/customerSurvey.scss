@@ -1,0 +1,78 @@
+.survey-customer-container {
+  margin-top: convertToVw(80px);
+
+  @include mq_min_750 {
+    margin-top: 80px;
+  }
+
+  .survey-title {
+    padding-bottom: convertToVw(27px);
+    padding-left: convertToVw(29px);
+    border-bottom: 1px solid #b3b3b3;
+    @include font(convertToVw(30px), 500, convertToVw(36px));
+
+    @include mq_min_750 {
+      padding-bottom: 27px;
+      padding-left: 29px;
+      @include font(30px, null, 36px);
+    }
+  }
+
+  .survey-item {
+    border-bottom: 1px solid #b3b3b3;
+    padding: convertToVw(37px) convertToVw(42px) convertToVw(45px) convertToVw(42px);
+
+    .checkbox-custom {
+      width: convertToVw(44px);
+      height: convertToVw(44px);
+    }
+
+    @include mq_min_750 {
+      padding: 37px 42px 45px 42px;
+
+      .checkbox-custom {
+        width: 44px;
+        height: 44px;
+      }
+    }
+  }
+
+  .survey-item-content {
+    margin-bottom: convertToVw(19px);
+    @include flexbox(flex, space-between, null, null);
+    @include font(convertToVw(26px), 500, convertToVw(31px));
+
+    @include mq_min_750 {
+      margin-bottom: 19px;
+      @include font(26px, null, 31px);
+    }
+  }
+
+  .survey-note {
+    letter-spacing: -1.8px;
+    @include font(convertToVw(22px), 500, convertToVw(42px));
+
+    @include mq_min_750 {
+      @include font(24px, null, 42px);
+    }
+  }
+
+  .survey-require {
+    color: #036eb8;
+    margin-bottom: convertToVw(26px);
+    @include font(convertToVw(28px), 500, convertToVw(32px));
+
+    @include mq_min_750 {
+      margin-bottom: 26px;
+      @include font(28px, null, 32px);
+    }
+  }
+
+  .btn-survey-block {
+    margin: convertToVw(90px) 0 0;
+
+    @include mq_min_750 {
+      margin: 90px 0 0;
+    }
+  }
+}

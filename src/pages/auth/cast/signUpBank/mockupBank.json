@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "label":"Ngân hàng Á Châu",
+    "value":"ACB"
+  },
+  {
+    "id": 2,
+    "label":"Ngân hàng thương mại cổ phần Kỹ Thương Việt Nam",
+    "value":"Techcombank"
+  },
+  {
+    "id": 3,
+    "label":"Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam",
+    "value":"Agribank"
+  },
+  {
+    "id": 4,
+    "label":"Ngân hàng Thương mại Cổ phần Tiên Phong",
+    "value":"TPBank"
+  },
+  {
+    "id": 5,
+    "label":"Ngân hàng Thương mại Cổ phần Quân đội",
+    "value":"MBBank"
+  },
+  {
+    "id": 6,
+    "label":"Ngân hàng TMCP Công Thương Việt Nam",
+    "value":"VietinBank"
+  }
+]

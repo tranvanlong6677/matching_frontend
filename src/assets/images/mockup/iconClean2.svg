@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66.204" height="66.604" viewBox="0 0 66.204 66.604">
+  <g id="Group_390" data-name="Group 390" transform="translate(-4317.192 -199.59)">
+    <path
+      id="Path_578"
+      data-name="Path 578"
+      d="M4352.421,228.921h-4.53V207.209a2.265,2.265,0,0,1,2.265-2.265h0a2.265,2.265,0,0,1,2.265,2.265Z"
+    />
+    <path
+      id="Path_579"
+      data-name="Path 579"
+      d="M4365.211,241.325l-1.482-5.152a7.245,7.245,0,0,0-6.962-5.24h-13.222a7.244,7.244,0,0,0-6.962,5.24l-1.483,5.152Z"
+    />
+    <path id="Path_580" data-name="Path 580" d="M4365.211,241.325l5.365,18.642h-40.842l5.365-18.642Z" />
+    <line
+      id="Line_467"
+      data-name="Line 467"
+      y1="16.731"
+      transform="translate(4350.225 248.267)"
+      fill="none"
+      stroke="#fff"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2.012"
+    />
+    <line
+      id="Line_468"
+      data-name="Line 468"
+      x1="1.204"
+      y2="16.731"
+      transform="translate(4344.74 248.267)"
+      fill="none"
+      stroke="#fff"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2.012"
+    />
+    <line
+      id="Line_469"
+      data-name="Line 469"
+      x1="2.408"
+      y2="16.731"
+      transform="translate(4339.255 248.267)"
+      fill="none"
+      stroke="#fff"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2.012"
+    />
+    <line
+      id="Line_470"
+      data-name="Line 470"
+      x1="3.612"
+      y2="16.731"
+      transform="translate(4333.771 248.267)"
+      fill="none"
+      stroke="#fff"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2.012"
+    />
+    <line
+      id="Line_471"
+      data-name="Line 471"
+      x2="1.204"
+      y2="16.731"
+      transform="translate(4354.505 248.267)"
+      fill="none"
+      stroke="#fff"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2.012"
+    />
+    <line
+      id="Line_472"
+      data-name="Line 472"
+      x2="2.408"
+      y2="16.731"
+      transform="translate(4358.787 248.267)"
+      fill="none"
+      stroke="#fff"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2.012"
+    />
+    <line
+      id="Line_473"
+      data-name="Line 473"
+      x2="3.612"
+      y2="16.731"
+      transform="translate(4363.067 248.267)"
+      fill="none"
+      stroke="#fff"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2.012"
+    />
+    <line
+      id="Line_474"
+      data-name="Line 474"
+      x2="32.123"
+      transform="translate(4334.094 241.325)"
+      fill="none"
+      stroke="#fff"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2.012"
+    />
+  </g>
+  <rect
+    id="Rectangle_503"
+    data-name="Rectangle 503"
+    width="63.369"
+    height="63.369"
+    rx="3.447"
+    transform="translate(1.417 1.417)"
+    fill="none"
+    stroke="#000"
+    stroke-miterlimit="10"
+    stroke-width="2.835"
+  />
+</svg>
